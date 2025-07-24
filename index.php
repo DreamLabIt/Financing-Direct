@@ -52,7 +52,7 @@
                 <div class="footer-logo">
 
                     <a href="https://www.homefinancingdirect.com/">
-                        <img src="https://www.homefinancingdirect.com/img/hfd-logo-footer.png" alt="hfd logo footer">
+                        <img src="./assets/images/home-financing-direct-logo.png " alt="logo">
                     </a>
 
                 </div>
@@ -92,7 +92,7 @@
               <h5>Newsletter</h5>
 
               <div class="quotes-btn-wrap">
-              <form id="subscribe-form">
+              <form id="subscribe-form" class="flex">
                   <div class="container mail-input" style="background-color:white">
                       <input placeholder="Your Email" type="email" id="email" name="email" required>
                   </div>
@@ -100,9 +100,6 @@
                       <input type="submit" value="SUBMIT">
                   </div>
               </form>
-              <div id="thank-you-message" style="display: none; color: #fff; margin-top: 10px;">
-                  Thank you for subscribing
-              </div>
 
 
               </div>

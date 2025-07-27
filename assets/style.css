@@ -651,16 +651,14 @@ label {
     /* =========== Calculetor style =========== */
 
     .calculator-container {
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      width: 100%;
-      overflow: hidden;
-      margin-top: 73px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        width: 100%;
+        padding-block: 73px;
     }
 
     .calculator-header {
       padding-left: 60px;
-      margin-top: 48px;
     }
 
     .calculator-header h2 {
@@ -781,6 +779,41 @@ label {
       line-height: 52.8px;
       font-weight: bold;
       margin-top: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .calculator-container {
+        padding-block: 28px;
+    }
+    .calculator-header {
+      padding-left: 20px;
+    }
+
+      .calculator-body {
+        padding-block: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .form-section {
+        flex-direction: column;
+      }
+     .form-section .form-inner{
+      order: 2;
+      width: 100%;
+     }
+     
+     .form-section .output{
+      order: 1;
+      width: 100%;
+     }
+     .output-value{
+      font-size: 40px;
+      line-height: 46px;
+     }
+     .input-group{
+      max-width: 100%;
+      width: 100%;
+     }
     }
 
 

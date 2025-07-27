@@ -94,7 +94,7 @@
 
             <!-- ADVANCED TAB -->
 
-             <!-- <div id="basic" class="form-section ">
+             <div id="basic" class="form-section ">
               <div class="form-inner">
                 <div class="input-group">
                   <label>Loan Amount</label>
@@ -129,7 +129,7 @@
                 <div class="output-label">Monthly Payment</div>
                 <div class="output-value" id="resultBasic">$1,663</div>
               </div>
-            </div> -->
+            </div>
         
           </div>
         </div>

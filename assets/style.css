@@ -334,7 +334,7 @@ label {
 /* end flex style */
 /* button style start */
 .btn{
-  background-color: var(--background-btn);
+  background-color: var(--color-secondary-light);
   color: var(--color-brich);
   padding-inline: 20px;
   padding-block: 18px;
@@ -543,14 +543,14 @@ label {
    color: var(--color-white);
    min-height: 360px;
 }
-.item h3{
+.mortgages .item h3{
    color: var(--color-white);
    margin-bottom: 10px;
 }
-.item p{
+.mortgages .item p{
    text-align: start;
 }
-.item a{
+.mortgages .item a{
    width: 100%;
    margin-top: 24px;
 }
@@ -593,7 +593,7 @@ label {
       padding: 30px;
     }
 
-    form {
+    .form-box form {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
@@ -897,40 +897,38 @@ label {
 
 
 .footer-wrap{
-  background-color: var(--background-gray-light);
+  background-color: var(--section-bg);
   width: 100%;
   
 }
-.footer-wrap .offer-wrap{
-  background-color: var(--background-green-light);
+.footer-wrap a{
+  color: var(--color-text);
+  line-height: 40px;
+}
+
+.offer-wrap{
+  background-color: var(--color-primary-light);
   padding-block: 20px;
    padding-top: 27px;
    padding-bottom: 17px;
-    
 }
-.footer-wrap .offer-wrap .offer{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 20px;
-}
-.footer-wrap .image-wrap{
+
+.offer-wrap img{
    width: 30px;
    height: 30px;
    display: inline-block;
+   vertical-align: middle;
+   margin-right: 18px;
 }
-
-.footer-wrap .offer-wrap p{
+.offer-wrap h4{
   color: var(--color-white);
-  font-size: 20px;
-  line-height: var(--lh-md);
-  font-weight: var(--font-weight-bold);
-   margin-top: -5px;
+  text-align: center;
 }
-.footer-wrap .offer-wrap span{
+.offer-wrap span{
   color: #ffd65c;
   text-decoration: underline;
 }
+
 .footer-bottom{
    padding-block: 95px;
 }
@@ -938,9 +936,28 @@ label {
 .widget-item{
   width: 30%;
 }
+.address-wrap{
+  padding-right: 44px;
+}
 .widget-item-links{
   width: 40%;
-  padding-right: 50px;
+}
+.widget-item-links .links{
+  gap: 90px;
+}
+.form-row input{
+  background-color: var(--color-white);
+}
+.form-row input:focus{
+  outline: none;
+}
+.form-row button{
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #115740;
+  padding-block: 14px;
+  border-radius: 12px;
 }
 .footer-bottom address, .phone, .email{
    font-size: 15px;
@@ -956,15 +973,71 @@ label {
 }
 .footer-bottom h5{
    margin-bottom: 16px;
-   font-size: 18px;
-   font-weight: 800;
-   line-height: 21px;
-   color: var(--color-green-tropical);
 }
-.footer-bottom li a{
-   font-size: var(--font-size-base);
-   line-height: 40px;
-   font-weight: 400;
+.item-left{
+  width: 30%;
+}
+.item-right{
+  width: 37%;
+}
+
+
+@media (max-width: 768px){
+   
+   /* Footer style */
+   .footer-wrap .image-wrap {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+   }
+   .offer-wrap{
+      padding-top: 12px;
+      padding-bottom: 12px;
+   }
+   .offer-wrap img {
+      width: 24px;
+      height: 24px;
+      margin-right: 0px;
+  }
+   
+   .widget-item, .widget-item-links{
+      width: 100%;
+      text-align: center;
+   }
+   .form-row input{
+      width: 100%;
+    }
+   .form-row button {
+      width: 100%;
+   }
+   .address-wrap{
+      padding-right: 0px;
+    }
+    .item-left {
+      margin-bottom: 10px;
+  }
+    
+  .footer-bottom {
+      padding-block: 40px;
+  }
+  .footer-wrap .d-flex {
+      display: flex;
+      flex-direction: column;
+  }
+}
+@media (max-width: 1024px){
+   
+   /* Footer style */
+   .widget-item-links .links {
+      gap: 0px;
+  }
+   .item-left {
+      width: 100%;
+      text-align: center;
+  }
+  .item-right {
+      width: 100%;
+  }
 }
 
 
@@ -1009,50 +1082,7 @@ label {
    .mortgages{
       grid-template-columns: 1fr ;
    }
-   /* Footer style */
-   .footer-wrap .image-wrap {
-      width: 24px;
-      height: 24px;
-      display: inline-block;
-   }
-   .footer-wrap .offer-wrap{
-      padding-top: 12px;
-      padding-bottom: 12px;
-   }
-   .offer-wrap .offer p {
-      color: var(--color-white);
-      font-size: 15px;
-      line-height: 18px;
-      font-weight: var(--font-weight-bold);
-      text-align: center;
-   }
-
-   .footer-wrap .offer-wrap .offer {
-      gap: 10px;
-      flex-direction: column;
-   }
-   .footer-bottom {
-      padding-block: 32px;
-   }
-   .footer-bottom{
-      row-gap: 20px;
-   }
    
-   .widget-item, .widget-item-links{
-      width: 100%;
-      text-align: center;
-   }
-   .form-row {
-    
-      justify-content: center;
-   }
-   .form-row button {
-    
-      width: 100%;
-   }
-   .footer-bottom li a{
-      line-height: 32px;
-   }
    
    .output {
       text-align: left;
@@ -1062,7 +1092,7 @@ label {
 }
 
 @media (max-width: 600px) {
-      form {
+      .form-box form {
         grid-template-columns: 1fr;
       }
     }

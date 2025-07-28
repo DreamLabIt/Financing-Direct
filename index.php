@@ -290,40 +290,36 @@
           <div class="rate-box">
             <div class="rate-row rate-box-head">
               <div class="rate-col">
-                <h5>Single Family</h5>
+                <h5>Credit Score</h5>
               </div>
               <div class="rate-col">
-                <h5>Duplex</h5>
+                <h5>Minimum Down</h5>
               </div>
-              
             </div>
             <div class="rate-box-body ">
               <div class="rate-row">
                 <div class="rate-col">
-                  <p>$571,550</p>
+                  <p>600+</p>
                 </div>
                 <div class="rate-col">
-                  <p>$731,700</p>
+                  <p>0.0%</p>
                 </div>
-                
               </div>
               <div class="rate-row">
                 <div class="rate-col">
-                  <p>$571,550</p>
+                  <p>580+</p>
                 </div>
                 <div class="rate-col">
-                  <p>$731,700</p>
+                  <p>3.5%</p>
                 </div>
-                
               </div>
               <div class="rate-row">
                 <div class="rate-col">
-                  <p>$571,550</p>
+                  <p>500-579</p>
                 </div>
                 <div class="rate-col">
-                  <p>$731,700</p>
+                  <p>10%</p>
                 </div>
-                
               </div>
             </div>
           </div>

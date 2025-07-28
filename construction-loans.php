@@ -118,6 +118,75 @@
    </section>
    <!-- benefit fha mortgage section end -->
 
+   <!-- ============================ FAQ section start ============================ -->
+
+   <section class="common-faq-section">
+      <div class="common-wrap common-faq-wrap">
+         <h2>Construction Loan FAQs</h2>
+         <p class="subtitle">Answers to commonly asked questions about our one-time close construction loans.</p>
+         <div class="d-flex gap-10 common-faq">
+            <div class="d-flex flex-col gap-10">
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">Will my interest rate change when construction is complete?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>You will lock in an interest rate for the construction phase...</p>
+                  </div>
+               </div>
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">How long do I have to complete construction?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>You have 12 months from closing to complete construction...</p>
+                  </div>
+               </div>
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">How much interest is charged during construction?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>The interest is based on the amount drawn each month...</p>
+                  </div>
+               </div>
+            </div>
+            <div class="d-flex flex-col gap-10">
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">Can I still do this loan if I already own my lot?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>Yes! We can use the value of your lot as part of the equity...</p>
+                  </div>
+               </div>
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">Does my builder have to be approved through your program?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>Yes, your builder must be reviewed and approved by our team...</p>
+                  </div>
+               </div>
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">What construction documentation will be required?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>Required documents include contract, plans, permits, appraisal, etc.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- common faq end -->
+
 
    <?php include 'footer-simple.php'; ?>
 </body>

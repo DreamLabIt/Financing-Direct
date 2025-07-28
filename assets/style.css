@@ -721,7 +721,10 @@ textarea {
 }
 
 
-@media (min-width:769px) {
+@media only screen and (min-width:769px) {
+  .mortgage-rates{
+    padding-block: 70px;
+  }
   .exceptional-title {
   margin-bottom: 48px;   
 }
@@ -751,6 +754,16 @@ textarea {
 .down-pament-rates .rate-col{
   justify-content: start;
   padding-left: 30px;
+}
+@media only screen and (min-width:769px){
+  .down-pament-rates{
+    padding-block: 70px;
+  }
+  .down-pament-rates .note{
+    font-size: 14px;
+    font-weight: 16.8px;
+    padding: 10px;
+  }
 }
 
 /* ================ down-pament-rate style end ================ */

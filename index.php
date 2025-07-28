@@ -14,8 +14,8 @@
      <!-- ====  End header section === -->
 
      <!-- ===== Mortgages section start -->
-      <section class="mortgages-wrap common-wrap">
-        <div class="mortgages">
+      <section class="mortgages-wrap ">
+        <div class="mortgages common-wrap">
           <div class="item" style="background-image: url('./assets/images/mortgage-types.jpg');">
             <h3>All Type of Mortgages</h3>
             <p>From zero down loans to multi-millions dollar jumbo loans, we have a loan option that perfectly fits your situation!</p>
@@ -326,7 +326,8 @@
                 
               </div>
             </div>
-          </div> 
+          </div>
+          <p class="note">* Please note that the 0% down payment option will result in an interest rate that is about 1% higher than the 3.5% down option.</p> 
         </div>
       </section>
 

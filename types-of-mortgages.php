@@ -31,6 +31,29 @@
    <!-- hero section start -->
 
    <!--  -->
+   <section>
+      <div class="common-wrap grid">
+         <div class="card d-flex justify-between gap-24">
+            <div class="card-content d-flex flex-col">
+               <div class="card-title-wrap d-flex item-center">
+                  <h3 class="card-title h2">Community Involvement</h3>
+               </div>
+               <div class="card-body">
+                  <p>The genuine concern I have for my community and people in general is apparent in my daily life. I serve and support several local charities and strives to make a positive impact through my service.</p>
+                  <ul>
+                     <li>The River City Youth Foundation</li>
+                     <li>Central Texas Food Bank</li>
+                     <li>Interfaith Action of Central Texas</li>
+                     <li>Brown Santa</li>
+                  </ul>
+               </div>
+               <a class="btn btn-primary" href="#">Learn More</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!--  -->
    <?php include 'footer-simple.php'; ?>
    <!-- footer section end -->
    <script src="./script.js"></script>

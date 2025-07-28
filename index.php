@@ -5,16 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Financing Direct | Home</title>
-  <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+  <link rel="stylesheet" href="./assets/css/final.css">
+
 </head>
 
 <body>
   <?php include 'header.php'; ?>
   <!-- hero section start -->
   <section class="hero-section">
-    <div class="common-wrap d-flex justify-between item-center">
+    <div class="common-wrap d-flex justify-between item-center gap-20">
       <div class="content-wraper">
         <p class="sub-title">Best Mortgage Solutions</p>
         <h1 class="title">The Absolute Lowest Rates & Fees</h1>
@@ -24,7 +25,7 @@
           <a class="btn btn-white" href="#">View Rates</a>
         </div>
       </div>
-      <div class="media">
+      <div class="media d-flex item-end flex-col">
         <img src="./assets/images/homepage-hero-bg.png" alt="about-shay-wright-video">
         <!-- <div class="media-shape">
           <img src="./assets/images/about-shay-wright-shape.png" alt="about-shay-wright-shape">
@@ -57,8 +58,8 @@
   </section>
   <!-- ===== Mortgages section end -->
   <!-- double img hero section start -->
-  <section class="hero-section hero-double-img">
-    <div class="common-wrap d-flex justify-between item-center">
+  <section class="hero-section">
+    <div class="common-wrap d-flex justify-between item-center gap-20">
       <div class="content-wraper">
         <h2 class="h1 title"><span>Realizing Dreams ... </span>
           One Mortgage at a Time</h2>

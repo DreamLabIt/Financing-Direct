@@ -595,6 +595,7 @@ label {
 
 /* rafi work start */
 /* about shay-wright page start */
+
 /* common hero section star */
 
 
@@ -735,10 +736,6 @@ label {
     gap: 40px;
   }
 
-  /* .hero-section .content-wraper {
-    padding-top: 24px;
-  } */
-
   .hero-section.about-shay-hero {
     --space-y: 100px;
     --space-b: 90px;
@@ -747,10 +744,6 @@ label {
   .hero-section.about-shay-hero .content-wraper {
     padding-left: calc(var(--width) + var(--gap));
   }
-
-
-
-
 }
 
 @media only screen and (min-width:1025px) {
@@ -761,6 +754,7 @@ label {
 
 
 /* hero double img section end */
+
 /* get quote common section start */
 .cta {
   padding-block: 40px;
@@ -1125,6 +1119,7 @@ textarea {
     padding-right: 120px;
   }
 } */
+ 
 /* =========== Calculetor style =========== */
 
 .calculator-container {

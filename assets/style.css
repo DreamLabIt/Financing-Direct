@@ -581,7 +581,7 @@ label {
   background: #ffffff;
   border: 1px solid #EDEBE1;
   border-radius: 10px;
-  padding: 30px;
+  padding: 20px;
 }
 
 .common-form-content {
@@ -593,7 +593,7 @@ label {
 
 .common-form-wrap form {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
 
@@ -650,10 +650,106 @@ textarea {
   background-color: #015a3b;
 }
 
+@media (min-width: 769px){
+  .common-form-wrap form{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .common-form-section{
+    padding: 30px;
+  }
+}
+
+
     
 /* ====== Common form section end ===== */
 
     
+
+/* =============== FHA loan rate style start ================= */
+
+.mortgage-rates-inner {
+    max-width: 527px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.exceptional-title {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.exceptional-title h2{
+  margin-bottom: 12px;
+}
+.rate-box{
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.rate-box-head {
+    background-color: green;
+    
+}
+.mortgage-rates .rate-box .rate-row{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.rate-col h5 {
+    color: white;
+    font-size: 14px;
+}
+.rate-col p {
+    font-size: 12px;
+}
+.rate-col {
+    padding-block: 14px;
+    padding-inline: 4px;
+    border-right: 1px solid #EDEBE1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rate-box-body .rate-row:nth-child(even){
+  background-color: var(--color-white);
+}
+
+.rate-col:last-child{
+    border: 0;
+}
+.rate-box-body{
+  background-color: var(--section-bg);
+  
+}
+
+
+@media (min-width:769px) {
+  .rate-col {
+    padding-inline: 8px;
+  }
+  .rate-col h5 {
+    font-size: 18px;
+}
+.rate-col p {
+    font-size: 18px;
+}
+  
+}
+
+/* =============== FHA loan rate style end ================= */
+
+
+
+/* ================ down-pament-rate style start ================ */
+
+.down-pament-rates .rate-box .rate-row{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.down-pament-rates .rate-col{
+  justify-content: start;
+  padding-left: 30px;
+}
+
+/* ================ down-pament-rate style end ================ */
 
     /* =========== Calculetor style =========== */
 

@@ -232,14 +232,14 @@
 
 
 
-      <!-- ============================= FHA loon section start ========================== -->
+      <!-- ============================= FHA loon rate section start ========================== -->
 
 
-      <section class="mortgage-rates dec-mortgage-rates fha-page-rates">
+      <section class="mortgage-rates">
         <div class="mortgage-rates-inner">
           <div class="exceptional-title">
-            <h2>FHA Loan Limits <br>in Texas</h2>
-            <p>The following are the FHA loan limits for most counties in Texas with a few exceptions. To look up the FHA loan limit for a specific county in Texas, please <a href="https://entp.hud.gov/idapp/html/hicostlook.cfm" target="_blank">visit this site</a>.</p>
+            <h2>FHA Loan Limits</h2>
+            <p>The following are the loan limits for most counties in Texas with a few exceptions. Look up the FHA loan limit for a specific county in Texas.</p>
           </div>
           <div class="rate-box">
             <div class="rate-row rate-box-head">
@@ -256,7 +256,7 @@
                   <h5>Fourplex</h5>
               </div>
             </div>
-            <div class="rate-box-body">
+            <div class="rate-box-body ">
               <div class="rate-row">
                 <div class="rate-col">
                   <p>$571,550</p>
@@ -277,7 +277,61 @@
       </section>
 
 
-      <!-- ============================= FHA loon section end ========================== -->
+<br>
+<br>
+
+
+      <section class="down-pament-rates">
+        <div class="mortgage-rates-inner">
+          <div class="exceptional-title">
+            <h2>Down Payment Requirements</h2>
+            <p>The following are our minimum FHA down payment amounts based on credit score.</p>
+          </div>
+          <div class="rate-box">
+            <div class="rate-row rate-box-head">
+              <div class="rate-col">
+                <h5>Single Family</h5>
+              </div>
+              <div class="rate-col">
+                <h5>Duplex</h5>
+              </div>
+              
+            </div>
+            <div class="rate-box-body ">
+              <div class="rate-row">
+                <div class="rate-col">
+                  <p>$571,550</p>
+                </div>
+                <div class="rate-col">
+                  <p>$731,700</p>
+                </div>
+                
+              </div>
+              <div class="rate-row">
+                <div class="rate-col">
+                  <p>$571,550</p>
+                </div>
+                <div class="rate-col">
+                  <p>$731,700</p>
+                </div>
+                
+              </div>
+              <div class="rate-row">
+                <div class="rate-col">
+                  <p>$571,550</p>
+                </div>
+                <div class="rate-col">
+                  <p>$731,700</p>
+                </div>
+                
+              </div>
+            </div>
+          </div> 
+        </div>
+      </section>
+
+
+      <!-- ============================= FHA loon rate section end ========================== -->
 
 
 

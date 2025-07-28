@@ -846,6 +846,7 @@ textarea {
 .parameters-links {
   font-size: 14px;
   flex-direction: row;
+  row-gap: 0px;
 }
 .parameters-links ul li{
   list-style-type: disc;
@@ -873,6 +874,9 @@ textarea {
   }
   .parameters {
     flex-direction: row;
+  }
+  .parameters-links{
+    row-gap: 0px;
   }
   .parameters-links ul li{
     font-size: 16px;

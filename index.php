@@ -500,14 +500,14 @@
                 <p>Loan Parameters</p>
               <div class="parameters-links d-flex flex-wrap flex-col justify-between gap-10">
                 <ul>
-                  <li>15 yr fixed and 30 yr fixed</li>
-                  <li>7 yr ARM and 10 yr ARM</li>
-                  <li>Primary, second & investment homes</li>
+                  <li>30 yr fixed</li>
+                  <li>Primary residence only</li>
+                  <li>Max loan amount of $4 million</li>
                 </ul>
                 <ul>
-                  <li>Max loan amount of $806,500</li>
-                  <li>Minimum credit score of 700</li>
-                  <li>Minimum down payment of 5%</li>
+                  <li>Minimum credit score of 580</li>
+                  <li>Minimum down payment of 0%</li>
+                  <li>No owner builders</li>
                 </ul>
               </div>
             </div>

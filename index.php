@@ -340,7 +340,7 @@
       <section class="our-mortgage-rates">
         <div class="mortgage-rates-inner">
           <div class="exceptional-title">
-            <h2>Down Payment Requirements</h2>
+            <h2>Our Mortgage Rates</h2>
             <p>The lowest rates on the market!</p>
           </div>
           <div class="rate-box">

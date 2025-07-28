@@ -701,7 +701,7 @@ textarea {
     font-size: 12px;
 }
 .rate-col {
-    padding-block: 14px;
+    padding-block: 10px;
     padding-inline: 4px;
     border-right: 1px solid #EDEBE1;
     display: flex;
@@ -726,6 +726,7 @@ textarea {
   margin-bottom: 48px;   
 }
   .rate-col {
+    padding-block: 14px;
     padding-inline: 8px;
   }
   .rate-col h5 {

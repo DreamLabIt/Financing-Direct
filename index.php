@@ -378,28 +378,13 @@
               <div class="rate-row">
                 <div class="rate-col d-flex flex-col rate-col-body">
                   <h5>Conventional</h5>
-                  <p>15 yr fixed</p>
+                  <p>30 yr fixed</p>
                 </div>
                 <div class="rate-col">
-                  <p>4.95%</p>
+                  <p>5.90%</p>
                 </div>
                 <div class="rate-col">
-                  <p>5.20%</p>
-                </div>
-                <div class="rate-col">
-                  <p>1.45</p>
-                </div>
-              </div>
-              <div class="rate-row">
-                <div class="rate-col d-flex flex-col rate-col-body">
-                  <h5>Conventional</h5>
-                  <p>15 yr fixed</p>
-                </div>
-                <div class="rate-col">
-                  <p>4.95%</p>
-                </div>
-                <div class="rate-col">
-                  <p>5.20%</p>
+                  <p>6.15%</p>
                 </div>
                 <div class="rate-col">
                   <p>1.45</p>
@@ -407,14 +392,59 @@
               </div>
               <div class="rate-row">
                 <div class="rate-col d-flex flex-col rate-col-body">
-                  <h5>Conventional</h5>
-                  <p>15 yr fixed</p>
+                  <h5>FHA</h5>
+                  <p>30 yr fixed</p>
                 </div>
                 <div class="rate-col">
-                  <p>4.95%</p>
+                  <p>5.30%</p>
                 </div>
                 <div class="rate-col">
-                  <p>5.20%</p>
+                  <p>5.88%</p>
+                </div>
+                <div class="rate-col">
+                  <p>1.00</p>
+                </div>
+              </div>
+              <div class="rate-row">
+                <div class="rate-col d-flex flex-col rate-col-body">
+                  <h5>VA</h5>
+                  <p>30 yr fixed</p>
+                </div>
+                <div class="rate-col">
+                  <p>5.35%</p>
+                </div>
+                <div class="rate-col">
+                  <p>5.73%</p>
+                </div>
+                <div class="rate-col">
+                  <p>1.00</p>
+                </div>
+              </div>
+              <div class="rate-row">
+                <div class="rate-col d-flex flex-col rate-col-body">
+                  <h5>USDA</h5>
+                  <p>30 yr fixed</p>
+                </div>
+                <div class="rate-col">
+                  <p>5.62%</p>
+                </div>
+                <div class="rate-col">
+                  <p>6.13%</p>
+                </div>
+                <div class="rate-col">
+                  <p>1.00</p>
+                </div>
+              </div>
+              <div class="rate-row">
+                <div class="rate-col d-flex flex-col rate-col-body">
+                  <h5>Jumbo</h5>
+                  <p>30 yr fixed</p>
+                </div>
+                <div class="rate-col">
+                  <p>6.25%</p>
+                </div>
+                <div class="rate-col">
+                  <p>6.41%</p>
                 </div>
                 <div class="rate-col">
                   <p>1.45</p>
@@ -422,14 +452,14 @@
               </div>
               <div class="rate-row">
                 <div class="rate-col d-flex flex-col rate-col-body">
-                  <h5>Conventional</h5>
-                  <p>15 yr fixed</p>
+                  <h5>Investment</h5>
+                  <p>30 yr fixed</p>
                 </div>
                 <div class="rate-col">
-                  <p>4.95%</p>
+                  <p>6.55%</p>
                 </div>
                 <div class="rate-col">
-                  <p>5.20%</p>
+                  <p>6.88%</p>
                 </div>
                 <div class="rate-col">
                   <p>1.45</p>

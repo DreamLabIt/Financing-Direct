@@ -141,13 +141,13 @@
 
       <!-- ============================ FAQ section start ============================ -->
 
-      <section class="faq-section">
-        <div class="common-wrap faq-wrap">
+      <section class="common-faq-section">
+        <div class="common-wrap common-faq-wrap">
           <h2>Construction Loan FAQs</h2>
           <p class="subtitle">Answers to commonly asked questions about our one-time close construction loans.</p>
-          <div class="d-flex gap-10 faq">
+          <div class="d-flex gap-10 common-faq">
             <div class="d-flex flex-col gap-10">
-              <div class="faq-item">
+              <div class="common-faq-item">
                 <div class="question">
                   <h5 class="d-flex item-center justify-between gap-10">Will my interest rate change when construction is complete?</h5>
                 </div>
@@ -156,7 +156,7 @@
                 </div>
               </div>
 
-              <div class="faq-item">
+              <div class="common-faq-item">
                 <div class="question">
                   <h5 class="d-flex item-center justify-between gap-10">How long do I have to complete construction?</h5>
                 </div>
@@ -165,7 +165,7 @@
                 </div>
               </div>
 
-              <div class="faq-item">
+              <div class="common-faq-item">
                 <div class="question">
                   <h5 class="d-flex item-center justify-between gap-10">How much interest is charged during construction?</h5>
                 </div>
@@ -176,7 +176,7 @@
             </div>  
             <div class="d-flex flex-col gap-10">
             
-              <div class="faq-item">
+              <div class="common-faq-item">
                 <div class="question">
                   <h5 class="d-flex item-center justify-between gap-10">Can I still do this loan if I already own my lot?</h5>
                 </div>
@@ -185,7 +185,7 @@
                 </div>
               </div>
 
-              <div class="faq-item">
+              <div class="common-faq-item">
                 <div class="question">
                   <h5 class="d-flex item-center justify-between gap-10">Does my builder have to be approved through your program?</h5>
                 </div>
@@ -194,7 +194,7 @@
                 </div>
               </div>
 
-              <div class="faq-item">
+              <div class="common-faq-item">
                 <div class="question">
                   <h5 class="d-flex item-center justify-between gap-10">What construction documentation will be required?</h5>
                 </div>
@@ -208,7 +208,7 @@
       </section>
 
 <script>
-  document.querySelectorAll('.faq-item').forEach(item => {
+  document.querySelectorAll('.common-faq-item').forEach(item => {
       item.addEventListener('click', () => {
         const answer = item.querySelector('.answer');
         const icon = item.querySelector('.icon');
@@ -228,6 +228,56 @@
         
 
       <!-- ============================ FAQ section end ============================ -->
+
+
+
+
+      <!-- ============================= FHA loon section start ========================== -->
+
+
+      <section class="mortgage-rates dec-mortgage-rates fha-page-rates">
+        <div class="mortgage-rates-inner">
+          <div class="exceptional-title">
+            <h2>FHA Loan Limits <br>in Texas</h2>
+            <p>The following are the FHA loan limits for most counties in Texas with a few exceptions. To look up the FHA loan limit for a specific county in Texas, please <a href="https://entp.hud.gov/idapp/html/hicostlook.cfm" target="_blank">visit this site</a>.</p>
+          </div>
+          <div class="rate-box">
+            <div class="rate-row rate-box-head">
+              <div class="rate-col">
+                <h5>Single Family</h5>
+              </div>
+              <div class="rate-col">
+                <h5>Duplex</h5>
+              </div>
+              <div class="rate-col">
+                  <h5>Triplex</h5>
+              </div>
+              <div class="rate-col">
+                  <h5>Fourplex</h5>
+              </div>
+            </div>
+            <div class="rate-box-body">
+              <div class="rate-row">
+                <div class="rate-col">
+                  <p>$571,550</p>
+                </div>
+                <div class="rate-col">
+                  <p>$731,700</p>
+                </div>
+                <div class="rate-col">
+                  <p>$884,450</p>
+                </div>
+                <div class="rate-col">
+                  <p>$1,099,150</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </section>
+
+
+      <!-- ============================= FHA loon section end ========================== -->
 
 
 

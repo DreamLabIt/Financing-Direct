@@ -370,12 +370,12 @@ label {
 /* ======================== FAQ Style start ==================== */
 
 
- .faq-section{
+ .common-faq-section{
   padding-top: 50px;
   padding-bottom: 60px;
   background-color: #F7F6F2;
  }
- .faq-wrap h2{
+ .common-faq-wrap h2{
       color: #007c5d;
       text-align: center;
       font-size: 26px;
@@ -383,20 +383,14 @@ label {
       margin-bottom: 20px;
       font-weight: 700;
     }
-  p.subtitle {
+  .common-faq-wrap .subtitle {
       text-align: center;
       color: #48432c;
       font-size: 18px;
       line-height: 21.6px;
       margin-bottom: 54px;
     }
-    .faq-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      row-gap: 20px;
-      column-gap: 40px;
-    }
-    .faq-item {
+    .common-faq-item {
       background: #FFFFFF;
       border-radius: 8px;
       border-radius: 8px;
@@ -408,11 +402,11 @@ label {
       transition: all 0.3s ease;
     }
     
-    .faq-item:hover {
+    .common-faq-item:hover {
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     
-    .question h5 {
+     .question h5 {
       font-size: 18px;
       line-height: 21.6px;
       color: #48432c;
@@ -433,7 +427,7 @@ label {
       
     }
    
-   .faq-wrap .rotate {
+   .common-faq-wrap .rotate {
       transform: rotate(180deg);
     }
     .answer {
@@ -448,16 +442,13 @@ label {
     }
 
     @media (max-width: 768px) {
-      .faq{
+      .common-faq{
         flex-direction: column;
       }
-      .faq-item{
+      .common-faq-item{
         width: 100%;
         padding-block: 12px;
         padding-left: 20px;
-      }
-      .faq-grid {
-        grid-template-columns: repeat(1, 1fr);
       }
     }
 

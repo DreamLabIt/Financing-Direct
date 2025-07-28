@@ -189,6 +189,8 @@
 
 
    <?php include 'footer-simple.php'; ?>
+   <!-- footer section end -->
+   <script src="./script.js"></script>
 </body>
 
 </html>

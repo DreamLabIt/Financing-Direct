@@ -320,74 +320,70 @@ label {
 
 /* blog wrap common section start */
 .blog-wrap {
-  padding-top: 50px;
-}
-
-.blog-wrap {
-  padding: 76px 0 45px;
-}
-
-.blog-wrap {
-  float: left;
-  width: 100%;
-  background-color: #ffffff;
-  padding: 71px 0 80px;
-}
-
-.blog-wrap .common-wrap {
-  max-width: 1278px;
-}
-
-.blog-item-wrap {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
+  --space-y: 32px;
+  padding: var(--space-y) 0;
 }
 
 .blog-item {
-  width: 30.2907915993538%;
-  margin-right: 4.5638126009693%;
-}
-
-.blog-item:nth-child(3n + 3) {
-  margin-right: 0;
+  border-radius: 8px;
+  border: 1px solid #EEECE3;
+  overflow: hidden;
 }
 
 .blog-item-thumb {
-  float: left;
-  width: 100%;
+  height: 200px;
 }
 
-.blog-item-thumb figure {
-  width: 100%;
-}
-
-.blog-item-thumb figure img {
-  width: 100%;
+.blog-item-thumb img {
+  height: 100%;
 }
 
 .blog-item-content {
-  float: left;
-  width: 100%;
-  padding-top: 11px;
+  padding: 32px 24px;
+  flex-grow: 1;
 }
 
-.blog-item-content h5 {
-  color: #0f69a3;
-  font-family: "ProximaNova-Bold", sans-serif;
-  margin-bottom: 7px;
+.blog-item-content h5 a {
+  color: var(--color-brich);
 }
 
 .blog-item-content p {
-  font-size: 20px;
-  line-height: 24px;
-  color: #333333;
-  font-family: "proximanovalight", sans-serif;
+  flex-grow: 1;
 }
 
-@media only screen and (min-width: 992px) {
-  .mortgage-resource .blog-wrap {
-    padding-top: 200px;
+.arrow-icon {
+  display: inline-block;
+  width: 10px;
+  height: 8px;
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+  background-color: var(--color-primary-extra-light);
+  transform: rotate(38deg);
+  margin-left: 10px;
+}
+
+@media only screen and (min-width:460px) {
+  .blog-wrap .common-wrap {
+    --grid-column: 2;
+  }
+}
+
+@media only screen and (min-width:769px) {
+  .blog-wrap {
+    --space-y: 40px;
+  }
+
+  .blog-wrap .common-wrap {
+    --grid-column: 3;
+  }
+}
+
+@media only screen and (min-width:1025px) {
+  .blog-wrap {
+    --space-y: 60px;
+  }
+
+  .blog-wrap .common-wrap {
+    --gap: 60px;
   }
 }
 
@@ -1233,7 +1229,7 @@ textarea {
 }
 
 .output-value {
-  color: var(--color-green);
+  color: var(--color-primary);
   font-size: 54px;
   line-height: 52.8px;
   font-weight: bold;

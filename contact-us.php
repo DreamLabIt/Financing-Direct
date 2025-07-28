@@ -17,12 +17,12 @@
    <section class="hero-section">
       <div class="common-wrap d-flex justify-between">
          <div class="content-wraper">
-            <p class="sub-title">Your mortgage partner</p>
-            <h1 class="title">About Us</h1>
-            <p class="content">Our company was built on the principles of trust, integrity, and customer-centric service, and we are committed to offering our clients the best mortgage options on the market.</p>
+            <p class="sub-title">We’re here to help</p>
+            <h1 class="title">Contact Us</h1>
+            <p class="content">Have a question? Want to learn more about our home financing options? Please complete the following form or reach out to us using one of the other contact methods listed below.</p>
          </div>
          <div class="media">
-            <img src="./assets/images/texas-mortgage-company.jpg" alt="about-shay-wright-video">
+            <img src="./assets/images/contact-us.jpg" alt="contact us">
          </div>
       </div>
    </section>

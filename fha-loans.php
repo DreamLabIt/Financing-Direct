@@ -123,7 +123,80 @@
    </section>
    <!-- benefit fha mortgage section end -->
 
+
+   <!-- ============================ FAQ section start ============================ -->
+
+   <section class="common-faq-section">
+      <div class="common-wrap common-faq-wrap">
+         <h2>FHA Mortgage FAQs</h2>
+         <p class="subtitle">Here are the answers to some of the most commonly asked questions about FHA loans.</p>
+         <div class="d-flex gap-10 common-faq">
+            <div class="d-flex flex-col gap-10">
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">What is a FHA mortgage?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>You will lock in an interest rate for the construction phase...</p>
+                  </div>
+               </div>
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">Who qualifies for a FHA loan?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>You have 12 months from closing to complete construction...</p>
+                  </div>
+               </div>
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">What cost and fees are involved with a FHA mortgage?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>The interest is based on the amount drawn each month...</p>
+                  </div>
+               </div>
+            </div>
+            <div class="d-flex flex-col gap-10">
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">How does FHA mortgage insurance work?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>Yes! We can use the value of your lot as part of the equity...</p>
+                  </div>
+               </div>
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">How is a FHA loan different from a conventional loan?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>Yes, your builder must be reviewed and approved by our team...</p>
+                  </div>
+               </div>
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">How can I apply for a FHA loan?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>Required documents include contract, plans, permits, appraisal, etc.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- common faq end -->
+
    <?php include 'footer-simple.php'; ?>
+
+   <!-- footer section end -->
+   <script src="./script.js"></script>
 </body>
 
 </html>

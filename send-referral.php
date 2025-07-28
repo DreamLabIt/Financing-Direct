@@ -12,9 +12,20 @@
 
 <body class="about-shay">
    <?php include 'header.php'; ?>
-   <!-- hero section end -->
-
-
+   <!-- hero section start -->
+   <section class="hero-section">
+      <div class="common-wrap d-flex justify-between item-center">
+         <div class="content-wraper">
+            <p class="sub-title">In good hands</p>
+            <h1 class="title">Send a Referral</h1>
+            <p class="content">Do you know someone who needs a great new mortgage? I love referrals, and I would really appreciate any business you refer to me. And of course, I promise to take great care of anyone you send my way!</p>
+         </div>
+         <div class="media">
+            <img src="./assets/images/mortgage-referral.jpg" alt="about-shay-wright-video">
+         </div>
+      </div>
+   </section>
+   <!-- hero section start -->
    <?php include 'footer-simple.php'; ?>
    <!-- footer section end -->
    <script src="./script.js"></script>

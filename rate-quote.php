@@ -12,7 +12,21 @@
 
 <body class="about-shay">
    <?php include 'header.php'; ?>
-   <!-- hero section end -->
+   <!-- hero section start -->
+   <section class="hero-section">
+      <div class="common-wrap d-flex justify-center text-center">
+         <div class="content-wraper">
+            <p class="sub-title">The lowest rates on the market!</p>
+            <h1 class="title">Mortgage Rate Quote</h1>
+            <p class="content">Are you planning to purchase a home or refinance your existing mortgage?</p>
+            <div class="btn-wraper d-flex flex-wrap item-center gap-20">
+               <a class="btn" href="#">Purchase</a>
+               or
+               <a class="btn btn-white" href="#">Refinance</a>
+            </div>
+         </div>
+   </section>
+   <!-- hero section start -->
 
 
    <?php include 'footer-simple.php'; ?>

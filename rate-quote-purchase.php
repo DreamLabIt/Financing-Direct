@@ -12,7 +12,16 @@
 
 <body class="about-shay">
    <?php include 'header.php'; ?>
-   <!-- hero section end -->
+   <!-- hero section start -->
+   <section class="hero-section">
+      <div class="common-wrap d-flex justify-center text-center">
+         <div class="content-wraper">
+            <p class="sub-title">Your mortgage partner</p>
+            <h1 class="title">About Us</h1>
+            <p class="content">Our company was built on the principles of trust, integrity, and customer-centric service, and we are committed to offering our clients the best mortgage options on the market.</p>
+         </div>
+   </section>
+   <!-- hero section start -->
 
 
    <?php include 'footer-simple.php'; ?>

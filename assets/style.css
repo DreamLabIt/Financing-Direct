@@ -553,89 +553,105 @@ label {
 
 /* ====== Mortgages style end ====== */
 
-
-/* ====== form section ===== */
-.common-wrap-form{
-   padding-top: 90px;
-   padding-bottom: 90px;
-   max-width: 805px;
-   margin: 0 auto;
-}
-.common-wrap-form .help{
+/* .common-form-wrap .help{
    max-width: 600px;
    margin: 0 auto;
    text-align: center;
    margin-bottom: 80px;
-   
-}
-.common-wrap-form .help p{
+
+
+   .common-wrap-form .help p{
    font-size: 18px;
    line-height: 25px;
    margin-top: 30px;
    margin-bottom: 30px;
 }
-.common-wrap-form .help img{
-   max-width: 14px;
+   .common-wrap-form .help img{
+      max-width: 14px;
+    }
+*/
+
+
+/* ====== Common form section ===== */
+.common-form-section{
+  padding-top: 90px;
+  padding-bottom: 90px;
+  max-width: 805px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #EDEBE1;
+  border-radius: 10px;
+  padding: 30px;
 }
-.form-box {
-      background: #ffffff;
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      padding: 30px;
-    }
 
-    .form-box form {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
+.common-form-content {
+    padding-bottom: 40px;
+  }
+.common-form-content p{
+  margin-bottom: 5px;
+}
 
-    .form-group {
-      display: flex;
-      flex-direction: column;
-    }
+.common-form-wrap form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
 
-    .form-group.full {
-      grid-column: 1 / -1; /* full width row */
-    }
+.common-form-wrap .common-form-group {
+  display: flex;
+  flex-direction: column;
+}
 
-   .form-box label {
-      font-size: 17px;
-      margin-bottom: 6px;
-      font-weight: bold;
-      color: #48432C;
-      text-align: left;
-    }
+.common-form-wrap .common-form-group.wrap {
+  grid-column: 1 / -1; 
+}
 
-    input,
-    textarea {
-      padding: 12px;
-      font-size: 15px;
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      background-color: var(--background-gray);
-      resize: vertical;
-    }
+.common-form-wrap label {
+  font-size: 17px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #48432C;
+  text-align: left;
+}
 
-    .submit-btn {
-      grid-column: 1 / -1;
-      padding: 14px;
-      background-color: var(--background-green-light);
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 16px;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-    }
+.common-form-wrap input,
+textarea {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #EDEBE1;
+  border-radius: 8px;
+  background-color: #FAF9F7;
+  resize: vertical;
+}
+.common-form-wrap input:focus{
+  outline: none;
+}
 
-    .submit-btn:hover {
-      background-color: #015a3b;
-    }
+.common-form-wrap button {
+  grid-column: 1 / -1;
+  padding: 14px;
+  background-color: #007255;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 22.8px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.common-form-wrap img{
+  width: 36px;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+.common-form-wrap button:hover {
+  background-color: #015a3b;
+}
+
+    
+/* ====== Common form section end ===== */
 
     
 

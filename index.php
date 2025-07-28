@@ -334,6 +334,115 @@
       <!-- ============================= FHA loon rate section end ========================== -->
 
 
+
+      <!-- ======================== Our Mortgage Rates start ====================== -->
+
+      <section class="our-mortgage-rates">
+        <div class="mortgage-rates-inner">
+          <div class="exceptional-title">
+            <h2>Down Payment Requirements</h2>
+            <p>The lowest rates on the market!</p>
+          </div>
+          <div class="rate-box">
+            <div class="rate-row rate-box-head">
+              <div class="rate-col rate-col-head">
+                <h5>Loan Type</h5>
+              </div>
+              <div class="rate-col">
+                <h5>Rate</h5>
+              </div>
+              <div class="rate-col">
+                <h5>APR</h5>
+              </div>
+              <div class="rate-col">
+                <h5>Points</h5>
+              </div>
+              
+            </div>
+            <div class="rate-box-body ">
+              <div class="rate-row">
+                <div class="rate-col d-flex flex-col rate-col-body">
+                  <h5>Conventional</h5>
+                  <p>15 yr fixed</p>
+                </div>
+                <div class="rate-col">
+                  <p>4.95%</p>
+                </div>
+                <div class="rate-col">
+                  <p>5.20%</p>
+                </div>
+                <div class="rate-col">
+                  <p>1.45</p>
+                </div>
+              </div>
+              <div class="rate-row">
+                <div class="rate-col d-flex flex-col rate-col-body">
+                  <h5>Conventional</h5>
+                  <p>15 yr fixed</p>
+                </div>
+                <div class="rate-col">
+                  <p>4.95%</p>
+                </div>
+                <div class="rate-col">
+                  <p>5.20%</p>
+                </div>
+                <div class="rate-col">
+                  <p>1.45</p>
+                </div>
+              </div>
+              <div class="rate-row">
+                <div class="rate-col d-flex flex-col rate-col-body">
+                  <h5>Conventional</h5>
+                  <p>15 yr fixed</p>
+                </div>
+                <div class="rate-col">
+                  <p>4.95%</p>
+                </div>
+                <div class="rate-col">
+                  <p>5.20%</p>
+                </div>
+                <div class="rate-col">
+                  <p>1.45</p>
+                </div>
+              </div>
+              <div class="rate-row">
+                <div class="rate-col d-flex flex-col rate-col-body">
+                  <h5>Conventional</h5>
+                  <p>15 yr fixed</p>
+                </div>
+                <div class="rate-col">
+                  <p>4.95%</p>
+                </div>
+                <div class="rate-col">
+                  <p>5.20%</p>
+                </div>
+                <div class="rate-col">
+                  <p>1.45</p>
+                </div>
+              </div>
+              <div class="rate-row">
+                <div class="rate-col d-flex flex-col rate-col-body">
+                  <h5>Conventional</h5>
+                  <p>15 yr fixed</p>
+                </div>
+                <div class="rate-col">
+                  <p>4.95%</p>
+                </div>
+                <div class="rate-col">
+                  <p>5.20%</p>
+                </div>
+                <div class="rate-col">
+                  <p>1.45</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </section>
+
+      <!-- ======================== Our Mortgage Rates end ====================== -->
+
+
       <!-- ============================ loan parameters section start ========================= -->
 
       <section class="parameters-wrap">

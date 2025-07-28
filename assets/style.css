@@ -752,6 +752,71 @@ textarea {
 /* ================ down-pament-rate style end ================ */
 
 
+/* ================ Our-mortgages-rate style start ================ */
+.our-mortgage-rates{
+  padding-block: 60px;
+}
+.our-mortgage-rates .exceptional-title{
+  padding-inline: 10px;
+}
+.our-mortgage-rates .mortgage-rates-inner{
+  max-width: 710px;
+  border: 1px solid #EDEBE1;
+  border-radius: 8px;
+  padding-top: 50px;
+}
+.our-mortgage-rates .rate-box{
+  border-radius: unset;
+}
+.our-mortgage-rates .rate-box .rate-row{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.our-mortgage-rates .rate-col.rate-col-body h5{
+  color: var(--color-text);
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.our-mortgage-rates .rate-col.rate-col-body p{
+  font-size: 12px;
+  line-height: 16.8px;
+  font-weight: 600;
+}
+.our-mortgage-rates .rate-col.rate-col-head{
+  justify-content: start;
+  padding-left: 5px;
+}
+.our-mortgage-rates .rate-col.rate-col-body{
+  justify-content: start;
+  align-items: start;
+  padding-left: 2px;
+}
+
+@media only screen and (min-width:769px) {
+  .our-mortgage-rates .exceptional-title{
+    text-align: start;
+    padding-left: 30px;
+  }
+  .our-mortgage-rates .rate-col.rate-col-body {
+    padding-left: 30px;
+  }
+  
+.our-mortgage-rates .rate-col.rate-col-head{
+    padding-left: 30px;
+  }
+
+  .our-mortgage-rates .rate-col.rate-col-body h5{
+    font-size: 18px;
+  }
+.our-mortgage-rates .rate-col.rate-col-body p{
+    font-size: 14px;
+  }
+}
+
+/* ================  Our-mortgages-rate style end ================ */
+
+
 
 /* ========================= loan parameters style start ================== */
 

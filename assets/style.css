@@ -686,7 +686,7 @@ textarea {
 }
 
 .rate-box-head {
-    background-color: green;
+    background-color: var(--color-primary);
     
 }
 .mortgage-rates .rate-box .rate-row{
@@ -722,6 +722,9 @@ textarea {
 
 
 @media (min-width:769px) {
+  .exceptional-title {
+  margin-bottom: 48px;   
+}
   .rate-col {
     padding-inline: 8px;
   }

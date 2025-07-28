@@ -681,6 +681,7 @@ textarea {
   margin-bottom: 12px;
 }
 .rate-box{
+  border: 1px solid #EDEBE1;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -730,7 +731,7 @@ textarea {
 }
   .rate-col {
     padding-block: 14px;
-    padding-inline: 8px;
+    padding-inline: 7px;
   }
   .rate-col h5 {
     font-size: 18px;

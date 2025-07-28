@@ -751,6 +751,74 @@ textarea {
 
 /* ================ down-pament-rate style end ================ */
 
+
+
+/* ========================= loan parameters style start ================== */
+
+.parameters-wrap {
+  padding-block: 20px;
+}
+.parameters-wrap .border{
+  width: 100%;
+  height: 1px;
+  background-color: #EDEBE1;
+  
+}
+.parameters-item p {
+    margin-bottom: 14px;
+}
+.parameters-item{
+  flex: 1;
+}
+.parameters {  
+  gap: 10px;
+}
+
+.parameters-links {
+  font-size: 14px;
+  flex-direction: row;
+}
+.parameters-links ul li{
+  list-style-type: disc;
+  
+}
+.parameters-links ul, ol {
+    list-style-position: inside;
+}
+.parameters-item span{
+  font-size: 18px;
+  line-height: 21.6px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-text);
+}
+
+@media only screen and (min-width:769px)  {
+  .parameters-wrap {
+    padding-block: 80px;
+}
+  .parameters-wrap .border{
+    width: 1px;
+    height: unset;
+    margin-inline: 45px;
+  }
+  .parameters {
+    flex-direction: row;
+  }
+  .parameters-links ul li{
+    font-size: 16px;
+  }
+  .parameters-item h2 {
+    margin-bottom: 5px;
+  }
+  .parameters-item p {
+    margin-bottom: 32px;
+  }
+}
+
+    
+/* ========================= loan parameters style end ================== */
+
     /* =========== Calculetor style =========== */
 
     .calculator-container {

@@ -334,6 +334,52 @@
       <!-- ============================= FHA loon rate section end ========================== -->
 
 
+      <!-- ============================ loan parameters section start ========================= -->
+
+      <section class="parameters-wrap">
+        <div class="common-wrap">
+          <div class="parameters d-flex flex-wrap flex-col justify-between">
+            <div class="parameters-item">
+                <h2>Conventional</h2>
+                <p>Loan Parameters</p>
+              <div class="parameters-links d-flex flex-wrap flex-col justify-between gap-10">
+                <ul>
+                  <li>15 yr fixed and 30 yr fixed</li>
+                  <li>7 yr ARM and 10 yr ARM</li>
+                  <li>Primary, second & investment homes</li>
+                </ul>
+                <ul>
+                  <li>Max loan amount of $806,500</li>
+                  <li>Minimum credit score of 700</li>
+                  <li>Minimum down payment of 5%</li>
+                </ul>
+              </div>
+            </div>
+            <div class="border"></div>
+            <div class="parameters-item">
+                <h2>VA <span>(active military or veteran)</span></h2>
+                <p>Loan Parameters</p>
+              <div class="parameters-links d-flex flex-wrap flex-col justify-between gap-10">
+                <ul>
+                  <li>15 yr fixed and 30 yr fixed</li>
+                  <li>7 yr ARM and 10 yr ARM</li>
+                  <li>Primary, second & investment homes</li>
+                </ul>
+                <ul>
+                  <li>Max loan amount of $806,500</li>
+                  <li>Minimum credit score of 700</li>
+                  <li>Minimum down payment of 5%</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================ loan parameters section end ========================= -->
+
+
 
 
       

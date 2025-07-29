@@ -15,7 +15,7 @@
   <?php include 'header.php'; ?>
   <!-- hero section start -->
   <section class="hero-section">
-    <div class="common-wrap d-flex justify-between item-center gap-20">
+    <div class="common-wrap d-flex justify-between gap-20">
       <div class="content-wraper">
         <p class="sub-title">Best Mortgage Solutions</p>
         <h1 class="title">The Absolute Lowest Rates & Fees</h1>
@@ -27,9 +27,6 @@
       </div>
       <div class="media d-flex item-end flex-col">
         <img src="./assets/images/homepage-hero-bg.png" alt="about-shay-wright-video">
-        <!-- <div class="media-shape">
-          <img src="./assets/images/about-shay-wright-shape.png" alt="about-shay-wright-shape">
-        </div> -->
       </div>
     </div>
   </section>
@@ -58,8 +55,8 @@
   </section>
   <!-- ===== Mortgages section end -->
   <!-- double img hero section start -->
-  <section class="hero-section">
-    <div class="common-wrap d-flex justify-between item-center gap-20">
+  <section class="hero-section double-img-hero">
+    <div class="common-wrap d-flex justify-between gap-20">
       <div class="content-wraper">
         <h2 class="h1 title"><span>Realizing Dreams ... </span>
           One Mortgage at a Time</h2>
@@ -80,90 +77,7 @@
   </section>
   <!-- cta section end -->
   <!-- ======= Calculetor section start ======= -->
-  <section class="calculator-section">
-    <div class="common-wrap">
-      <div class="calculator-container">
-        <div class="calculator-header">
-          <h2>MORTGAGE PAYMENT CALCULATOR</h2>
-          <p>Calculate your monthly payment for different loan scenarios</p>
-        </div>
-
-        <div class="tabs d-flex justify-end flex-wrap">
-          <div class="tabs-right d-flex gap-10">
-            <button class="tab active" onclick="switchTab('basic')">BASIC</button>
-            <button class="tab" onclick="switchTab('advanced')">ADVANCED</button>
-          </div>
-        </div>
-
-        <div class="calculator-body">
-          <!-- BASIC TAB -->
-          <div id="basic" class="form-section active">
-            <div class="form-inner">
-              <div class="input-group">
-                <label>Loan Amount</label>
-                <input type="number" id="loanBasic" />
-              </div>
-              <div class="input-group">
-                <label>Loan Term (Yrs)</label>
-                <input type="number" id="termBasic" />
-              </div>
-              <div class="input-group">
-                <label>Interest Rate (%)</label>
-                <input type="number" id="rateBasic" />
-              </div>
-              <div class="input-group">
-                <button class="calculate-btn btn btn-primary" onclick="calculateBasic()">CALCULATE</button>
-              </div>
-            </div>
-            <span></span>
-            <div class="output">
-              <div class="output-label">Monthly Payment</div>
-              <div class="output-value" id="resultBasic">$1,663</div>
-            </div>
-          </div>
-
-          <!-- ADVANCED TAB -->
-          <div id="basic" class="form-section ">
-            <div class="form-inner">
-              <div class="input-group">
-                <label>Loan Amount</label>
-                <input type="number" id="loanBasic" />
-              </div>
-              <div class="input-group">
-                <label>Loan Term (Yrs)</label>
-                <input type="number" id="termBasic" />
-              </div>
-              <div class="input-group">
-                <label>Interest Rate (%)</label>
-                <input type="number" id="rateBasic" />
-              </div>
-              <div class="input-group">
-                <label>Property Taxes (Yearly)</label>
-                <input type="number" id="rateBasic" />
-              </div>
-              <div class="input-group">
-                <label>Insurance (Yearly)</label>
-                <input type="number" id="rateBasic" />
-              </div>
-              <div class="input-group">
-                <label>Other (Yearly)</label>
-                <input type="number" id="rateBasic" />
-              </div>
-              <div class="input-group">
-                <button class="calculate-btn btn btn-primary" onclick="calculateBasic()">CALCULATE</button>
-              </div>
-            </div>
-            <span></span>
-            <div class="output">
-              <div class="output-label">Monthly Payment</div>
-              <div class="output-value" id="resultBasic">$1,663</div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
+  <?php include 'calculator.php'; ?>
 
   <!-- ======= Calculetor section end ======= -->
 
@@ -176,33 +90,9 @@
           <img src="./assets/images/phone-icon.png" alt=""> (512) 593-4157
         </button>
       </div>
-      <div class="form-box">
-        <form>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email">
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="text" id="phone">
-          </div>
-          <div class="form-group">
-            <label for="contact">Preferred Method of Contact</label>
-            <input type="text" id="contact">
-          </div>
-          <div class="form-group full">
-            <label for="message">Question or Comment</label>
-            <textarea id="message" rows="5"></textarea>
-          </div>
-          <button type="submit" class="submit-btn btn btn-primary">✉️ SEND</button>
-        </form>
-      </div>
     </div>
   </section>
+  <?php include "form.php"; ?>
   <!-- ====  Beginning footer section === -->
   <!-- testimonial section start  -->
   <?php include 'client-testimonials.php'; ?>

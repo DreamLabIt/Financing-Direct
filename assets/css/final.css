@@ -13,10 +13,9 @@
    --color-secondary-light: #fed65d;
    --color-white: #ffffff;
    --color-text: #48432c;
+   --border-color: #EDEBE1;
    --color-primary-heading: #005f47;
    --font-family-mulish: "Mulish", sans-serif;
-
-   /* H1 */
    --fs-h1: 26px;
    --lh-h1: 32px;
    --fs-h2: 20px;
@@ -48,19 +47,9 @@
    box-sizing: border-box;
 }
 
-/* body {
-   --body-text: 17px;
-   --body-line-height: 23.8px;
-   font-family: var(--font-family-mulish);
-   font-size: var(--body-text);
-   line-height: var(--body-line-height);
-   color: var(--color-text);
-   background: var(--color-white);
-} */
 body {
    --body-text: 14px;
    --body-line-height: 20px;
-
    font-family: var(--font-family-mulish);
    font-size: var(--body-text);
    line-height: var(--body-line-height);
@@ -99,52 +88,6 @@ address {
 }
 
 /* typrography */
-/* 
-h1,
-.h1 {
-   font-size: 42px;
-   line-height: 46.2px;
-   font-weight: 800;
-   color: var(--color-primary-heading);
-}
-
-h2,
-.h2 {
-   font-size: 26px;
-   line-height: 33.8px;
-   font-weight: 700;
-   color: var(--color-primary);
-}
-
-h3,
-.h3 {
-   font-size: 24px;
-   line-height: 31.2px;
-   font-weight: 700;
-   color: var(--color-brich);
-}
-
-h4,
-.h4 {
-   font-size: 20px;
-   line-height: 24px;
-   font-weight: 700;
-}
-
-h5,
-.h5 {
-   font-size: 18px;
-   line-height: 21.6px;
-   color: var(--color-primary);
-}
-
-label {
-   font-size: 17px;
-   line-height: 20.4px;
-   font-weight: 600;
-   color: #47432c;
-} */
-
 h1,
 .h1 {
    font-size: var(--fs-h1);
@@ -190,8 +133,6 @@ label {
    font-weight: var(--fw-semibold);
    color: #47432c;
 }
-
-
 
 /* common class*/
 
@@ -362,6 +303,8 @@ label {
    flex-flow: row wrap;
 }
 
+/* component start  */
+
 .grid {
    --grid-column: 1;
    --gap: 20px;
@@ -385,18 +328,6 @@ label {
       --gap: 40px;
    }
 }
-
-/* .btn {
-   background-color: var(--color-secondary);
-   color: var(--color-brich);
-   text-align: center;
-   padding: 18px;
-   border-radius: 4px;
-   font-size: 18px;
-   line-height: 21.6px;
-   font-weight: 700;
-   min-width: 176px;
-} */
 
 .btn {
    background-color: var(--color-secondary);
@@ -434,7 +365,7 @@ label {
    padding: 0 12px;
 }
 
-/* header section style start */
+/* header component start */
 
 .header-wrap {
    padding: 12px 0;
@@ -458,9 +389,8 @@ label {
    font-weight: 600;
 }
 
-/* header section style end */
-
-/* navigation section start */
+/* header component end */
+/* navigation component start */
 .nav-wrap {
    background-color: var(--color-primary);
 }
@@ -477,7 +407,8 @@ label {
    font-weight: 600;
 }
 
-/* navigation section end */
+/* navigation component end */
+/* hero component start */
 
 /* common hero section start */
 .hero-section {
@@ -503,12 +434,17 @@ label {
    margin-bottom: 24px;
 }
 
+.content-wraper .title span {
+   color: #3d3825;
+   display: block;
+}
+
 .content-wraper .btn-wraper {
    margin-top: 24px;
 }
 
-.btn-wraper:has(a:nth-of-type(2)) a {
-   flex: 1;
+.double-img-hero .content-wraper .btn-white {
+   border: 1px solid var(--color-primary-extra-light);
 }
 
 .media img {
@@ -516,78 +452,9 @@ label {
    border-bottom-right-radius: 24px;
 }
 
-/* common hero section start */
+/* hero component end */
 
-
-
-
-
-.calc-spacing {
-   --width: 236px;
-   --gap: 20px;
-}
-
-.hero-section.about-shay-hero .title,
-.hero-section.about-shay-hero .content {
-   color: var(--color-white);
-}
-
-.hero-section.about-shay-hero .content-wraper {
-   max-width: 100%;
-}
-
-.hero-section.about-shay-hero {
-   background-image: url(../images/about-shay-bg.png);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-}
-
-/* common hero section end */
-
-/* ====== Mortgages style start ====== */
-.mortgages-wrap {
-   --space-y: 32px;
-   --space-b: 32px;
-   padding: var(--space-y) 0 var(--space-b);
-}
-
-.mortgages .item {
-   --space-y: 12px;
-   --space-x: 12px;
-   background: no-repeat;
-   background-size: cover;
-   background-position: center;
-   padding: var(--space-y) var(--space-x);
-   text-align: center;
-   color: var(--color-white);
-   min-height: 360px;
-}
-
-.item h3 {
-   color: var(--color-white);
-   margin-bottom: 10px;
-}
-
-.item p {
-   margin-bottom: 16px;
-}
-
-.item a {
-   width: 100%;
-   font-size: 14px;
-   line-height: 18px;
-   font-weight: 600;
-}
-
-.explore {
-   background-color: #777777;
-   color: var(--color-white);
-}
-
-/* ====== Mortgages style end ====== */
-
-/* cta common section start */
+/* cta component start */
 
 .cta {
    --space-y: 32px;
@@ -626,35 +493,468 @@ label {
    height: 100%;
 }
 
-@media only screen and (min-width:1025px) {
-   .cta {
-      padding-block: 80px;
+/* cta component end */
+
+/* support box component start */
+.common-wrap-form .support-box {
+   max-width: 600px;
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: 32px;
+
+}
+
+.support-box .support-text {
+   margin-top: 15px;
+   margin-bottom: 12px;
+}
+
+.support-box .support-text a {
+   color: var(--color-primary-extra-light);
+}
+
+.support-box img {
+   max-width: 14px;
+}
+
+/* support box component end */
+/* ====== Common form section ===== */
+.common-form-section {
+   padding-top: 90px;
+   padding-bottom: 90px;
+   max-width: 805px;
+   margin: 0 auto;
+   background: #ffffff;
+   border: 1px solid #EDEBE1;
+   border-radius: 10px;
+   padding: 20px;
+}
+
+.common-form-content {
+   padding-bottom: 40px;
+}
+
+.common-form-content p {
+   margin-bottom: 5px;
+}
+
+.common-form-wrap form {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 20px;
+}
+
+.common-form-wrap .common-form-group {
+   display: flex;
+   flex-direction: column;
+}
+
+.common-form-wrap .common-form-group.wrap {
+   grid-column: 1 / -1;
+}
+
+.common-form-wrap label {
+   font-size: 17px;
+   margin-bottom: 6px;
+   font-weight: bold;
+   color: #48432C;
+   text-align: left;
+}
+
+.common-form-wrap input,
+textarea {
+   padding: 12px;
+   font-size: 15px;
+   border: 1px solid #EDEBE1;
+   border-radius: 8px;
+   background-color: #FAF9F7;
+   resize: vertical;
+}
+
+.common-form-wrap input:focus {
+   outline: none;
+}
+
+.common-form-wrap button {
+   grid-column: 1 / -1;
+   padding: 14px;
+   background-color: #007255;
+   color: white;
+   border: none;
+   border-radius: 8px;
+   font-weight: bold;
+   font-size: 19px;
+   line-height: 22.8px;
+   cursor: pointer;
+   transition: 0.3s ease-in;
+}
+
+.common-form-wrap img {
+   width: 36px;
+   vertical-align: middle;
+   padding-right: 5px;
+}
+
+.common-form-wrap button:hover {
+   background-color: #015a3b;
+}
+
+@media (min-width: 769px) {
+   .common-form-wrap form {
+      grid-template-columns: repeat(2, 1fr);
    }
 
-   .get-quote-inner {
-      flex-direction: row;
-      align-items: center;
-      gap: 60px;
-   }
-
-   .get-quote-content {
-      flex-direction: row;
-   }
-
-   .get-quote-content-img {
-      --size: 80px;
+   .common-form-section {
+      padding: 30px;
    }
 }
 
-/* cta common section end */
+
+
+/* ====== Common form section end ===== */
+
+/* form component end */
+
+/* doubele quote component start */
+.double-quote {
+   position: relative;
+   padding-left: 32px;
+   display: inline-block;
+}
+
+.double-quote::before,
+.double-quote::after {
+   content: "";
+   width: 14px;
+   height: 12px;
+   background-size: cover;
+}
+
+.double-quote::before {
+   position: absolute;
+   left: 0;
+   top: 6px;
+   background-image: url(../images/quote.png);
+}
+
+.double-quote::after {
+   background-image: url(../images/quote-2.png);
+   display: inline-block;
+   margin-left: 8px;
+}
+
+.double-quote.white-quote::before {
+   background-image: url(../images/white-quote.png);
+}
+
+.double-quote.white-quote::after {
+   background-image: url(../images/white-quote-2.png);
+}
+
+/* doubele quote component end */
+
+/* testimonial component start*/
+
+.testimonial .testimonial-swiper {
+   padding-top: 76px;
+}
+
+.slider-wrapper {
+   position: relative;
+}
+
+.testimonial .swiper-button-prev,
+.testimonial .swiper-button-next {
+   background-image: url(../images/testimonial-left-arrow.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   width: 40px;
+   height: 36px;
+   border-radius: 4px;
+   margin-top: 0;
+   top: 0;
+   right: 0;
+}
+
+.testimonial .swiper-button-prev {
+   left: auto;
+   right: 60px;
+}
+
+.testimonial .swiper-button-next {
+   background-image: url(../images/testimonial-right-arrow.png);
+}
+
+.testimonial .swiper-button-prev::after,
+.testimonial .swiper-button-next::after {
+   display: none;
+}
+
+.testimonial-item {
+   padding: 20px;
+   border: 1px solid #EDEBE1;
+   border-radius: 8px;
+}
+
+.testimonial-content {
+   flex-grow: 1;
+}
+
+.testimonial-content p {
+   font-size: 15px;
+   line-height: 26.25px;
+   position: relative;
+   padding-left: 32px;
+   display: inline-block;
+}
+
+
+.testimonial-item .author-img {
+   --size: 48px;
+   max-width: var(--size);
+   width: 100%;
+   height: var(--size);
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+.testimonial-author {
+   gap: 12px;
+   padding-left: 32px;
+}
+
+.testimonial-author h5 {
+   font-size: 14px;
+   line-height: 22.4px;
+   color: var(--color-text);
+   margin-bottom: 6px;
+}
+
+.author-img img {
+   height: 100%;
+}
+
+/* testimonial component end*/
+
+/* ======== Footer component start ========= */
+.footer {
+   padding-top: 32px;
+}
+
+.footer-top {
+   padding: 20px 0;
+   background-color: var(--color-primary-light);
+}
+
+.footer-top img {
+   width: 32px;
+   height: 32px;
+   vertical-align: middle;
+   margin-right: 6px;
+}
+
+.footer-top h4 {
+   color: var(--color-white);
+}
+
+.footer-top span {
+   color: var(--color-secondary-light);
+}
+
+.footer-middle {
+   --space-y: 32px;
+   --space-b: 32px;
+   background-color: var(--section-bg);
+   padding: var(--space-y) 0 var(--space-b);
+}
+
+.footer-logo-wrap a:first-child {
+   color: var(--color-text);
+}
+
+.footer-links a {
+   font-size: 16px;
+   line-height: 40px;
+   color: var(--color-text);
+   transition: all linear .3s;
+}
+
+.footer-links a:hover {
+   color: var(--color-primary-extra-light);
+}
+
+.footer-form form input {
+   border: none;
+   background-color: var(--color-white);
+   font-size: 15px;
+   line-height: 18px;
+   padding: 12px;
+}
+
+.footer-form .btn {
+   padding-block: 12px;
+   background-color: var(--color-secondary-light);
+   color: #115740;
+}
+
+.footer-bottom {
+   padding: 24px 0;
+   background-color: var(--section-bg);
+   border-top: 1px solid #E6E7DA;
+}
+
+.footer-bottom p,
+.footer-bottom a {
+   font-size: 16px;
+   line-height: 19.2px;
+   color: var(--color-text);
+}
+
+/* let connect component start */
+
+
+.let-connect {
+   --space-y: 32px;
+   padding: var(--space-y) 0;
+   background-color: var(--section-bg);
+}
+
+.let-connect .common-wrap {
+   max-width: 1060px;
+   text-align: center;
+}
+
+.support-box h2 {
+   margin-bottom: 22px;
+}
+
+.support-box p {
+   margin-bottom: 55px;
+}
+
+.support-box .btn {
+   min-width: 180px;
+   border: none;
+}
+
+
+.about-shay .let-connect .btn {
+   border: 1px solid;
+}
+
+
+/* let connect component end */
+/* author info component start */
+
+.about-shay-wright .author-img {
+   max-width: 114px;
+   width: 100%;
+   flex-shrink: 0;
+}
+
+.about-shay-wright .author-info {
+   flex-grow: 1;
+   gap: 16px;
+}
+
+.about-shay-wright .author-info img {
+   max-width: 240px;
+}
+
+.about-shay-wright .author-img {
+   overflow: hidden;
+   border-radius: 4px;
+}
+
+.author-title * {
+   font-size: 16px;
+   line-height: 26px;
+   color: #46432c;
+}
+
+.author-title a:last-child {
+   color: var(--color-primary-extra-light);
+}
+
+/* author info component end */
+
+/* ======== Footer component End========= */
+
+/* component end  */
+
+/* about shay hero section start */
+.hero-section.about-shay-hero {
+   background-image: url(../images/about-shay-bg.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.calc-spacing {
+   --width: 236px;
+   --gap: 20px;
+}
+
+.hero-section.about-shay-hero .title,
+.hero-section.about-shay-hero .content {
+   color: var(--color-white);
+}
+
+.hero-section.about-shay-hero .content-wraper {
+   max-width: 100%;
+}
+
+/* about shay hero section end */
+
+/* ====== Mortgages style start ====== */
+.mortgages-wrap {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding: var(--space-y) 0 var(--space-b);
+}
+
+.mortgages .item {
+   --space-y: 12px;
+   --space-x: 12px;
+   background: no-repeat;
+   background-size: cover;
+   background-position: center;
+   padding: var(--space-y) var(--space-x);
+   text-align: center;
+   color: var(--color-white);
+   min-height: 360px;
+}
+
+.item h3 {
+   color: var(--color-white);
+   margin-bottom: 10px;
+}
+
+.item p {
+   margin-bottom: 4px;
+}
+
+.item a {
+   width: 100%;
+   font-size: 14px;
+   line-height: 18px;
+   font-weight: 600;
+}
+
+.explore {
+   background-color: #777777;
+   color: var(--color-white);
+}
+
+/* ====== Mortgages style end ====== */
 
 /* =========== Calculetor style =========== */
-
 .calculator-container {
    border: 1px solid #EDEBE1;
    border-radius: 8px;
    width: 100%;
-   padding-block: 73px;
+   padding-top: 20px;
 }
 
 .calculator-header {
@@ -662,76 +962,82 @@ label {
 }
 
 .calculator-header h2 {
-   margin: 0 0 18px;
+   margin-bottom: 10px;
 }
 
-.calculator-header p {
-   font-size: 17px;
-   line-height: 20px;
+.calculator-body .tabs {
+   background-color: var(--color-white);
 }
 
-.tab {
-   padding: 16px 24px;
+.calculator-body .tab {
+   padding: 14px 20px;
    background: #EBE9DE;
    border: none;
    cursor: pointer;
-   font-size: 16px;
+   font-size: 14px;
    font-weight: bold;
    border-radius: 4px 4px 0 0;
    min-width: 143px;
    color: var(--color-brich);
-   margin-top: 24px;
+   margin-top: 30px;
+}
+
+.calculator-header {
+   text-align: center;
+   padding-inline: 12px;
 }
 
 .tab.active {
    background: var(--section-bg);
 }
 
-.calculator-body {
-   display: flex;
-   flex-wrap: wrap;
-   background: var(--section-bg);
-   padding-block: 48px;
-   padding-left: 60px;
-   padding-right: 120px;
-   gap: 16px;
-}
-
 .form-section {
-   display: flex;
+   background-color: var(--section-bg);
    width: 100%;
-   gap: 10px;
 }
 
 .form-section span {
-   margin-top: 20px;
-   width: 1px;
-   height: 100%;
+   width: 100%;
+   height: 1px;
    background-color: #DDDDDD;
+   order: 2;
+}
+
+.form-section .form-inner {
+   order: 3;
+   width: 100%;
+}
+
+.form-section .output {
+   order: 1;
+   width: 100%;
+}
+
+.output-value {
+   color: var(--color-primary);
+   font-weight: bold;
+   font-size: 32px;
+   line-height: 36px;
 }
 
 .form-inner {
-   max-width: 750px;
-   display: flex;
-   flex-flow: wrap;
-   gap: 20px;
-   align-items: end;
+   max-width: 718px;
+}
+
+.form-section {
+   flex-direction: column;
+   padding-block: 20px;
+   padding-right: 12px;
+   padding-left: 12px;
 }
 
 .form-section.active {
    display: flex;
 }
 
-.input-group {
-   max-width: 213px;
-}
-
 .input-group label {
-   font-size: 18px;
-   line-height: 21.6px;
+   margin-bottom: 6px;
    display: block;
-   margin-bottom: 10px;
-   font-weight: 600;
 }
 
 .input-group input {
@@ -740,74 +1046,522 @@ label {
    border-radius: 6px;
    border: 1px solid #e0e0e0;
    font-size: 16px;
+   height: 60px;
 }
 
-.output {
-   margin-left: auto;
+.input-group {
+   width: 100%;
+   max-width: 100%;
 }
 
-.output-label {
+
+/* shay wright section style start */
+
+.shay-wright-section {
+   --space-y: 32px;
+   padding: var(--space-y) 0;
+}
+
+.shay-wright-section .common-wrap {
+   gap: 40px;
+}
+
+.about-shay-wright {
+   gap: 24px;
+}
+
+
+/* author info section start */
+.author-info-section {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding: var(--space-y) 0 var(--space-b);
+}
+
+.author-info-section .author-img {
+   --size: 100px;
+   width: var(--size);
+   max-width: var(--size);
+   height: var(--size);
+   border-radius: 50%;
+   border: 10px solid var(--color-white);
+}
+
+.author-info-section .about-shay-wright {
+   gap: 12px;
+}
+
+.author-info-section .about-shay-wright .author-info {
+   gap: 12px;
+}
+
+
+.faq-item {
+   border-bottom: 1px solid #48432c;
+   padding-right: 28px;
+   padding-bottom: 22px;
+   padding-top: 26px;
+}
+
+.faq-item:first-child {
+   padding-top: 0;
+}
+
+.faq-button {
+   background: none;
+   border: none;
+   font-size: 17px;
+   line-height: 20px;
+   font-weight: 600;
+   cursor: pointer;
+   width: 100%;
+   text-align: left;
+   padding: 0;
+   color: #48432c;
+   letter-spacing: 0.3px;
+   position: relative;
+}
+
+.faq-button::after {
+   content: "+";
+   font-size: 20px;
+   color: var(--color-green-tropical);
+   transition: transform 0.3s ease, opacity 0.3s ease;
+   font-weight: 400;
+   margin-top: -3px;
+}
+
+.faq-item.active .faq-button::after {
+   content: "−";
+}
+
+.faq-content {
+   max-height: 0;
+   overflow: hidden;
+   opacity: 0;
+   transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+   color: #48432c;
+}
+
+.faq-item.active .faq-content {
+   max-height: 500px;
+   opacity: 1;
+   padding-top: 24px;
+}
+
+.faq-item.active .faq-content p {
+   letter-spacing: -0.16px;
+   line-height: 23.8px;
+}
+
+.faq-content p+p {
+   margin-top: 24px;
+}
+
+/* shay wright section style end */
+
+/* ======================== FAQ Style start ==================== */
+.common-faq-section {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding: var(--space-y) 0 var(--space-b);
+   background-color: #F7F6F2;
+}
+
+.common-faq-wrap h2 {
+   color: #007c5d;
+   text-align: center;
+   font-size: 26px;
+   line-height: 31.2px;
+   margin-bottom: 20px;
+   font-weight: 700;
+}
+
+.common-faq-wrap .subtitle {
+   text-align: center;
+   color: #48432c;
    font-size: 18px;
-   line-height: 21px;
+   line-height: 21.6px;
+   margin-bottom: 24px;
 }
 
-.output-value {
-   color: var(--color-primary);
-   font-size: 54px;
-   line-height: 52.8px;
-   font-weight: bold;
-   margin-top: 12px;
+.common-faq-item {
+   background: #FFFFFF;
+   border-radius: 8px;
+   border-radius: 8px;
+   padding-block: 20px;
+   padding-left: 36px;
+   padding-right: 16px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.common-faq-item:hover {
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.question h5 {
+   font-size: 18px;
+   line-height: 21.6px;
+   color: #48432c;
+   font-weight: 400;
+   margin: 0;
+   position: relative;
+}
+
+.question h5::after {
+   content: "";
+   right: 0;
+   top: 9px;
+   width: 10px;
+   height: 8px;
+   clip-path: polygon(0 0, 50% 100%, 100% 0);
+   background-color: #333333;
+   transition: 0.7s ease-in-out;
+   flex-shrink: 0;
+
+}
+
+.common-faq-wrap .rotate {
+   transform: rotate(180deg);
+}
+
+.answer {
+   margin-top: 16px;
+   margin-left: 10px;
+   font-size: 14px;
+   color: #4a4a4a;
+   display: none;
+}
+
+.show {
+   display: block;
 }
 
 @media (max-width: 768px) {
-   .calculator-container {
-      padding-block: 28px;
-   }
-
-   .calculator-header {
-      padding-left: 20px;
-   }
-
-   .calculator-body {
-      padding-block: 10px;
-      padding-left: 20px;
-      padding-right: 20px;
-   }
-
-   .form-section {
+   .common-faq {
       flex-direction: column;
    }
 
-   .form-section .form-inner {
-      order: 2;
+   .common-faq-item {
       width: 100%;
+      padding-block: 12px;
+      padding-left: 20px;
    }
+}
 
-   .form-section .output {
-      order: 1;
-      width: 100%;
-   }
+/* ======================== FAQ Style end ==================== */
+/* shay wright section end */
 
-   .output-value {
-      font-size: 40px;
-      line-height: 46px;
-   }
+/* quote section start */
+.quote-section {
+   --space-y: 32px;
+   padding: var(--space-y) 0;
+}
 
-   .input-group {
-      max-width: 100%;
-      width: 100%;
-   }
+.about-us .quote-section {
+   padding: 0;
+}
+
+.about-us .quote-section .common-wrap {
+   padding: 0;
+}
+
+.about-us .quote-content-wrapper {
+   padding-inline: 0;
+   background: none;
+   color: var(--color-text);
+   border-top: 1px solid #DDDDDD;
+   border-bottom: 1px solid #DDDDDD;
+}
+
+.quote-content-wrapper {
+   background: url(../images/home-financing-cta-bg.jpg) no-repeat center/cover;
+   border-radius: 8px;
+   color: var(--color-white);
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 20px;
+   padding: 30px 60px;
+   padding-right: 40px;
+   padding: 20px;
+}
+
+.quote-content__image {
+   max-width: 60px;
+   flex-shrink: 0;
+   border-radius: 50%;
+}
+
+.quote-content__content {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   flex: 1;
+   color: var(--color-white);
+}
+
+.quote-content__content h4 {
+   font-size: 24px;
+   line-height: 30px;
+   font-weight: 700;
+   color: var(--color-white);
+}
+
+/* quote section end */
+
+/* big card section start */
+
+.blog-post-section {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding: var(--space-y) 0 var(--space-b);
+}
+
+.card-wrapper {
+   gap: 40px;
+}
+
+.card {
+   flex-direction: column-reverse;
+   gap: 20px;
+}
+
+.card-content {
+   gap: 16px;
+}
+
+.card-content a {
+   text-decoration: underline;
+}
+
+.card-img {
+   max-width: 522px;
+   width: 100%;
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+.card-title-wrap {
+   gap: 12px;
+   margin-top: -6px;
+}
+
+.card-title-wrap .card-title-img {
+   --size: 34px;
+   width: var(--size);
+   height: var(--size);
+   display: flex;
+}
+
+.card-body ul {
+   list-style: disc;
+   list-style-position: inside;
+   color: #48432c;
+   font-size: 17px;
+   line-height: 27px;
+}
+
+
+.card-body p:has(+ p) {
+   margin-bottom: 12px;
+}
+
+.card-body p:has(+ ul) {
+   margin-bottom: 24px;
 }
 
 @media only screen and (min-width:769px) {
-   .tabs {
-      padding: 0 24px;
+   .card-wrapper {
+      gap: 160px;
+   }
+
+   .card {
+      gap: 40px 20px;
+      flex-direction: row;
+   }
+
+   .card-content {
+      gap: 30px;
+   }
+
+   .card-body p:has(+ p) {
+      margin-bottom: 23px;
+   }
+
+   .card-body p:has(+ ul) {
+      margin-bottom: 49px;
+   }
+
+   .about-us .card {
+      flex-direction: row-reverse;
+   }
+
+   .about-us .card-wrapper .card:nth-child(even) {
+      flex-direction: row-reverse;
+   }
+}
+
+/* big card section end */
+/* fha mortgages page  start*/
+.info-section {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding: var(--space-y) 0 var(--space-b);
+}
+
+.basic-loan-item {
+   padding: 16px;
+   border: 1px solid #F5F5F5;
+}
+
+.basic-loan-item .loan-things {
+   --size: 40px;
+   width: var(--size);
+   height: var(--size);
+   font-size: 18px;
+   line-height: 21.6px;
+   font-weight: 700;
+   color: #007255;
+   flex-shrink: 0;
+   background-color: #f0f7f1;
+}
+
+.basic-loan-item .loan-content h4 {
+   margin-bottom: 10px;
+   color: var(--color-text);
+}
+
+/* fha mortgages page  end*/
+
+/* benefit mortgage section start */
+.benefit-mortgage {
+   background-image: url(../images/neighborhood-mortgages-bg.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.benefit-mortgage .basic-loan-details,
+.benefit-mortgage .basic-loan-details h2 {
+   color: var(--color-white);
+}
+
+.benefit-mortgage .basic-loan-details h2 {
+   line-height: 31.2px;
+}
+
+.benefit-mortgage .basic-loan-item .loan-content h4,
+.benefit-mortgage .basic-loan-item {
+   color: var(--color-white);
+}
+
+.benefit-mortgage .basic-loan-item {
+   border: 0;
+   background-color: var(--color-primary-dark);
+   border-radius: 24px;
+}
+
+.benefit-mortgage .basic-loan-item .loan-things {
+   --size: auto;
+}
+
+/* benefit mortgage section end */
+
+
+/* ========================= loan parameters style start ================== */
+
+.parameters-wrap {
+   padding-block: 20px;
+}
+
+.parameters-wrap .border {
+   width: 100%;
+   height: 1px;
+   background-color: #EDEBE1;
+
+}
+
+.parameters-item p {
+   margin-bottom: 14px;
+}
+
+.parameters-item {
+   flex: 1;
+}
+
+.parameters {
+   gap: 10px;
+}
+
+.parameters-links {
+   font-size: 14px;
+   flex-direction: row;
+   row-gap: 0px;
+}
+
+.parameters-links ul li {
+   list-style-type: disc;
+
+}
+
+.parameters-links ul,
+ol {
+   list-style-position: inside;
+}
+
+.parameters-item span {
+   font-size: 18px;
+   line-height: 21.6px;
+   font-weight: 400;
+   font-style: italic;
+   color: var(--color-text);
+}
+
+@media only screen and (min-width:769px) {
+   .parameters-wrap {
+      padding-block: 80px;
+   }
+
+   .parameters-wrap .border {
+      width: 1px;
+      height: unset;
+      margin-inline: 45px;
+   }
+
+   .parameters {
+      flex-direction: row;
+   }
+
+   .parameters-links {
+      row-gap: 0px;
+   }
+
+   .parameters-links ul li {
+      font-size: 16px;
+   }
+
+   .parameters-item h2 {
+      margin-bottom: 5px;
+   }
+
+   .parameters-item p {
+      margin-bottom: 32px;
    }
 }
 
 
+/* ========================= loan parameters style end ================== */
 
 /* responsive  */
+@media only screen and (min-width:426px) {
+   .benefit-mortgage .basic-loan-card {
+      --grid-column: 2;
+   }
+}
+
 @media only screen and (min-width:769px) {
 
    /* varibale */
@@ -845,7 +1599,7 @@ label {
    /* header section end */
    /* navigation section style start */
    .nav-wrap ul a {
-      padding-block: 16px 15px;
+      padding-block: 16px;
    }
 
    /* navigation section style end */
@@ -860,8 +1614,13 @@ label {
    }
 
    .hero-section .content-wraper {
-      max-width: 472px;
+      max-width: 534px;
       width: 100%;
+      padding-top: 16px;
+   }
+
+   .hero-section.double-img-hero .content-wraper {
+      padding-top: 64px;
    }
 
    .hero-section .media {
@@ -869,21 +1628,45 @@ label {
       width: 100%;
    }
 
+   .hero-section.double-img-hero .media {
+      max-width: 586px;
+   }
+
    .content-wraper .sub-title {
       margin-bottom: 8px;
    }
 
    .content-wraper .title {
-      margin-bottom: 20px;
+      margin-bottom: 24px;
+   }
+
+   .double-img-hero .content-wraper .title {
+      font-size: 36px;
+      line-height: 43.2px;
+      margin-bottom: 38px;
    }
 
    .content-wraper .btn-wraper {
-      margin-top: 30px;
+      margin-top: 64px;
+      gap: 12px;
+   }
+
+   .double-img-hero .content-wraper .btn-wraper {
+      margin-top: 54px;
+      gap: 12px;
+   }
+
+   .content-wraper .btn-wraper .btn {
+      min-width: 194px;
+   }
+
+   .double-img-hero .content-wraper .btn-wraper .btn {
+      min-width: 232px;
    }
 
    .content-wraper .sub-title {
       font-size: 22px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
    }
 
    .media img {
@@ -935,6 +1718,297 @@ label {
    }
 
    /* cta common section style end */
+   /* ====== Common form section ===== */
+
+   .common-form-section {
+      padding-block: 20px;
+   }
+
+   .common-form-content {
+      padding-top: 10px;
+      padding-bottom: 10px;
+   }
+
+   .common-form-wrap {
+      padding-top: 90px;
+      padding-bottom: 90px;
+      max-width: 805px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 1px solid #EDEBE1;
+      border-radius: 10px;
+      padding-inline: 12px;
+      padding-block: 20px;
+   }
+
+
+   .common-form-content p {
+      margin-bottom: 5px;
+   }
+
+   .common-form-wrap form {
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+
+   .common-form-wrap .common-form-group.wrap {
+      grid-column: 1 / -1;
+   }
+
+   .common-form-wrap label {
+      margin-bottom: 6px;
+      color: #48432C;
+      text-align: left;
+   }
+
+   .common-form-wrap input,
+   textarea {
+      padding: 12px;
+      border: 1px solid #EDEBE1;
+      border-radius: 8px;
+      background-color: #FAF9F7;
+      resize: vertical;
+   }
+
+   .common-form-wrap input:focus {
+      outline: none;
+   }
+
+   .common-form-wrap button {
+      grid-column: 1 / -1;
+      padding: 14px;
+      background-color: #007255;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22.8px;
+      cursor: pointer;
+      transition: 0.3s ease-in;
+   }
+
+   .common-form-wrap img {
+      width: 36px;
+      vertical-align: middle;
+      padding-right: 5px;
+   }
+
+   .common-form-wrap button:hover {
+      background-color: #015a3b;
+   }
+
+   @media (min-width: 769px) {
+      .common-form-wrap {
+         padding-inline: 28px;
+         padding-block: 32px;
+      }
+
+      .common-form-wrap form {
+         grid-template-columns: repeat(2, 1fr);
+      }
+
+      .common-form-section {
+         padding-block: 30px;
+      }
+
+      .common-form-content {
+         padding-top: 20px;
+         padding-bottom: 40px;
+      }
+   }
+
+
+
+   /* ====== Common form section end ===== */
+   /* testimonial section styel stat */
+   .testimonial-item {
+      padding: 30px;
+   }
+
+   /* testimonial section style end */
+   /* calculator section style start */
+   .calculator-container {
+      padding-top: 50px;
+   }
+
+   .calculator-header {
+      text-align: start;
+      padding-left: 60px;
+      padding-right: 24px;
+   }
+
+   .calculator-header h2 {
+      margin-bottom: 10px;
+   }
+
+   .tabs {
+      padding-right: 24px;
+      padding-left: 60px;
+   }
+
+   .calculator-body .tab {
+      padding: 16px 24px;
+      font-size: 16px;
+   }
+
+   .form-section {
+      flex-direction: row;
+      padding-block: 32px;
+      padding-right: 24px;
+      padding-left: 60px;
+   }
+
+   .basic-tab {
+      padding-bottom: 130px;
+   }
+
+   .form-section .form-inner {
+      order: 1;
+      width: 100%;
+      gap: 17px;
+      row-gap: 52px;
+   }
+
+   .form-section .output {
+      order: 3;
+      width: 100%;
+      padding-left: 80px;
+      flex: 1;
+      padding-top: 10px;
+   }
+
+   .form-section span {
+      margin-top: 20px;
+      width: 1px;
+      height: auto;
+      order: 2;
+   }
+
+   .input-group label {
+      margin-bottom: 6px;
+   }
+
+   .output-value {
+      font-size: 45px;
+      line-height: 52.8px;
+      margin-top: 9px;
+   }
+
+   .input-group {
+      width: 210px;
+      max-width: 100%;
+   }
+
+   .calculate-btn {
+      min-width: 208px;
+   }
+
+   /* calculator section style end */
+   /* shay wright section start */
+   .shay-wright-section {
+      --space-y: 48px;
+   }
+
+   /* about shay */
+
+   .author-info-section .common-wrap {
+      flex-direction: row;
+      gap: var(--gap);
+   }
+
+   .author-info-section .about-shay-wright {
+      flex-shrink: 0;
+      max-width: var(--width);
+      align-items: center;
+      margin-top: -216px;
+   }
+
+   .author-info-section .author-info {
+      text-align: center;
+      align-items: center;
+   }
+
+   /* shay wright section end */
+   /* quote section style start */
+   .quote-section {
+      --space-y: 37px;
+   }
+
+   .quote-content-wrapper {
+      padding: 30px 60px;
+      padding-right: 40px;
+   }
+
+   /* quote section style end */
+   /* about shay style start */
+
+   .hero-section.about-shay-hero {
+      --space-y: 100px;
+      --space-b: 90px;
+   }
+
+   .hero-section.about-shay-hero .content-wraper {
+      padding-left: calc(var(--width) + var(--gap));
+   }
+
+   .author-info-section {
+      --space-y: 76px;
+      --space-b: 100px;
+   }
+
+   .author-info-section .author-img {
+      --size: 200px;
+   }
+
+   /* about shay style end */
+   /* benifit mortgage start */
+   .benefit-mortgage {
+      padding: 60px 0;
+   }
+
+   .benefit-mortgage .basic-loan-card {
+      --grid-column: 3;
+      gap: 20px;
+   }
+
+   .benefit-mortgage .basic-loan-details p {
+      font-size: 18px;
+      line-height: 21.6px;
+   }
+
+   /* benifit mortgage end */
+
+   /* footer section start */
+   .footer-middle .common-wrap {
+      --grid-column: 3;
+   }
+
+   .footer-bottom .common-wrap {
+      --grid-column: 3;
+   }
+
+   .footer-middle .footer-links {
+      grid-column: span 2;
+   }
+
+   .footer-link-wrap {
+      flex-direction: row;
+   }
+
+   .footer-link-wrap * {
+      width: 100%;
+   }
+
+   .footer-bottom p {
+      text-align: left;
+   }
+
+   .footer-top img {
+      margin-right: 26px;
+   }
+
+   /* footer section end */
 }
 
 @media only screen and (min-width: 992px) {}
@@ -979,6 +2053,11 @@ label {
       --space-b: 57px;
    }
 
+   .hero-section.double-img-hero {
+      --space-y: 48px;
+      --space-b: 46px;
+   }
+
    /* common hero section end */
    /* ====== Mortgages style start ====== */
    .mortgages-wrap {
@@ -987,17 +2066,18 @@ label {
    }
 
    .mortgages {
-      --gap: 48px;
+      --gap: 64px;
    }
 
    .mortgages .item {
       --space-y: 26px;
-      --space-x: 36px;
+      --space-x: 26px;
    }
 
    .item a {
       font-size: 20px;
       line-height: 24px;
+      padding-block: 13px;
    }
 
    /* ====== Mortgages style end ====== */
@@ -1008,9 +2088,183 @@ label {
    }
 
    .get-quote-inner {
-      --space-y: 38px;
-      --space-x: 34px;
+      gap: 60px;
+      padding-left: 22px;
+      padding-top: 35px;
+      padding-right: 40px;
+      padding-bottom: 32px;
+   }
+
+   .get-quote-btn .btn {
+      min-width: 200px;
+   }
+
+   .get-quote-content-img {
+      --size: 80px;
    }
 
    /* cta common section style end */
+   /* form section style start */
+   .common-wrap-form {
+      --space-y: 88px;
+      --space-b: 114px;
+   }
+
+   .common-wrap-form .support-box {
+      margin-bottom: 78px;
+   }
+
+   .support-box .support-btn {
+      min-width: 210px;
+   }
+
+   .support-box .support-text {
+      margin-top: 28px;
+      margin-bottom: 61px;
+   }
+
+   /* form section style end */
+   /* testimonial section styel stat */
+   .testimonial-item {
+      padding: 40px;
+   }
+
+   /* testimonial section styel end */
+   /* shay wright section start */
+   .shay-wright-section {
+      --space-y: 60px;
+   }
+
+   .about-shay-wright {
+      max-width: 400px;
+      width: 100%;
+   }
+
+   .shay-wright-section .about-shay-wright-faq {
+      max-width: 586px;
+      width: 100%;
+   }
+
+   .shay-wright-section .common-wrap {
+      flex-direction: row;
+   }
+
+   .about-shay-wright {
+      gap: 43px;
+      padding-top: 24px;
+   }
+
+   .about-shay-wright .author-info {
+      gap: 23px;
+   }
+
+   .author-info-section .about-shay-wright {
+      margin-top: -237px;
+   }
+
+   .author-info .author-name {
+      font-size: 24px;
+      line-height: 29px;
+      color: var(--color-primary);
+   }
+
+   /* shay wright section end */
+   /* quote section start */
+
+   .quote-content-wrapper h4 {
+      font-size: 19px;
+      line-height: 33px;
+      font-weight: 600;
+   }
+
+   /* quote section end */
+   /* lets connect style start */
+   .let-connect {
+      --space-y: 56px;
+   }
+
+   /* lets connect style end */
+   /* big card section start */
+   .blog-post-section {
+      --space-y: 80px;
+      --space-b: 134px;
+   }
+
+   /* big card section end*/
+   /* about shay page style start */
+   .calc-spacing {
+      --gap: 110px;
+   }
+
+   /* about shay page style end */
+   /* loan section style start */
+   .basic-loan-item .loan-content h4 {
+      font-size: 19px;
+      line-height: 22.8px;
+   }
+
+   .basic-loan {
+      padding: 100px 0 80px;
+   }
+
+   .basic-loan .common-wrap {
+      gap: 60px;
+   }
+
+   .section-header {
+      gap: 24px;
+   }
+
+   .basic-loan-card {
+      gap: 50px;
+   }
+
+   .basic-loan-item {
+      padding: 24px;
+      gap: 24px;
+   }
+
+   .basic-loan-item .loan-content {
+      flex-grow: 1;
+   }
+
+   .basic-loan-item .loan-content h4 {
+      margin-bottom: 24px;
+   }
+
+   /* loan section style end */
+   /* banifit mortgage start */
+   .benefit-mortgage .basic-loan-card {
+      --grid-column: 5;
+   }
+
+   /* banifit mortgage end */
+
+   /* footer section start */
+   .footer {
+      padding-top: 92px;
+   }
+
+   .footer-middle {
+      --space-y: 96px;
+      --space-b: 74px;
+   }
+
+   .footer-middle .common-wrap {
+      --grid-column: 4;
+   }
+
+   .footer-bottom .common-wrap {
+      --grid-column: 4;
+   }
+
+   .footer-form form {
+      flex-direction: row;
+   }
+
+   .footer-form form .btn {
+      min-width: auto;
+   }
+
+   /* footer section end */
 }

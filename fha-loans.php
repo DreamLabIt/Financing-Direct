@@ -5,16 +5,14 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>FHA loan</title>
-   <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
-   <link rel="stylesheet" href="./assets/css/style.css">
-   <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+   <link rel="stylesheet" href="./assets/css/final.css">
 </head>
 
 <body>
    <?php include 'header.php'; ?>
    <!-- hero section start -->
    <section class="hero-section">
-      <div class="common-wrap d-flex justify-between item-center">
+      <div class="common-wrap d-flex justify-between gap-20">
          <div class="content-wraper">
             <p class="sub-title">The lowest rates & fees</p>
             <h1 class="title">FHA Mortgages</h1>
@@ -23,11 +21,8 @@
                <a class="btn btn-primary" href="#">Get a Rate Quote</a>
             </div>
          </div>
-         <div class="media">
+         <div class="media d-flex item-end flex-col">
             <img src="./assets/images/happy-fha-mortgage-family.jpg" alt="happy fha mortgage family">
-            <!-- <div class="media-shape">
-               <img src="./assets/images/about-shay-wright-shape.png" alt="about-shay-wright-shape">
-            </div> -->
          </div>
       </div>
    </section>

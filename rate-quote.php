@@ -5,9 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>rate-quote</title>
-   <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
-   <link rel="stylesheet" href="./assets/css/style.css">
-   <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+   <link rel="stylesheet" href="./assets/css/final.css">
 </head>
 
 <body class="about-shay">
@@ -19,7 +17,7 @@
             <p class="sub-title">The lowest rates on the market!</p>
             <h1 class="title">Mortgage Rate Quote</h1>
             <p class="content">Are you planning to purchase a home or refinance your existing mortgage?</p>
-            <div class="btn-wraper d-flex flex-wrap item-center gap-20">
+            <div class="btn-wraper d-flex flex-wrap justify-center item-center gap-20">
                <a class="btn" href="#">Purchase</a>
                or
                <a class="btn btn-white" href="#">Refinance</a>

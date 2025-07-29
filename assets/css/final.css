@@ -238,71 +238,6 @@ label {
    overflow: hidden;
 }
 
-.flex-box {
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-orient: horizontal;
-   -webkit-box-direction: normal;
-   -ms-flex-flow: row wrap;
-   flex-flow: row wrap;
-   -webkit-box-pack: justify;
-   -ms-flex-pack: justify;
-   justify-content: space-between;
-}
-
-.flex-box-all {
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-orient: horizontal;
-   -webkit-box-direction: normal;
-   -ms-flex-flow: row wrap;
-   flex-flow: row wrap;
-   -webkit-box-pack: justify;
-   -ms-flex-pack: justify;
-   justify-content: space-around;
-   -webkit-box-align: center;
-   -ms-flex-align: center;
-   align-items: center;
-}
-
-.flex-horizontal-align {
-   -webkit-box-pack: center;
-   -ms-flex-pack: center;
-   justify-content: center;
-}
-
-.flex-vertical-align {
-   -webkit-box-align: center;
-   -ms-flex-align: center;
-   align-items: center;
-}
-
-.flex-bottom-align {
-   -webkit-box-align: flex-end;
-   -ms-flex-align: end;
-   align-items: flex-end;
-}
-
-.flex-content-align {
-   -ms-flex-line-pack: center;
-   align-content: center;
-}
-
-.flex {
-   display: -moz-flex;
-   display: -ms-flex;
-   display: -o-flex;
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-orient: horizontal;
-   -webkit-box-direction: normal;
-   -ms-flex-flow: row wrap;
-   flex-flow: row wrap;
-}
-
 /* component start  */
 
 .grid {
@@ -1554,6 +1489,191 @@ ol {
 
 
 /* ========================= loan parameters style end ================== */
+/* =============== FHA loan rate style start ================= */
+
+.mortgage-rates-inner {
+   max-width: 527px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.exceptional-title {
+   text-align: center;
+   margin-bottom: 24px;
+}
+
+.exceptional-title h2 {
+   margin-bottom: 12px;
+}
+
+.rate-box {
+   border: 1px solid #EDEBE1;
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+.rate-box-head {
+   background-color: var(--color-primary);
+
+}
+
+.mortgage-rates .rate-box .rate-row {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+}
+
+.rate-col h5 {
+   color: white;
+   font-size: 14px;
+}
+
+.rate-col p {
+   font-size: 12px;
+}
+
+.rate-col {
+   padding-block: 10px;
+   padding-inline: 4px;
+   border-right: 1px solid #EDEBE1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.rate-box-body .rate-row:nth-child(even) {
+   background-color: var(--color-white);
+}
+
+.rate-col:last-child {
+   border: 0;
+}
+
+.rate-box-body {
+   background-color: var(--section-bg);
+
+}
+
+
+@media only screen and (min-width:769px) {
+   .mortgage-rates {
+      padding-block: 70px;
+   }
+
+   .exceptional-title {
+      margin-bottom: 48px;
+   }
+
+   .rate-col {
+      padding-block: 14px;
+      padding-inline: 7px;
+   }
+
+   .rate-col h5 {
+      font-size: 18px;
+   }
+
+   .rate-col p {
+      font-size: 18px;
+   }
+
+}
+
+/* =============== FHA loan rate style end ================= */
+/* ================ down-pament-rate style start ================ */
+
+.down-pament-rates .rate-box .rate-row {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.down-pament-rates .rate-col {
+   justify-content: start;
+   padding-left: 30px;
+}
+
+@media only screen and (min-width:769px) {
+   .down-pament-rates {
+      padding-block: 70px;
+   }
+
+   .down-pament-rates .note {
+      font-size: 14px;
+      font-weight: 16.8px;
+      padding: 10px;
+   }
+}
+
+/* ================ down-pament-rate style end ================ */
+/* blog wrap common section start */
+.blog-wrap {
+   --space-y: 32px;
+   padding: var(--space-y) 0;
+}
+
+.blog-item {
+   border-radius: 8px;
+   border: 1px solid #EEECE3;
+   overflow: hidden;
+}
+
+.blog-item-thumb {
+   height: 200px;
+}
+
+.blog-item-thumb img {
+   height: 100%;
+}
+
+.blog-item-content {
+   padding: 32px 24px;
+   flex-grow: 1;
+}
+
+.blog-item-content h5 a {
+   color: var(--color-brich);
+}
+
+.blog-item-content p {
+   flex-grow: 1;
+}
+
+.arrow-icon {
+   display: inline-block;
+   width: 10px;
+   height: 8px;
+   clip-path: polygon(0 0, 50% 100%, 100% 0);
+   background-color: var(--color-primary-extra-light);
+   transform: rotate(38deg);
+   margin-left: 10px;
+}
+
+@media only screen and (min-width:460px) {
+   .blog-wrap .common-wrap {
+      --grid-column: 2;
+   }
+}
+
+@media only screen and (min-width:769px) {
+   .blog-wrap {
+      --space-y: 40px;
+   }
+
+   .blog-wrap .common-wrap {
+      --grid-column: 3;
+   }
+}
+
+@media only screen and (min-width:1025px) {
+   .blog-wrap {
+      --space-y: 60px;
+   }
+
+   .blog-wrap .common-wrap {
+      --gap: 60px;
+   }
+}
+
+/* blog wrap common section end */
 
 /* responsive  */
 @media only screen and (min-width:426px) {

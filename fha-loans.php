@@ -118,6 +118,104 @@
    </section>
    <!-- benefit fha mortgage section end -->
 
+   <!-- ============================= FHA loon rate section start ========================== -->
+
+
+   <section class="mortgage-rates">
+      <div class="mortgage-rates-inner">
+         <div class="exceptional-title">
+            <h2>FHA Loan Limits</h2>
+            <p>The following are the loan limits for most counties in Texas with a few exceptions. Look up the FHA loan limit for a specific county in Texas.</p>
+         </div>
+         <div class="rate-box">
+            <div class="rate-row rate-box-head">
+               <div class="rate-col">
+                  <h5>Single Family</h5>
+               </div>
+               <div class="rate-col">
+                  <h5>Duplex</h5>
+               </div>
+               <div class="rate-col">
+                  <h5>Triplex</h5>
+               </div>
+               <div class="rate-col">
+                  <h5>Fourplex</h5>
+               </div>
+            </div>
+            <div class="rate-box-body ">
+               <div class="rate-row">
+                  <div class="rate-col">
+                     <p>$571,550</p>
+                  </div>
+                  <div class="rate-col">
+                     <p>$731,700</p>
+                  </div>
+                  <div class="rate-col">
+                     <p>$884,450</p>
+                  </div>
+                  <div class="rate-col">
+                     <p>$1,099,150</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <br>
+   <br>
+
+
+   <section class="down-pament-rates">
+      <div class="mortgage-rates-inner">
+         <div class="exceptional-title">
+            <h2>Down Payment Requirements</h2>
+            <p>The following are our minimum FHA down payment amounts based on credit score.</p>
+         </div>
+         <div class="rate-box">
+            <div class="rate-row rate-box-head">
+               <div class="rate-col">
+                  <h5>Credit Score</h5>
+               </div>
+               <div class="rate-col">
+                  <h5>Minimum Down</h5>
+               </div>
+            </div>
+            <div class="rate-box-body ">
+               <div class="rate-row">
+                  <div class="rate-col">
+                     <p>600+</p>
+                  </div>
+                  <div class="rate-col">
+                     <p>0.0%</p>
+                  </div>
+               </div>
+               <div class="rate-row">
+                  <div class="rate-col">
+                     <p>580+</p>
+                  </div>
+                  <div class="rate-col">
+                     <p>3.5%</p>
+                  </div>
+               </div>
+               <div class="rate-row">
+                  <div class="rate-col">
+                     <p>500-579</p>
+                  </div>
+                  <div class="rate-col">
+                     <p>10%</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <p class="note">* Please note that the 0% down payment option will result in an interest rate that is about 1% higher than the 3.5% down option.</p>
+      </div>
+   </section>
+
+
+   <!-- ============================= FHA loon rate section end ========================== -->
+
 
    <!-- ============================ FAQ section start ============================ -->
 

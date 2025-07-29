@@ -13,7 +13,7 @@
                </div>
             </div>
             <!-- BASIC TAB -->
-            <div id="basic" class="basic-tab form-section d-flex gap-20 active">
+            <div id="basic" class="basic-tab calculator-form d-flex gap-20 active">
                <div class="form-inner d-flex item-end flex-wrap gap-20">
                   <div class="input-group">
                      <label>Loan Amount</label>

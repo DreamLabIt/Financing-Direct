@@ -110,12 +110,12 @@
    </section>
    <!-- big card section end -->
    <!-- lets connect start -->
-   <section class="let-connect">
+   <section class="support-box-section let-connect">
       <div class="common-wrap">
-         <div class="support-box">
+         <div class="support-box text-center">
             <h2 class="support-title">Let’s Connect</h2>
             <p class="support-text">Interested in learning more about the mortgage services I offer? Please feel free to call or text me anytime at <a href="tel:5124688261">(512) 468-8261</a> or email me at <a href="shay@homefinancingdirect.com">shay@homefinancingdirect.com</a>. You can also book a call with me.</p>
-            <div class="btn-wrapper">
+            <div class="btn-wrapper d-flex flex-wrap justify-center gap-10">
                <a class="btn btn-primary" href="#">Book a Call</a>
                <a class="btn btn-border" href="#">Send a Referral</a>
             </div>

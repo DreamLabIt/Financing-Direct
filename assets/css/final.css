@@ -134,6 +134,25 @@ label {
    color: #47432c;
 }
 
+input,
+textarea {
+   padding: 12px;
+   border: 1px solid #EDEBE1;
+   border-radius: 8px;
+   background-color: #FAF9F7;
+   resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+   outline-color: var(--color-primary);
+}
+
+textarea {
+   resize: none;
+   height: 126px;
+}
+
 /* common class*/
 
 .d-flex {
@@ -275,6 +294,7 @@ label {
    border-radius: 4px;
    min-width: var(--btn-min-width);
    text-wrap: nowrap;
+   transition: all .3s linear;
 }
 
 .btn-primary {
@@ -300,7 +320,7 @@ label {
    padding: 0 12px;
 }
 
-/* header component start */
+/* header section start */
 
 .header-wrap {
    padding: 12px 0;
@@ -324,8 +344,8 @@ label {
    font-weight: 600;
 }
 
-/* header component end */
-/* navigation component start */
+/* header section start */
+/* navigation section start */
 .nav-wrap {
    background-color: var(--color-primary);
 }
@@ -342,10 +362,10 @@ label {
    font-weight: 600;
 }
 
-/* navigation component end */
+/* navigation section end */
 /* hero component start */
 
-/* common hero section start */
+/* hero section start */
 .hero-section {
    --space-y: 32px;
    --space-b: 32px;
@@ -387,9 +407,9 @@ label {
    border-bottom-right-radius: 24px;
 }
 
-/* hero component end */
+/* hero section end */
 
-/* cta component start */
+/* cta section start */
 
 .cta {
    --space-y: 32px;
@@ -428,20 +448,18 @@ label {
    height: 100%;
 }
 
-/* cta component end */
+/* cta section end */
 
-/* support box component start */
-.common-wrap-form .support-box {
-   max-width: 600px;
-   margin: 0 auto;
-   text-align: center;
-   margin-bottom: 32px;
-
+/* support box section start */
+.support-box-section {
+   --space-y: 32px;
+   --space-b: 32px;
+   --support-box-container-width: 600px;
+   padding: var(--space-y) 0 var(--space-b);
 }
 
-.support-box .support-text {
-   margin-top: 15px;
-   margin-bottom: 12px;
+.support-box-section .common-wrap {
+   max-width: var(--support-box-container-width);
 }
 
 .support-box .support-text a {
@@ -452,105 +470,30 @@ label {
    max-width: 14px;
 }
 
-/* support box component end */
-/* ====== Common form section ===== */
-.common-form-section {
-   padding-top: 90px;
-   padding-bottom: 90px;
-   max-width: 805px;
-   margin: 0 auto;
-   background: #ffffff;
-   border: 1px solid #EDEBE1;
-   border-radius: 10px;
-   padding: 20px;
+.support-box h2 {
+   margin-bottom: 16px;
 }
 
-.common-form-content {
-   padding-bottom: 40px;
+.support-box p {
+   margin-bottom: 55px;
 }
 
-.common-form-content p {
-   margin-bottom: 5px;
-}
-
-.common-form-wrap form {
-   display: grid;
-   grid-template-columns: repeat(1, 1fr);
-   gap: 20px;
-}
-
-.common-form-wrap .common-form-group {
-   display: flex;
-   flex-direction: column;
-}
-
-.common-form-wrap .common-form-group.wrap {
-   grid-column: 1 / -1;
-}
-
-.common-form-wrap label {
-   font-size: 17px;
-   margin-bottom: 6px;
-   font-weight: bold;
-   color: #48432C;
-   text-align: left;
-}
-
-.common-form-wrap input,
-textarea {
-   padding: 12px;
-   font-size: 15px;
-   border: 1px solid #EDEBE1;
-   border-radius: 8px;
-   background-color: #FAF9F7;
-   resize: vertical;
-}
-
-.common-form-wrap input:focus {
-   outline: none;
-}
-
-.common-form-wrap button {
-   grid-column: 1 / -1;
-   padding: 14px;
-   background-color: #007255;
-   color: white;
+.support-box .btn {
+   min-width: 180px;
    border: none;
-   border-radius: 8px;
-   font-weight: bold;
-   font-size: 19px;
-   line-height: 22.8px;
-   cursor: pointer;
-   transition: 0.3s ease-in;
 }
 
-.common-form-wrap img {
-   width: 36px;
-   vertical-align: middle;
-   padding-right: 5px;
+.support-box .support-btn {
+   min-width: 210px;
 }
 
-.common-form-wrap button:hover {
-   background-color: #015a3b;
+.support-box .support-text {
+   margin-bottom: 16px;
 }
 
-@media (min-width: 769px) {
-   .common-form-wrap form {
-      grid-template-columns: repeat(2, 1fr);
-   }
+/* support box section start */
 
-   .common-form-section {
-      padding: 30px;
-   }
-}
-
-
-
-/* ====== Common form section end ===== */
-
-/* form component end */
-
-/* doubele quote component start */
+/* doubele quote section start */
 .double-quote {
    position: relative;
    padding-left: 32px;
@@ -586,9 +529,9 @@ textarea {
    background-image: url(../images/white-quote-2.png);
 }
 
-/* doubele quote component end */
+/* doubele quote section end */
 
-/* testimonial component start*/
+/* testimonial section start*/
 
 .testimonial .testimonial-swiper {
    padding-top: 76px;
@@ -670,9 +613,9 @@ textarea {
    height: 100%;
 }
 
-/* testimonial component end*/
+/* testimonial section start*/
 
-/* ======== Footer component start ========= */
+/* Footer section start */
 .footer {
    padding-top: 32px;
 }
@@ -746,41 +689,22 @@ textarea {
    color: var(--color-text);
 }
 
-/* let connect component start */
+/* Footer section start */
 
-
+/* let connect section start */
 .let-connect {
    --space-y: 32px;
-   padding: var(--space-y) 0;
+   --space-b: 32px;
+   --support-box-container-width: 1060px;
    background-color: var(--section-bg);
 }
 
-.let-connect .common-wrap {
-   max-width: 1060px;
-   text-align: center;
-}
-
-.support-box h2 {
-   margin-bottom: 22px;
-}
-
-.support-box p {
-   margin-bottom: 55px;
-}
-
-.support-box .btn {
-   min-width: 180px;
-   border: none;
-}
-
-
 .about-shay .let-connect .btn {
-   border: 1px solid;
+   border: 1px solid var(--color-primary-extra-light);
 }
 
-
-/* let connect component end */
-/* author info component start */
+/* let connect section start */
+/* author info section start */
 
 .about-shay-wright .author-img {
    max-width: 114px;
@@ -812,11 +736,7 @@ textarea {
    color: var(--color-primary-extra-light);
 }
 
-/* author info component end */
-
-/* ======== Footer component End========= */
-
-/* component end  */
+/* author info section start */
 
 /* about shay hero section start */
 .hero-section.about-shay-hero {
@@ -842,7 +762,7 @@ textarea {
 
 /* about shay hero section end */
 
-/* ====== Mortgages style start ====== */
+/* Mortgages style start  */
 .mortgages-wrap {
    --space-y: 32px;
    --space-b: 32px;
@@ -882,9 +802,9 @@ textarea {
    color: var(--color-white);
 }
 
-/* ====== Mortgages style end ====== */
+/* Mortgages style start  */
 
-/* =========== Calculetor style =========== */
+/* calculetor section style start */
 .calculator-container {
    border: 1px solid #EDEBE1;
    border-radius: 8px;
@@ -926,24 +846,24 @@ textarea {
    background: var(--section-bg);
 }
 
-.form-section {
+.calculator-form {
    background-color: var(--section-bg);
    width: 100%;
 }
 
-.form-section span {
+.calculator-form span {
    width: 100%;
    height: 1px;
    background-color: #DDDDDD;
    order: 2;
 }
 
-.form-section .form-inner {
+.calculator-form .form-inner {
    order: 3;
    width: 100%;
 }
 
-.form-section .output {
+.calculator-form .output {
    order: 1;
    width: 100%;
 }
@@ -959,14 +879,14 @@ textarea {
    max-width: 718px;
 }
 
-.form-section {
+.calculator-form {
    flex-direction: column;
    padding-block: 20px;
    padding-right: 12px;
    padding-left: 12px;
 }
 
-.form-section.active {
+.calculator-form.active {
    display: flex;
 }
 
@@ -989,9 +909,9 @@ textarea {
    max-width: 100%;
 }
 
+/* calculetor section style end */
 
 /* shay wright section style start */
-
 .shay-wright-section {
    --space-y: 32px;
    padding: var(--space-y) 0;
@@ -1004,7 +924,6 @@ textarea {
 .about-shay-wright {
    gap: 24px;
 }
-
 
 /* author info section start */
 .author-info-section {
@@ -1029,7 +948,6 @@ textarea {
 .author-info-section .about-shay-wright .author-info {
    gap: 12px;
 }
-
 
 .faq-item {
    border-bottom: 1px solid #48432c;
@@ -1094,8 +1012,7 @@ textarea {
 }
 
 /* shay wright section style end */
-
-/* ======================== FAQ Style start ==================== */
+/* common faq section style start */
 .common-faq-section {
    --space-y: 32px;
    --space-b: 32px;
@@ -1155,7 +1072,6 @@ textarea {
    background-color: #333333;
    transition: 0.7s ease-in-out;
    flex-shrink: 0;
-
 }
 
 .common-faq-wrap .rotate {
@@ -1186,7 +1102,7 @@ textarea {
    }
 }
 
-/* ======================== FAQ Style end ==================== */
+/* common faq section style end */
 /* shay wright section end */
 
 /* quote section start */
@@ -1246,6 +1162,143 @@ textarea {
 }
 
 /* quote section end */
+
+/* form section style start */
+.form-section {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding: var(--space-y) 0 var(--space-b);
+}
+
+.form-section .common-wrap {
+   max-width: 744px;
+}
+
+.common-form {
+   --space: 12px;
+   padding: var(--space);
+   border: 1px solid #EDEBE1;
+   border-radius: 8px;
+}
+
+.common-form h3 {
+   color: var(--color-primary);
+}
+
+.form-item {
+   gap: 6px;
+}
+
+.form-full-width {
+   grid-column: 1 / -1;
+}
+
+.form-submit img {
+   width: 30px;
+}
+
+/* contact us section start */
+.contact-us {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding: var(--space-y) 0 var(--space-b);
+}
+
+.contact-us .common-form {
+   flex-grow: 1;
+}
+
+.contact-us .common-form {
+   width: 100%;
+}
+
+.contact-us .contact-info {
+   width: 100%;
+}
+
+.contact-info {
+   --space: 12px;
+   padding: var(--space);
+   border: 1px solid #EDEBE1;
+   border-radius: 8px;
+}
+
+.contact-info img {
+   width: 18px;
+}
+
+.contact-info h3 {
+   color: var(--color-primary);
+}
+
+.contact-info .contact-item:not(:last-child) a {
+   color: var(--color-text);
+}
+
+/* contact us section end */
+
+@media only screen and (min-width:769px) {
+
+   /* form section start */
+   .form-section {
+      --space-y: 48px;
+      --space-b: 48px;
+   }
+
+   .form-item-wrap {
+      --grid-column: 2;
+      gap: 30px 20px;
+   }
+
+   .common-form {
+      --space: 24px;
+   }
+
+   /* form section end */
+   /* contact us section start */
+   .contact-us {
+      --space-y: 48px;
+      --space-b: 48px;
+   }
+
+   .contact-info {
+      --space: 24px;
+   }
+
+   /* contact us section end */
+}
+
+@media only screen and (min-width:1025px) {
+
+   /* form section start */
+   .common-form {
+      --space: 28px;
+   }
+
+   /* form section end */
+   /* contact us section style start */
+   .contact-us {
+      --space-y: 72px;
+      --space-b: 72px;
+   }
+
+   .contact-us .common-wrap {
+      flex-direction: row;
+   }
+
+   .contact-info {
+      --space: 28px;
+   }
+
+   .contact-us .contact-info {
+      width: 29.919%;
+      align-items: center;
+   }
+
+   /* contact us section style end */
+}
+
+/* form section style end */
 
 /* big card section start */
 
@@ -1404,8 +1457,6 @@ textarea {
 }
 
 /* benefit mortgage section end */
-
-
 /* ========================= loan parameters style start ================== */
 
 .parameters-wrap {
@@ -1416,7 +1467,6 @@ textarea {
    width: 100%;
    height: 1px;
    background-color: #EDEBE1;
-
 }
 
 .parameters-item p {
@@ -1439,7 +1489,6 @@ textarea {
 
 .parameters-links ul li {
    list-style-type: disc;
-
 }
 
 .parameters-links ul,
@@ -1838,109 +1887,7 @@ ol {
    }
 
    /* cta common section style end */
-   /* ====== Common form section ===== */
 
-   .common-form-section {
-      padding-block: 20px;
-   }
-
-   .common-form-content {
-      padding-top: 10px;
-      padding-bottom: 10px;
-   }
-
-   .common-form-wrap {
-      padding-top: 90px;
-      padding-bottom: 90px;
-      max-width: 805px;
-      margin: 0 auto;
-      background: #ffffff;
-      border: 1px solid #EDEBE1;
-      border-radius: 10px;
-      padding-inline: 12px;
-      padding-block: 20px;
-   }
-
-
-   .common-form-content p {
-      margin-bottom: 5px;
-   }
-
-   .common-form-wrap form {
-      grid-template-columns: repeat(1, 1fr);
-   }
-
-
-   .common-form-wrap .common-form-group.wrap {
-      grid-column: 1 / -1;
-   }
-
-   .common-form-wrap label {
-      margin-bottom: 6px;
-      color: #48432C;
-      text-align: left;
-   }
-
-   .common-form-wrap input,
-   textarea {
-      padding: 12px;
-      border: 1px solid #EDEBE1;
-      border-radius: 8px;
-      background-color: #FAF9F7;
-      resize: vertical;
-   }
-
-   .common-form-wrap input:focus {
-      outline: none;
-   }
-
-   .common-form-wrap button {
-      grid-column: 1 / -1;
-      padding: 14px;
-      background-color: #007255;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 22.8px;
-      cursor: pointer;
-      transition: 0.3s ease-in;
-   }
-
-   .common-form-wrap img {
-      width: 36px;
-      vertical-align: middle;
-      padding-right: 5px;
-   }
-
-   .common-form-wrap button:hover {
-      background-color: #015a3b;
-   }
-
-   @media (min-width: 769px) {
-      .common-form-wrap {
-         padding-inline: 28px;
-         padding-block: 32px;
-      }
-
-      .common-form-wrap form {
-         grid-template-columns: repeat(2, 1fr);
-      }
-
-      .common-form-section {
-         padding-block: 30px;
-      }
-
-      .common-form-content {
-         padding-top: 20px;
-         padding-bottom: 40px;
-      }
-   }
-
-
-
-   /* ====== Common form section end ===== */
    /* testimonial section styel stat */
    .testimonial-item {
       padding: 30px;
@@ -1972,7 +1919,7 @@ ol {
       font-size: 16px;
    }
 
-   .form-section {
+   .calculator-form {
       flex-direction: row;
       padding-block: 32px;
       padding-right: 24px;
@@ -1983,14 +1930,14 @@ ol {
       padding-bottom: 130px;
    }
 
-   .form-section .form-inner {
+   .calculator-form .form-inner {
       order: 1;
       width: 100%;
       gap: 17px;
       row-gap: 52px;
    }
 
-   .form-section .output {
+   .calculator-form .output {
       order: 3;
       width: 100%;
       padding-left: 80px;
@@ -1998,7 +1945,7 @@ ol {
       padding-top: 10px;
    }
 
-   .form-section span {
+   .calculator-form span {
       margin-top: 20px;
       width: 1px;
       height: auto;
@@ -2224,26 +2171,10 @@ ol {
    }
 
    /* cta common section style end */
-   /* form section style start */
-   .common-wrap-form {
-      --space-y: 88px;
-      --space-b: 114px;
-   }
+   /* support box style start */
 
-   .common-wrap-form .support-box {
-      margin-bottom: 78px;
-   }
 
-   .support-box .support-btn {
-      min-width: 210px;
-   }
-
-   .support-box .support-text {
-      margin-top: 28px;
-      margin-bottom: 61px;
-   }
-
-   /* form section style end */
+   /* support box style end */
    /* testimonial section styel stat */
    .testimonial-item {
       padding: 40px;
@@ -2298,12 +2229,6 @@ ol {
    }
 
    /* quote section end */
-   /* lets connect style start */
-   .let-connect {
-      --space-y: 56px;
-   }
-
-   /* lets connect style end */
    /* big card section start */
    .blog-post-section {
       --space-y: 80px;

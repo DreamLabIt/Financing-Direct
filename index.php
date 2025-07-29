@@ -81,9 +81,9 @@
 
   <!-- ======= Calculetor section end ======= -->
 
-  <section class=" common-wrap-form">
+  <section class="support-box-section">
     <div class="common-wrap">
-      <div class="support-box">
+      <div class="support-box text-center">
         <h2 class="support-title">We’re Here to Help</h2>
         <p class="support-text">Have a mortgage related question? Looking for additional information about our mortgage products and services? Please reach out to us anytime!</p>
         <button class="support-btn btn">

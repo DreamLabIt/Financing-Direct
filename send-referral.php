@@ -23,43 +23,52 @@
          </div>
       </div>
    </section>
-   <!-- hero section start -->
-
-   <section class="common-form-section">
+   <!-- hero section end -->
+   <!-- form section start -->
+   <section class="form-section">
       <div class="common-wrap">
-         <div class="common-form-wrap">
-            <div class="common-form d-flex flex-col">
-               <div class="common-form-content text-center">
-                  <h2>Ask Us a Question</h2>
-                  <p>Get expert mortgage advice</p>
-               </div>
-               <form class="grid gap-20">
-                  <div class="common-form-group d-flex flex-col">
-                     <label for="name">Name</label>
-                     <input type="text" id="name">
-                  </div>
-                  <div class="common-form-group d-flex flex-col">
-                     <label for="email">Email</label>
-                     <input type="email" id="email">
-                  </div>
-                  <div class="common-form-group d-flex flex-col">
-                     <label for="phone">Phone</label>
-                     <input type="text" id="phone">
-                  </div>
-                  <div class="common-form-group d-flex flex-col">
-                     <label for="contact">Preferred Method of Contact</label>
-                     <input type="text" id="contact">
-                  </div>
-                  <div class="common-form-group d-flex flex-col wrap">
-                     <label for="message">Question or Comment</label>
-                     <textarea id="message" rows="5"></textarea>
-                  </div>
-                  <button type="submit" class="submit-btn"><img src="./assets/images/send-icon.png" alt="send icon"> SEND</button>
-               </form>
+         <form action="" class="common-form d-flex flex-col gap-20">
+            <div class="d-flex flex-col item-center gap-10">
+               <p>Send referral to</p>
+               <h3>Shay Wright</h3>
             </div>
-         </div>
+            <div class="form-item-wrap grid">
+               <div class="form-item d-flex flex-col">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name">
+               </div>
+               <div class="form-item d-flex flex-col">
+                  <label for="email">Your Email</label>
+                  <input type="text" id="email">
+               </div>
+               <div class="form-item d-flex flex-col">
+                  <label for="referral_name">Referral's Name</label>
+                  <input type="text" id="referral_name">
+               </div>
+               <div class="form-item d-flex flex-col">
+                  <label for="referral_email">Referral's Email</label>
+                  <input type="text" id="referral_email">
+               </div>
+               <div class="form-item d-flex flex-col">
+                  <label for="referral_phone">Referral's Phone</label>
+                  <input type="text" id="referral_phone">
+               </div>
+               <div class="form-item d-flex flex-col">
+                  <label for="referral_contact">Referral's Preferred Method of Contact</label>
+                  <input type="text" id="referral_contact">
+               </div>
+               <div class="form-item form-full-width d-flex flex-col">
+                  <label for="referral_comment">Comments (if any)</label>
+                  <textarea name="" id="referral_comment"></textarea>
+               </div>
+               <div class="form-item form-full-width d-flex flex-col">
+                  <button type="submit" class="btn btn-primary d-flex item-center justify-center gap-10">Send Referral</button>
+               </div>
+            </div>
+         </form>
       </div>
    </section>
+   <!-- form section end -->
    <?php include 'footer-simple.php'; ?>
    <!-- footer section end -->
    <script src="./script.js"></script>

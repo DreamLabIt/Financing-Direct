@@ -1,0 +1,2208 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* ====Global style==== */
+/* variable */
+:root {
+  --color-brich: #3d3825;
+  --color-primary: #007c5d;
+  --color-primary-dark: #006048;
+  --color-primary-light: #32a250;
+  --color-primary-extra-light: #32a150;
+  --section-bg: #f7f6f2;
+  --color-secondary: #ffd65c;
+  --color-secondary-light: #fed65d;
+  --color-white: #ffffff;
+  --color-text: #48432c;
+  --color-primary-heading: #005f47;
+  --font-family-mulish: "Mulish", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --body-text: 17px;
+  --body-line-height: 23.8px;
+  font-family: var(--font-family-mulish);
+  font-size: var(--body-text);
+  line-height: var(--body-line-height);
+  color: var(--color-text);
+  background: var(--color-white);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--color-primary-extra-light);
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Headings */
+h1,
+.h1 {
+  font-size: 42px;
+  line-height: 46.2px;
+  font-weight: 800;
+  color: var(--color-primary-heading);
+}
+
+h2,
+.h2 {
+  font-size: 26px;
+  line-height: 33.8px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+  line-height: 31.2px;
+  font-weight: 700;
+  color: var(--color-brich);
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+h5,
+.h5 {
+  font-size: 18px;
+  line-height: 21.6px;
+  color: var(--color-primary);
+}
+
+label {
+  font-size: 17px;
+  line-height: 20.4px;
+  font-weight: 600;
+  color: #47432c;
+}
+
+/* common class*/
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row-rev {
+  flex-direction: row-reverse;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.item-end {
+  align-items: end;
+}
+
+.item-start {
+  align-items: start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Flex style */
+.flex-box {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.flex-box-all {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.flex-horizontal-align {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.flex-vertical-align {
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.flex-bottom-align {
+  -webkit-box-align: flex-end;
+  align-items: flex-end;
+}
+
+.flex-content-align {
+  -webkit-align-content: center;
+  -moz-align-content: center;
+  align-content: center;
+}
+
+.flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.grid {
+  --grid-column: 1;
+  --gap: 20px;
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(var(--grid-column), 1fr);
+}
+
+@media screen and (min-width: 789px) {
+  .grid {
+    --grid-column: 2;
+    --gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .grid {
+    --grid-column: 3;
+    --gap: 40px;
+  }
+}
+
+/* end flex style */
+/* button style start */
+.btn {
+  background-color: var(--color-secondary);
+  color: var(--color-brich);
+  text-align: center;
+  padding: 18px;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 21.6px;
+  font-weight: 700;
+  min-width: 176px;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  /* font-size: 18px;
+  line-height: 21.6px;
+  font-weight: 700; */
+}
+
+.btn-white {
+  /* font-size: 19px;
+  line-height: 22.8px; */
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+.btn-border {
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary-extra-light);
+  background-color: var(--color-white);
+}
+
+/* button style end */
+
+.common-wrap {
+  max-width: 1264px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+/* blog wrap common section start */
+.blog-wrap {
+  --space-y: 32px;
+  padding: var(--space-y) 0;
+}
+
+.blog-item {
+  border-radius: 8px;
+  border: 1px solid #EEECE3;
+  overflow: hidden;
+}
+
+.blog-item-thumb {
+  height: 200px;
+}
+
+.blog-item-thumb img {
+  height: 100%;
+}
+
+.blog-item-content {
+  padding: 32px 24px;
+  flex-grow: 1;
+}
+
+.blog-item-content h5 a {
+  color: var(--color-brich);
+}
+
+.blog-item-content p {
+  flex-grow: 1;
+}
+
+.arrow-icon {
+  display: inline-block;
+  width: 10px;
+  height: 8px;
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+  background-color: var(--color-primary-extra-light);
+  transform: rotate(38deg);
+  margin-left: 10px;
+}
+
+@media only screen and (min-width:460px) {
+  .blog-wrap .common-wrap {
+    --grid-column: 2;
+  }
+}
+
+@media only screen and (min-width:769px) {
+  .blog-wrap {
+    --space-y: 40px;
+  }
+
+  .blog-wrap .common-wrap {
+    --grid-column: 3;
+  }
+}
+
+@media only screen and (min-width:1025px) {
+  .blog-wrap {
+    --space-y: 60px;
+  }
+
+  .blog-wrap .common-wrap {
+    --gap: 60px;
+  }
+}
+
+/* blog wrap common section end */
+
+/* ====== Header section start ====== */
+
+
+.header-wrap {
+  padding: 12px 0;
+}
+
+
+.header-wrap .common-wrap {
+  gap: 20px;
+}
+
+.header-right {
+  gap: 20px;
+}
+
+.header-right p {
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 300;
+}
+
+.header-right p span {
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  margin-left: 8px;
+}
+
+.header-right .btn {
+  font-size: 17px;
+  line-height: 20.4px;
+  font-weight: 600;
+}
+
+.header-wrap .call-wrap {
+  gap: 20px;
+}
+
+.header-wrap .site-logo {
+  margin-top: 11px;
+}
+
+.header-wrap .call-wrap p {
+  color: var(--color-green);
+  font-weight: 900;
+  line-height: 19.2px;
+}
+
+.header-wrap .call-wrap .call-title {
+  color: var(--color-primary);
+  font-weight: 300;
+  margin-right: 1px;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 992px) {
+  .header-wrap {
+    padding: 32px 0;
+  }
+}
+
+/* header section end */
+/* navigation section start */
+.nav-wrap {
+  background-color: var(--color-primary);
+  margin-top: 6px;
+}
+
+.nav-wrap ul {
+  gap: 6px;
+}
+
+.nav-wrap ul a {
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-white);
+  padding-block: 13px;
+  font-weight: 600;
+}
+
+/* navigation section end */
+
+/* ======== Footer style start ========= */
+.footer {
+  padding-top: 40px;
+}
+
+.footer-top {
+  padding: 20px 0;
+  background-color: var(--color-primary-light);
+}
+
+.footer-top img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 26px;
+}
+
+.footer-top h4 {
+  color: var(--color-white);
+}
+
+.footer-top span {
+  color: var(--color-secondary-light);
+}
+
+.footer-middle {
+  --space-y: 32px;
+  --space-b: 32px;
+  background-color: var(--section-bg);
+  padding: var(--space-y) 0 var(--space-b);
+}
+
+.footer-logo-wrap a:first-child {
+  color: var(--color-text);
+}
+
+.footer-links a {
+  font-size: 16px;
+  line-height: 40px;
+  color: var(--color-text);
+  transition: all linear .3s;
+}
+
+.footer-links a:hover {
+  color: var(--color-primary-extra-light);
+}
+
+.footer-form form input {
+  border: none;
+  background-color: var(--color-white);
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.footer-form .btn {
+  padding-block: 12px;
+  background-color: var(--color-secondary-light);
+  color: #115740;
+}
+
+.footer-bottom {
+  padding: 24px 0;
+  background-color: var(--section-bg);
+  border-top: 1px solid #E6E7DA;
+}
+
+.footer-bottom .common-wrap {
+  gap: 8px;
+}
+
+.footer-bottom p,
+.footer-bottom a {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--color-text);
+}
+
+@media only screen and (min-width:769px) {
+  .footer-middle .common-wrap {
+    --grid-column: 3;
+  }
+
+  .footer-bottom .common-wrap {
+    --grid-column: 3;
+  }
+}
+
+@media only screen and (min-width:1025px) {
+  .footer-middle {
+    --space-y: 96px;
+    --space-b: 74px;
+  }
+
+  .footer-middle .common-wrap {
+    --grid-column: 4;
+  }
+
+  .footer-middle .footer-links {
+    grid-column: span 2;
+  }
+
+  .footer-link-wrap {
+    flex-direction: row;
+  }
+
+  .footer-link-wrap * {
+    width: 100%;
+  }
+
+  .footer-bottom .common-wrap {
+    --grid-column: 4;
+  }
+
+  .footer-bottom p {
+    text-align: left;
+  }
+}
+
+/* ======== Footer style End========= */
+
+
+
+/* rafi work start */
+/* about shay-wright page start */
+
+/* common hero section star */
+
+
+.hero-section {
+  --space-y: 32px;
+  --space-b: 32px;
+  padding: var(--space-y) 0 var(--space-b);
+  background-color: var(--section-bg);
+}
+
+.hero-section.about-shay-hero {
+  background-image: url(../images/about-shay-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.calc-spacing {
+  --width: 236px;
+  --gap: 20px;
+}
+
+.hero-section.about-shay-hero .title,
+.hero-section.about-shay-hero .content {
+  color: var(--color-white);
+}
+
+.hero-section.about-shay-hero .content-wraper {
+  max-width: 100%;
+}
+
+.hero-section .common-wrap {
+  gap: 20px;
+  flex-direction: column-reverse;
+}
+
+.content-wraper .sub-title {
+  color: var(--color-primary-light);
+  font-size: 22px;
+  line-height: 26.4px;
+  margin-bottom: 12px;
+}
+
+.content-wraper .title {
+  margin-bottom: 24px;
+}
+
+.content-wraper .btn-wraper {
+  margin-top: 32px;
+}
+
+.btn-wraper:has(a:nth-of-type(2)) a {
+  flex: 1;
+}
+
+.hero-section .media {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+
+.media img,
+.media video {
+  position: relative;
+  z-index: 9;
+  /* padding-left: 27px; */
+}
+
+.media img {
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+.media .media-shape {
+  display: flex;
+  align-self: start;
+  margin-top: -58px;
+  position: relative;
+  z-index: 2;
+  margin-left: 6px;
+}
+
+.media .media-shape img {
+  padding: 0;
+  border-radius: 0;
+}
+
+/* common hero section end */
+/* hero double img section start */
+.hero-section.hero-double-img {
+  --space-y: 56px;
+  --space-b: 56px;
+}
+
+.hero-section.hero-double-img .title {
+  font-size: 36px;
+  line-height: 43.2px;
+  color: #007a5d;
+}
+
+.hero-section.hero-double-img .media {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.hero-section.hero-double-img .media .media-img {
+  width: 70%;
+  border: 10px solid var(--color-white);
+  border-radius: 8px;
+  display: flex;
+}
+
+.hero-section.hero-double-img .media .media-img-2 {
+  margin-right: auto;
+  margin-top: -50px;
+  position: relative;
+  z-index: 9;
+}
+
+.hero-section.hero-double-img .media img {
+  border-radius: 0;
+  padding: 0;
+}
+
+.hero-section.hero-double-img .title span {
+  color: var(--color-brich);
+  display: block;
+}
+
+@media only screen and (min-width:769px) {
+  .hero-section {
+    --space-y: 60px;
+    --space-b: 54px;
+  }
+
+  .hero-section .common-wrap {
+    gap: 40px;
+  }
+
+  .hero-section.about-shay-hero {
+    --space-y: 100px;
+    --space-b: 90px;
+  }
+
+  .hero-section.about-shay-hero .content-wraper {
+    padding-left: calc(var(--width) + var(--gap));
+  }
+}
+
+@media only screen and (min-width:1025px) {
+  .calc-spacing {
+    --gap: 110px;
+  }
+}
+
+
+/* hero double img section end */
+
+/* get quote common section start */
+.cta {
+  padding-block: 40px;
+}
+
+.get-quote-inner {
+  padding: 30px 58px 30px 35px;
+  padding: 24px 16px;
+  background-image: url(../images/home-financing-cta-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+
+.get-quote-content h4,
+.get-quote-content p {
+  color: var(--color-white);
+}
+
+.get-quote-btn {
+  flex-shrink: 0;
+}
+
+.get-quote-content-img {
+  --size: 60px;
+  width: var(--size);
+  height: var(--size);
+  flex-shrink: 0;
+}
+
+@media only screen and (min-width:769px) {
+  .cta {
+    padding-block: 60px;
+  }
+
+  .get-quote-inner {
+    padding: 30px 58px 30px 35px;
+  }
+}
+
+@media only screen and (min-width:1025px) {
+  .cta {
+    padding-block: 80px;
+  }
+
+  .get-quote-inner {
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .get-quote-content {
+    flex-direction: row;
+  }
+
+  .get-quote-content-img {
+    --size: 80px;
+  }
+}
+
+/* get quote common section end */
+/* ====== Mortgages style start ====== */
+.mortgages-wrap {
+  padding-top: 56px;
+  padding-bottom: 90px;
+}
+
+/* .mortgages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 53px;
+} */
+
+.mortgages .item {
+  background: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-inline: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+  color: var(--color-white);
+  min-height: 360px;
+  padding-right: 39px;
+}
+
+.item h3 {
+  color: var(--color-white);
+  margin-bottom: 10px;
+}
+
+.item a {
+  width: 100%;
+  margin-top: 4px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-block: 12px;
+}
+
+.explore {
+  background-color: #777777;
+  color: var(--color-white);
+}
+
+/* ====== Responsive style ====== */
+
+@media only screen and (min-width:769px) {
+  .mortgages .item {
+    padding-inline: 30px;
+    padding-block: 27px;
+  }
+
+  .mortgages .item h3 {
+    text-align: center;
+  }
+}
+
+/* ====== Mortgages style end ====== */
+
+/* support box common section start */
+.common-wrap-form .support-box {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 80px;
+
+}
+
+.support-box .support-text {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.support-box .support-text a {
+  color: var(--color-primary-extra-light);
+}
+
+.support-box img {
+  max-width: 14px;
+}
+
+/* support box common section end */
+/* ====== form section ===== */
+
+
+.common-wrap-form {
+  padding-block: 32px;
+}
+
+.common-wrap-form .common-wrap {
+  max-width: 805px;
+}
+
+.form-box {
+  background: #ffffff;
+  border: 1px solid #EDEBE1;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.form-box form {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full {
+  grid-column: 1 / -1;
+  /* full width row */
+}
+
+.form-box label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #48432C;
+  text-align: left;
+}
+
+input,
+textarea {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #EDEBE1;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.247);
+  resize: vertical;
+}
+
+.submit-btn {
+  grid-column: 1 / -1;
+  /* padding: 14px;
+  background-color: var(--background-green-light);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.submit-btn:hover {
+  background-color: #015a3b;
+}
+
+@media only screen and (min-width:769px) {
+  .form-box form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .common-wrap-form {
+    padding-block: 90px;
+  }
+}
+
+/* home form */
+
+/* =========== Calculetor style =========== */
+
+/* .calculator-container {
+  border: 1px solid #EDEBE1;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.calculator-header {
+  padding-left: 60px;
+  margin-top: 48px;
+}
+
+.calculator-header h2 {
+  margin: 0 0 18px;
+}
+
+.calculator-header p {
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 24px;
+}
+
+.tabs-right {
+  display: flex;
+  gap: 9px;
+}
+
+.tab {
+  padding: 16px 24px;
+  background: #EBE9DE;
+  ;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px 4px 0 0;
+  min-width: 143px;
+  color: var(--color-brich);
+  margin-top: 24px;
+}
+
+.tab.active {
+  background: var(--section-bg);
+}
+
+.calculator-body {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--section-bg);
+  padding-block: 48px;
+  padding-left: 60px;
+  padding-right: 120px;
+  gap: 16px;
+}
+
+.calculator-body {
+  padding-block: 48px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form-section {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.form-section span {
+  margin-top: 20px;
+  width: 1px;
+  height: 100%;
+  background-color: #DDDDDD;
+}
+
+.form-inner {
+  max-width: 750px;
+  display: flex;
+  flex-flow: wrap;
+  gap: 20px;
+  align-items: end;
+}
+
+.form-section.active {
+  display: flex;
+}
+
+.input-group {
+  max-width: 213px;
+}
+
+.input-group label {
+  font-size: 18px;
+  line-height: 21.6px;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  font-size: 16px;
+}
+
+.output {
+  margin-left: auto;
+}
+
+.output-label {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.output-value {
+  color: var(--color-green);
+  font-size: 54px;
+  line-height: 52.8px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+@media only screen and (min-width:769px) {
+  .calculator-body {
+    padding-block: 48px;
+    padding-left: 60px;
+    padding-right: 120px;
+  }
+} */
+ 
+/* =========== Calculetor style =========== */
+
+.calculator-container {
+  border: 1px solid #EDEBE1;
+  border-radius: 8px;
+  width: 100%;
+  padding-block: 73px;
+}
+
+.calculator-header {
+  padding-left: 60px;
+}
+
+.calculator-header h2 {
+  margin: 0 0 18px;
+}
+
+.calculator-header p {
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.tab {
+  padding: 16px 24px;
+  background: #EBE9DE;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px 4px 0 0;
+  min-width: 143px;
+  color: var(--color-brich);
+  margin-top: 24px;
+}
+
+.tab.active {
+  background: var(--section-bg);
+}
+
+.calculator-body {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--section-bg);
+  padding-block: 48px;
+  padding-left: 60px;
+  padding-right: 120px;
+  gap: 16px;
+}
+
+.form-section {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.form-section span {
+  margin-top: 20px;
+  width: 1px;
+  height: 100%;
+  background-color: #DDDDDD;
+}
+
+.form-inner {
+  max-width: 750px;
+  display: flex;
+  flex-flow: wrap;
+  gap: 20px;
+  align-items: end;
+}
+
+.form-section.active {
+  display: flex;
+}
+
+.input-group {
+  max-width: 213px;
+}
+
+.input-group label {
+  font-size: 18px;
+  line-height: 21.6px;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  font-size: 16px;
+}
+
+.output {
+  margin-left: auto;
+}
+
+.output-label {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.output-value {
+  color: var(--color-primary);
+  font-size: 54px;
+  line-height: 52.8px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .calculator-container {
+    padding-block: 28px;
+  }
+
+  .calculator-header {
+    padding-left: 20px;
+  }
+
+  .calculator-body {
+    padding-block: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .form-section {
+    flex-direction: column;
+  }
+
+  .form-section .form-inner {
+    order: 2;
+    width: 100%;
+  }
+
+  .form-section .output {
+    order: 1;
+    width: 100%;
+  }
+
+  .output-value {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .input-group {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width:769px) {
+  .tabs {
+    padding: 0 24px;
+  }
+}
+
+/* ======== Testimonial style start ========= */
+/* testimonial common section style start*/
+.testimonial .common-wrap {
+  gap: 8px;
+}
+
+.testimonial .testimonial-swiper {
+  padding-top: 60px;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.testimonial .swiper-button-prev,
+.testimonial .swiper-button-next {
+  background-image: url(../images/testimonial-left-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 40px;
+  height: 36px;
+  border-radius: 4px;
+  margin-top: 0;
+  top: 0;
+  right: 0;
+}
+
+.testimonial .swiper-button-prev {
+  left: auto;
+  right: 60px;
+}
+
+.testimonial .swiper-button-next {
+  background-image: url(../images/testimonial-right-arrow.png);
+}
+
+.testimonial .swiper-button-prev::after,
+.testimonial .swiper-button-next::after {
+  display: none;
+}
+
+.testimonial-item {
+  padding: 20px;
+  border: 1px solid #EDEBE1;
+  border-radius: 8px;
+}
+
+.testimonial-content {
+  flex-grow: 1;
+}
+
+.testimonial-content p {
+  font-size: 15px;
+  line-height: 26.25px;
+  position: relative;
+  padding-left: 32px;
+  display: inline-block;
+}
+
+/* common quote */
+.double-quote {
+  position: relative;
+  padding-left: 32px;
+  display: inline-block;
+}
+
+.double-quote::before,
+.double-quote::after {
+  content: "";
+  width: 14px;
+  height: 12px;
+  background-size: cover;
+}
+
+.double-quote::before {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  background-image: url(../images/quote.png);
+}
+
+.double-quote::after {
+  background-image: url(../images/quote-2.png);
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.double-quote.white-quote::before {
+  background-image: url(../images/white-quote.png);
+}
+
+.double-quote.white-quote::after {
+  background-image: url(../images/white-quote-2.png);
+}
+
+/*  */
+.testimonial-item .author-img {
+  --size: 48px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonial-author {
+  gap: 12px;
+  padding-left: 32px;
+}
+
+.testimonial-author h5 {
+  font-size: 14px;
+  line-height: 22.4px;
+  color: var(--color-text);
+  margin-bottom: 6px;
+}
+
+.author-img img {
+  height: 100%;
+}
+
+@media only screen and (min-width:769px) {
+  .testimonial-item {
+    padding: 50px 40px 32px;
+  }
+}
+
+/* testimonial common section style end*/
+
+
+
+/* shay wright section style start */
+
+
+.shay-wright-section {
+  --space-y: 32px;
+  padding: var(--space-y) 0;
+}
+
+.shay-wright-section .common-wrap {
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-shay-wright {
+  gap: 24px;
+}
+
+.author-info-section .about-shay-wright {
+  gap: 12px;
+}
+
+.author-info-section .about-shay-wright .author-info {
+  gap: 12px;
+}
+
+.about-shay-wright .author-img {
+  max-width: 114px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.about-shay-wright .author-info {
+  flex-grow: 1;
+  gap: 16px;
+}
+
+.about-shay-wright .author-info img {
+  max-width: 240px;
+}
+
+.about-shay-wright .author-img {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.author-info .author-name {
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--color-green-tropical);
+}
+
+.author-title * {
+  font-size: 16px;
+  line-height: 26px;
+  color: #46432c;
+}
+
+.author-title a:last-child {
+  color: var(--color-primary-extra-light);
+}
+
+@media only screen and (min-width:769px) {
+  .shay-wright-section {
+    --space-y: 60px;
+  }
+
+  .author-info-section .common-wrap {
+    flex-direction: row;
+    gap: var(--gap);
+  }
+
+  .author-info-section .about-shay-wright {
+    flex-shrink: 0;
+    max-width: var(--width);
+    align-items: center;
+    margin-top: -216px;
+  }
+
+  .author-info-section .author-info {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width:1025px) {
+  .author-info-section .about-shay-wright {
+    margin-top: -237px;
+  }
+}
+
+/*  */
+/* .faq-section {
+  margin-top: -3px;
+} */
+.faq-item {
+  border-bottom: 1px solid #48432c;
+  padding-right: 28px;
+  padding-bottom: 22px;
+  padding-top: 26px;
+}
+
+.faq-item:first-child {
+  padding-top: 0;
+}
+
+.faq-button {
+  background: none;
+  border: none;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  color: #48432c;
+  letter-spacing: 0.3px;
+  position: relative;
+}
+
+.faq-button::after {
+  content: "+";
+  font-size: 20px;
+  color: var(--color-green-tropical);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  font-weight: 400;
+  margin-top: -3px;
+}
+
+.faq-item.active .faq-button::after {
+  content: "−";
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+  color: #48432c;
+}
+
+.faq-item.active .faq-content {
+  max-height: 500px;
+  opacity: 1;
+  padding-top: 24px;
+}
+
+.faq-item.active .faq-content p {
+  letter-spacing: -0.16px;
+  line-height: 23.8px;
+}
+
+.faq-content p+p {
+  margin-top: 24px;
+}
+
+/* shay wright section style end */
+
+
+/* ======================== FAQ Style start ==================== */
+
+
+.common-faq-section {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background-color: #F7F6F2;
+}
+
+.common-faq-wrap h2 {
+  color: #007c5d;
+  text-align: center;
+  font-size: 26px;
+  line-height: 31.2px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.common-faq-wrap .subtitle {
+  text-align: center;
+  color: #48432c;
+  font-size: 18px;
+  line-height: 21.6px;
+  margin-bottom: 54px;
+}
+
+.common-faq-item {
+  background: #FFFFFF;
+  border-radius: 8px;
+  border-radius: 8px;
+  padding-block: 20px;
+  padding-left: 36px;
+  padding-right: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.common-faq-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.question h5 {
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #48432c;
+  font-weight: 400;
+  margin: 0;
+  position: relative;
+}
+
+.question h5::after {
+  content: "";
+  right: 0;
+  top: 9px;
+  width: 10px;
+  height: 8px;
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+  background-color: #333333;
+  transition: 0.7s ease-in-out;
+  flex-shrink: 0;
+
+}
+
+.common-faq-wrap .rotate {
+  transform: rotate(180deg);
+}
+
+.answer {
+  margin-top: 16px;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #4a4a4a;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .common-faq {
+    flex-direction: column;
+  }
+
+  .common-faq-item {
+    width: 100%;
+    padding-block: 12px;
+    padding-left: 20px;
+  }
+}
+
+/* ======================== FAQ Style end ==================== */
+
+/* quote section start */
+
+
+.quote-section {
+  --space-y: 20px;
+  padding: var(--space-y) 0;
+}
+
+.about-us .quote-section {
+  padding: 0;
+}
+
+.about-us .quote-section .common-wrap {
+  padding: 0;
+}
+
+.about-us .quote-content-wrapper {
+  padding-inline: 0;
+  background: none;
+  color: var(--color-text);
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+
+
+.quote-content-wrapper {
+  background: url(../images/home-financing-cta-bg.jpg) no-repeat center/cover;
+  border-radius: 8px;
+  color: var(--color-white);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 60px;
+  padding-right: 40px;
+  padding: 20px;
+}
+
+.quote-content__image {
+  max-width: 60px;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.quote-content__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  color: var(--color-white);
+}
+
+.quote-content__content h4 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.quote-content-wrapper h4 {
+  font-size: 19px;
+  line-height: 33px;
+  font-weight: 600;
+}
+
+@media only screen and (min-width:769px) {
+  .quote-section {
+    --space-y: 37px;
+  }
+
+  .quote-content-wrapper {
+    padding: 30px 60px;
+    padding-right: 40px;
+  }
+}
+
+/* quote section end */
+/* big card section start */
+.card-section {
+  --space-y: 80px;
+  --space-b: 134px;
+  padding: var(--space-y) 0 var(--space-b);
+}
+
+.card-wrapper {
+  gap: 40px;
+}
+
+
+
+.card {
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+
+.card-content {
+  gap: 16px;
+}
+
+.card-content a {
+  text-decoration: underline;
+}
+
+.card-img {
+  max-width: 522px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-title-wrap {
+  gap: 12px;
+  margin-top: -6px;
+}
+
+.card-title-wrap .card-title-img {
+  --size: 34px;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+}
+
+.card-body ul {
+  list-style: disc;
+  list-style-position: inside;
+  color: #48432c;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+
+.card-body p:has(+ p) {
+  margin-bottom: 12px;
+}
+
+
+
+.card-body p:has(+ ul) {
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width:769px) {
+  .card-wrapper {
+    gap: 160px;
+  }
+
+  .card {
+    gap: 40px 20px;
+    flex-direction: row;
+  }
+
+  .card-content {
+    gap: 30px;
+  }
+
+  .card-body p:has(+ p) {
+    margin-bottom: 23px;
+  }
+
+  .card-body p:has(+ ul) {
+    margin-bottom: 49px;
+  }
+
+  .about-us .card {
+    flex-direction: row-reverse;
+  }
+
+  .about-us .card-wrapper .card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+/* big card section end */
+/* let connect start */
+
+
+.let-connect {
+  --space-y: 32px;
+  padding: var(--space-y) 0;
+  background-color: var(--section-bg);
+}
+
+.let-connect .common-wrap {
+  max-width: 1060px;
+  text-align: center;
+}
+
+.let-connect h2 {
+  margin-bottom: 22px;
+}
+
+.let-connect p {
+  margin-bottom: 55px;
+}
+
+/* .let-connect p a {
+  color: #32a150;
+} */
+
+.let-connect .btn {
+  min-width: 180px;
+  border: none;
+}
+
+.about-shay .let-connect .btn {
+  border: 1px solid;
+}
+
+.let-connect .btn-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media only screen and (min-width:769px) {
+  .let-connect {
+    --space-y: 56px;
+  }
+}
+
+/* let connect end */
+/* fha mortgages page  start*/
+.info-section {
+  padding: 40px 0;
+}
+
+.basic-loan-item {
+  padding: 16px;
+  border: 1px solid #F5F5F5;
+}
+
+.basic-loan-item .loan-things {
+  --size: 40px;
+  width: var(--size);
+  height: var(--size);
+  font-size: 18px;
+  line-height: 21.6px;
+  font-weight: 700;
+  color: #007255;
+  flex-shrink: 0;
+  background-color: #f0f7f1;
+}
+
+.basic-loan-item .loan-content h4 {
+  margin-bottom: 10px;
+  color: var(--color-text);
+  font-size: 19px;
+  line-height: 22.8px;
+}
+
+@media only screen and (min-width:769px) {
+  .basic-loan {
+    padding: 100px 0 80px;
+  }
+
+  .basic-loan .common-wrap {
+    gap: 60px;
+  }
+
+  .section-header {
+    gap: 24px;
+  }
+
+  .basic-loan-card {
+    gap: 50px;
+  }
+
+  .basic-loan-item {
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .basic-loan-item .loan-content {
+    flex-grow: 1;
+  }
+
+  .basic-loan-item .loan-content h4 {
+    margin-bottom: 24px;
+  }
+}
+
+/* fha mortgages page  end*/
+/* benefit mortgage section start */
+.benefit-mortgage {
+  background-image: url(../images/neighborhood-mortgages-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.benefit-mortgage .basic-loan-details,
+.benefit-mortgage .basic-loan-details h2 {
+  color: var(--color-white);
+}
+
+.benefit-mortgage .basic-loan-details h2 {
+  line-height: 31.2px;
+}
+
+.benefit-mortgage .basic-loan-details p {
+  font-size: 18px;
+  line-height: 21.6px;
+}
+
+.benefit-mortgage .basic-loan-item .loan-content h4,
+.benefit-mortgage .basic-loan-item {
+  color: var(--color-white);
+}
+
+.benefit-mortgage .basic-loan-item {
+  border: 0;
+  background-color: var(--color-primary-dark);
+  border-radius: 24px;
+}
+
+.benefit-mortgage .basic-loan-item .loan-things {
+  --size: auto;
+}
+
+
+
+@media only screen and (min-width:426px) {
+  .benefit-mortgage .basic-loan-card {
+    --grid-column: 2;
+  }
+}
+
+@media only screen and (min-width:769px) {
+  .benefit-mortgage {
+    padding: 60px 0;
+  }
+
+  .benefit-mortgage .basic-loan-card {
+    --grid-column: 3;
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width:1025px) {
+  .benefit-mortgage .basic-loan-card {
+    --grid-column: 5;
+  }
+}
+
+/* benefit mortgage section end */
+
+/* about shay-wright page end */
+/* learning center page style start */
+/* hero section start */
+.hero-section.learning-center {
+  --space-y: 46px;
+  --space-b: 64px;
+}
+
+.hero-section.learning-center .common-wrap {
+  justify-content: center;
+}
+
+.hero-section.learning-center .content-wraper {
+  padding-top: 0;
+  max-width: 718px;
+  text-align: center;
+}
+
+/* hero section end */
+/* card section start */
+
+
+.card-section {
+  --space-t: 32px;
+  --space-b: 32px;
+  padding: var(--space-t) 0 var(--space-b);
+}
+
+.card.learning-card-verticle {
+  flex-direction: column-reverse;
+  gap: 0;
+  border-radius: 4px;
+  border: 1px solid var(--background-green);
+  overflow: hidden;
+}
+
+.card.learning-card-verticle .card-content {
+  --space-y: 34px;
+  --space-x: 24px;
+  --gap: 26px;
+  padding: var(--space-y) var(--space-x);
+  gap: var(--gap);
+}
+
+.card.learning-card-verticle .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.card.learning-card-verticle .card-body a {
+  justify-content: space-between;
+}
+
+.card.learning-card-verticle .card-img {
+  height: 190px;
+}
+
+.card.learning-card-verticle .card-img img {
+  height: 100%;
+}
+
+@media only screen and (min-width:769px) {
+  .card-section {
+    --space-t: 70px;
+    --space-b: 120px;
+  }
+}
+
+/* card section end */
+/* learning center page style end */
+
+
+/* author info section start */
+.author-info-section {
+  --space-y: 32px;
+  --space-b: 32px;
+  padding: var(--space-y) 0 var(--space-b);
+}
+
+.author-info-section .author-img {
+  --size: 100px;
+  width: var(--size);
+  max-width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  border: 10px solid var(--color-white);
+}
+
+
+@media only screen and (min-width:769px) {
+  .author-info-section {
+    --space-y: 76px;
+    --space-b: 100px;
+  }
+
+  .author-info-section .author-img {
+    --size: 200px;
+  }
+
+}
+
+@media only screen and (min-width:1025px) {
+  .author-info-section .common-wrap {}
+}
+
+/* author info section end */
+@media only screen and (min-width: 769px) {
+
+  /* about shay-wright page start */
+  .card-content {
+    max-width: 625px;
+    width: 100%;
+  }
+
+  .card-wrapper .card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .card-wrapper .card:nth-child(even) .card-title-wrap {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+    margin-top: 8px;
+  }
+
+  .card-wrapper .card:nth-child(even) .card-body {
+    padding-left: 66px;
+  }
+
+  /* about shay-wright page end */
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* about shay-wright page start */
+  /* hero section start */
+  .hero-section .common-wrap {
+    flex-direction: row;
+  }
+
+  .hero-section .content-wraper {
+    max-width: 455px;
+    width: 100%;
+  }
+
+  .hero-section .media {
+    max-width: 590px;
+    width: 100%;
+  }
+
+  /*  */
+  .content-wraper .sub-title {
+    margin-bottom: 8px;
+  }
+
+  .content-wraper .title {
+    margin-bottom: 20px;
+  }
+
+  .content-wraper .btn-wraper {
+    margin-top: 30px;
+  }
+
+  /* hero section end */
+  /* shay wright section start */
+  .about-shay-wright {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .shay-wright-section .about-shay-wright-faq {
+    max-width: 586px;
+    width: 100%;
+  }
+
+  .shay-wright-section .common-wrap {
+    flex-direction: row;
+  }
+
+  .about-shay-wright {
+    gap: 43px;
+    padding-top: 24px;
+  }
+
+  .about-shay-wright .author-info {
+    gap: 23px;
+  }
+
+  /* shay wright section end */
+  /* about shay-wright page end */
+}
+
+/* responsive style end */
+/* rafi work end */

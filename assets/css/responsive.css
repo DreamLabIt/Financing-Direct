@@ -1,0 +1,55 @@
+@media (max-width: 768px) {
+
+   /* about shay-wright page start */
+   .footer-wrap .image-wrap {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+   }
+
+   .footer-wrap .offer-wrap {
+      padding-top: 12px;
+      padding-bottom: 12px;
+   }
+
+   .offer-wrap .offer p {
+      color: var(--color-white);
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: var(--font-weight-bold);
+      text-align: center;
+   }
+
+   .footer-wrap .offer-wrap .offer {
+      gap: 10px;
+      flex-direction: column;
+   }
+
+   .footer-bottom {
+      padding-block: 32px;
+   }
+
+   .footer-bottom {
+      row-gap: 20px;
+   }
+
+   .widget-item,
+   .widget-item-links {
+      width: 100%;
+      text-align: center;
+   }
+
+   .form-row {
+      justify-content: center;
+   }
+
+   .form-row button {
+      width: 100%;
+   }
+
+   .footer-bottom li a {
+      line-height: 32px;
+   }
+
+   /* about shay-wright page end */
+}

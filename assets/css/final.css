@@ -1,0 +1,1116 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* ====Global style==== */
+/* variable */
+:root {
+   --color-brich: #3d3825;
+   --color-primary: #007c5d;
+   --color-primary-dark: #006048;
+   --color-primary-light: #32a250;
+   --color-primary-extra-light: #32a150;
+   --section-bg: #f7f6f2;
+   --color-secondary: #ffd65c;
+   --color-secondary-light: #fed65d;
+   --color-white: #ffffff;
+   --color-text: #48432c;
+   --color-primary-heading: #005f47;
+   --font-family-mulish: "Mulish", sans-serif;
+
+   /* H1 */
+   --fs-h1: 26px;
+   --lh-h1: 32px;
+   --fs-h2: 20px;
+   --lh-h2: 26px;
+   --fs-h3: 18px;
+   --lh-h3: 24px;
+   --fs-h4: 16px;
+   --lh-h4: 20px;
+   --fs-h5: 15px;
+   --lh-h5: 18px;
+   --fs-label: 14px;
+   --lh-label: 17px;
+   --fw-light: 300;
+   --fw-normal: 400;
+   --fw-medium: 500;
+   --fw-semibold: 600;
+   --fw-bold: 700;
+   --fw-extrabold: 800;
+   --btn-font-size: 14px;
+   --btn-line-height: 18px;
+   --btn-padding: 12px;
+   --btn-min-width: 120px;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+
+/* body {
+   --body-text: 17px;
+   --body-line-height: 23.8px;
+   font-family: var(--font-family-mulish);
+   font-size: var(--body-text);
+   line-height: var(--body-line-height);
+   color: var(--color-text);
+   background: var(--color-white);
+} */
+body {
+   --body-text: 14px;
+   --body-line-height: 20px;
+
+   font-family: var(--font-family-mulish);
+   font-size: var(--body-text);
+   line-height: var(--body-line-height);
+   color: var(--color-text);
+   background: var(--color-white);
+}
+
+ul,
+ol {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   display: inline-block;
+   color: var(--color-primary-extra-light);
+}
+
+img {
+   width: 100%;
+   max-width: 100%;
+   height: auto;
+   -o-object-fit: cover;
+   object-fit: cover;
+}
+
+button {
+   cursor: pointer;
+   border: 0;
+   outline: 0;
+   background-color: transparent;
+}
+
+address {
+   font-style: normal;
+}
+
+/* typrography */
+/* 
+h1,
+.h1 {
+   font-size: 42px;
+   line-height: 46.2px;
+   font-weight: 800;
+   color: var(--color-primary-heading);
+}
+
+h2,
+.h2 {
+   font-size: 26px;
+   line-height: 33.8px;
+   font-weight: 700;
+   color: var(--color-primary);
+}
+
+h3,
+.h3 {
+   font-size: 24px;
+   line-height: 31.2px;
+   font-weight: 700;
+   color: var(--color-brich);
+}
+
+h4,
+.h4 {
+   font-size: 20px;
+   line-height: 24px;
+   font-weight: 700;
+}
+
+h5,
+.h5 {
+   font-size: 18px;
+   line-height: 21.6px;
+   color: var(--color-primary);
+}
+
+label {
+   font-size: 17px;
+   line-height: 20.4px;
+   font-weight: 600;
+   color: #47432c;
+} */
+
+h1,
+.h1 {
+   font-size: var(--fs-h1);
+   line-height: var(--lh-h1);
+   font-weight: var(--fw-extrabold);
+   color: var(--color-primary-heading);
+}
+
+h2,
+.h2 {
+   font-size: var(--fs-h2);
+   line-height: var(--lh-h2);
+   font-weight: var(--fw-bold);
+   color: var(--color-primary);
+}
+
+h3,
+.h3 {
+   font-size: var(--fs-h3);
+   line-height: var(--lh-h3);
+   font-weight: var(--fw-bold);
+   color: var(--color-brich);
+}
+
+h4,
+.h4 {
+   font-size: var(--fs-h4);
+   line-height: var(--lh-h4);
+   font-weight: var(--fw-bold);
+}
+
+h5,
+.h5 {
+   font-size: var(--fs-h5);
+   line-height: var(--lh-h5);
+   font-weight: var(--fw-normal);
+   color: var(--color-primary);
+}
+
+label {
+   font-size: var(--fs-label);
+   line-height: var(--lh-label);
+   font-weight: var(--fw-semibold);
+   color: #47432c;
+}
+
+
+
+/* common class*/
+
+.d-flex {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+}
+
+.flex-wrap {
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+}
+
+.flex-row {
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: row;
+   flex-direction: row;
+}
+
+.flex-col {
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+}
+
+.flex-row-rev {
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: reverse;
+   -ms-flex-direction: row-reverse;
+   flex-direction: row-reverse;
+}
+
+.item-center {
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+}
+
+.item-end {
+   -webkit-box-align: end;
+   -ms-flex-align: end;
+   align-items: end;
+}
+
+.item-start {
+   -webkit-box-align: start;
+   -ms-flex-align: start;
+   align-items: start;
+}
+
+.justify-center {
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+}
+
+.justify-between {
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+}
+
+.justify-start {
+   -webkit-box-pack: start;
+   -ms-flex-pack: start;
+   justify-content: start;
+}
+
+.justify-end {
+   -webkit-box-pack: end;
+   -ms-flex-pack: end;
+   justify-content: end;
+}
+
+.text-center {
+   text-align: center;
+}
+
+.text-left {
+   text-align: left;
+}
+
+.text-right {
+   text-align: right;
+}
+
+.gap-10 {
+   gap: 10px;
+}
+
+.gap-20 {
+   gap: 20px;
+}
+
+.gap-24 {
+   gap: 24px;
+}
+
+.overflow-hidden {
+   overflow: hidden;
+}
+
+.flex-box {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+   -ms-flex-flow: row wrap;
+   flex-flow: row wrap;
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+}
+
+.flex-box-all {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+   -ms-flex-flow: row wrap;
+   flex-flow: row wrap;
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-around;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+}
+
+.flex-horizontal-align {
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+}
+
+.flex-vertical-align {
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+}
+
+.flex-bottom-align {
+   -webkit-box-align: flex-end;
+   -ms-flex-align: end;
+   align-items: flex-end;
+}
+
+.flex-content-align {
+   -ms-flex-line-pack: center;
+   align-content: center;
+}
+
+.flex {
+   display: -moz-flex;
+   display: -ms-flex;
+   display: -o-flex;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+   -ms-flex-flow: row wrap;
+   flex-flow: row wrap;
+}
+
+.grid {
+   --grid-column: 1;
+   --gap: 20px;
+   display: -ms-grid;
+   display: grid;
+   gap: var(--gap);
+   -ms-grid-columns: 1fr;
+   grid-template-columns: repeat(var(--grid-column), 1fr);
+}
+
+@media screen and (min-width: 789px) {
+   .grid {
+      --grid-column: 2;
+      --gap: 30px;
+   }
+}
+
+@media screen and (min-width: 1025px) {
+   .grid {
+      --grid-column: 3;
+      --gap: 40px;
+   }
+}
+
+/* .btn {
+   background-color: var(--color-secondary);
+   color: var(--color-brich);
+   text-align: center;
+   padding: 18px;
+   border-radius: 4px;
+   font-size: 18px;
+   line-height: 21.6px;
+   font-weight: 700;
+   min-width: 176px;
+} */
+
+.btn {
+   background-color: var(--color-secondary);
+   color: var(--color-brich);
+   text-align: center;
+   font-size: var(--btn-font-size);
+   line-height: var(--btn-line-height);
+   font-weight: var(--fw-bold);
+   padding: var(--btn-padding);
+   border-radius: 4px;
+   min-width: var(--btn-min-width);
+   text-wrap: nowrap;
+}
+
+.btn-primary {
+   background-color: var(--color-primary);
+   color: var(--color-white);
+}
+
+.btn-white {
+   background-color: var(--color-white);
+   color: var(--color-primary);
+}
+
+.btn-border {
+   color: var(--color-primary);
+   border: 1px solid var(--color-primary-extra-light);
+   background-color: var(--color-white);
+}
+
+.common-wrap {
+   max-width: 1264px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 12px;
+}
+
+/* header section style start */
+
+.header-wrap {
+   padding: 12px 0;
+}
+
+.header-right p {
+   font-size: 16px;
+   line-height: 19.2px;
+   font-weight: 300;
+}
+
+.header-right p span {
+   font-weight: 800;
+   color: var(--color-primary-dark);
+   margin-left: 8px;
+}
+
+.header-right .btn {
+   font-size: 17px;
+   line-height: 20.4px;
+   font-weight: 600;
+}
+
+/* header section style end */
+
+/* navigation section start */
+.nav-wrap {
+   background-color: var(--color-primary);
+}
+
+.nav-wrap ul {
+   gap: 6px;
+}
+
+.nav-wrap ul a {
+   font-size: 18px;
+   line-height: 21.6px;
+   color: var(--color-white);
+   padding-block: 12px;
+   font-weight: 600;
+}
+
+/* navigation section end */
+
+/* common hero section start */
+.hero-section {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding: var(--space-y) 0 var(--space-b);
+   background-color: var(--section-bg);
+}
+
+.hero-section .common-wrap {
+   flex-direction: column-reverse;
+}
+
+.content-wraper .sub-title {
+   color: var(--color-primary-light);
+   font-size: 16px;
+   line-height: 26.4px;
+
+   margin-bottom: 8px;
+}
+
+.content-wraper .title {
+   margin-bottom: 24px;
+}
+
+.content-wraper .btn-wraper {
+   margin-top: 24px;
+}
+
+.btn-wraper:has(a:nth-of-type(2)) a {
+   flex: 1;
+}
+
+.media img {
+   border-top-left-radius: 24px;
+   border-bottom-right-radius: 24px;
+}
+
+/* common hero section start */
+
+
+
+
+
+.calc-spacing {
+   --width: 236px;
+   --gap: 20px;
+}
+
+.hero-section.about-shay-hero .title,
+.hero-section.about-shay-hero .content {
+   color: var(--color-white);
+}
+
+.hero-section.about-shay-hero .content-wraper {
+   max-width: 100%;
+}
+
+.hero-section.about-shay-hero {
+   background-image: url(../images/about-shay-bg.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+/* common hero section end */
+
+/* ====== Mortgages style start ====== */
+.mortgages-wrap {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding: var(--space-y) 0 var(--space-b);
+}
+
+.mortgages .item {
+   --space-y: 12px;
+   --space-x: 12px;
+   background: no-repeat;
+   background-size: cover;
+   background-position: center;
+   padding: var(--space-y) var(--space-x);
+   text-align: center;
+   color: var(--color-white);
+   min-height: 360px;
+}
+
+.item h3 {
+   color: var(--color-white);
+   margin-bottom: 10px;
+}
+
+.item p {
+   margin-bottom: 16px;
+}
+
+.item a {
+   width: 100%;
+   font-size: 14px;
+   line-height: 18px;
+   font-weight: 600;
+}
+
+.explore {
+   background-color: #777777;
+   color: var(--color-white);
+}
+
+/* ====== Mortgages style end ====== */
+
+/* cta common section start */
+
+.cta {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding-block: var(--space-y) var(--space-b);
+}
+
+.get-quote-inner {
+   --space-y: 24px;
+   --space-x: 16px;
+   padding: var(--space-y) var(--space-x);
+   background-image: url(../images/home-financing-cta-bg.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   border-radius: 12px;
+}
+
+.get-quote-content h4,
+.get-quote-content p {
+   color: var(--color-white);
+}
+
+.get-quote-btn {
+   flex-shrink: 0;
+}
+
+.get-quote-content-img {
+   --size: 60px;
+   width: var(--size);
+   height: var(--size);
+   flex-shrink: 0;
+}
+
+.get-quote-content-img img {
+   height: 100%;
+}
+
+@media only screen and (min-width:1025px) {
+   .cta {
+      padding-block: 80px;
+   }
+
+   .get-quote-inner {
+      flex-direction: row;
+      align-items: center;
+      gap: 60px;
+   }
+
+   .get-quote-content {
+      flex-direction: row;
+   }
+
+   .get-quote-content-img {
+      --size: 80px;
+   }
+}
+
+/* cta common section end */
+
+/* =========== Calculetor style =========== */
+
+.calculator-container {
+   border: 1px solid #EDEBE1;
+   border-radius: 8px;
+   width: 100%;
+   padding-block: 73px;
+}
+
+.calculator-header {
+   padding-left: 60px;
+}
+
+.calculator-header h2 {
+   margin: 0 0 18px;
+}
+
+.calculator-header p {
+   font-size: 17px;
+   line-height: 20px;
+}
+
+.tab {
+   padding: 16px 24px;
+   background: #EBE9DE;
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: bold;
+   border-radius: 4px 4px 0 0;
+   min-width: 143px;
+   color: var(--color-brich);
+   margin-top: 24px;
+}
+
+.tab.active {
+   background: var(--section-bg);
+}
+
+.calculator-body {
+   display: flex;
+   flex-wrap: wrap;
+   background: var(--section-bg);
+   padding-block: 48px;
+   padding-left: 60px;
+   padding-right: 120px;
+   gap: 16px;
+}
+
+.form-section {
+   display: flex;
+   width: 100%;
+   gap: 10px;
+}
+
+.form-section span {
+   margin-top: 20px;
+   width: 1px;
+   height: 100%;
+   background-color: #DDDDDD;
+}
+
+.form-inner {
+   max-width: 750px;
+   display: flex;
+   flex-flow: wrap;
+   gap: 20px;
+   align-items: end;
+}
+
+.form-section.active {
+   display: flex;
+}
+
+.input-group {
+   max-width: 213px;
+}
+
+.input-group label {
+   font-size: 18px;
+   line-height: 21.6px;
+   display: block;
+   margin-bottom: 10px;
+   font-weight: 600;
+}
+
+.input-group input {
+   width: 100%;
+   padding: 10px;
+   border-radius: 6px;
+   border: 1px solid #e0e0e0;
+   font-size: 16px;
+}
+
+.output {
+   margin-left: auto;
+}
+
+.output-label {
+   font-size: 18px;
+   line-height: 21px;
+}
+
+.output-value {
+   color: var(--color-primary);
+   font-size: 54px;
+   line-height: 52.8px;
+   font-weight: bold;
+   margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+   .calculator-container {
+      padding-block: 28px;
+   }
+
+   .calculator-header {
+      padding-left: 20px;
+   }
+
+   .calculator-body {
+      padding-block: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+
+   .form-section {
+      flex-direction: column;
+   }
+
+   .form-section .form-inner {
+      order: 2;
+      width: 100%;
+   }
+
+   .form-section .output {
+      order: 1;
+      width: 100%;
+   }
+
+   .output-value {
+      font-size: 40px;
+      line-height: 46px;
+   }
+
+   .input-group {
+      max-width: 100%;
+      width: 100%;
+   }
+}
+
+@media only screen and (min-width:769px) {
+   .tabs {
+      padding: 0 24px;
+   }
+}
+
+
+/* support box common section start */
+.common-wrap-form .support-box {
+   max-width: 600px;
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: 80px;
+
+}
+
+.support-box .support-text {
+   font-size: 18px;
+   line-height: 25px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+.support-box .support-text a {
+   color: var(--color-primary-extra-light);
+}
+
+.support-box img {
+   max-width: 14px;
+}
+
+/* support box common section end */
+/* ====== form section ===== */
+
+
+.common-wrap-form {
+   padding-block: 32px;
+}
+
+.common-wrap-form .common-wrap {
+   max-width: 805px;
+}
+
+.form-box {
+   background: #ffffff;
+   border: 1px solid #EDEBE1;
+   border-radius: 10px;
+   padding: 30px;
+}
+
+.form-box form {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 20px;
+}
+
+.form-group {
+   display: flex;
+   flex-direction: column;
+}
+
+.form-group.full {
+   grid-column: 1 / -1;
+}
+
+.form-box label {
+   margin-bottom: 6px;
+   font-weight: bold;
+   color: #48432C;
+   text-align: left;
+}
+
+input,
+textarea {
+   padding: 12px;
+   font-size: 15px;
+   border: 1px solid #EDEBE1;
+   border-radius: 8px;
+   background-color: rgba(255, 255, 255, 0.247);
+   resize: vertical;
+}
+
+.submit-btn {
+   grid-column: 1 / -1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+}
+
+.submit-btn:hover {
+   background-color: #015a3b;
+}
+
+@media only screen and (min-width:769px) {
+   .form-box form {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .common-wrap-form {
+      padding-block: 90px;
+   }
+}
+
+/* home form */
+
+
+
+/* responsive  */
+@media only screen and (min-width:769px) {
+
+   /* varibale */
+   :root {
+      --fs-h1: 32px;
+      --lh-h1: 38px;
+      --fs-h2: 22px;
+      --lh-h2: 28px;
+      --fs-h3: 20px;
+      --lh-h3: 26px;
+      --fs-h4: 18px;
+      --lh-h4: 22px;
+      --fs-h5: 16px;
+      --lh-h5: 20px;
+      --fs-label: 15px;
+      --lh-label: 18px;
+      --btn-font-size: 16px;
+      --btn-line-height: 20px;
+      --btn-padding: 16px;
+      --btn-min-width: 150px;
+   }
+
+   /* body typorgraphy */
+
+   body {
+      --body-text: 16px;
+      --body-line-height: 22.4px;
+   }
+
+   /* header section start */
+   .header-wrap {
+      padding: 24px 0 30px;
+   }
+
+   /* header section end */
+   /* navigation section style start */
+   .nav-wrap ul a {
+      padding-block: 16px 15px;
+   }
+
+   /* navigation section style end */
+   /* common hero section style start */
+   .hero-section {
+      --space-y: 48px;
+      --space-b: 45px;
+   }
+
+   .hero-section .common-wrap {
+      flex-direction: row;
+   }
+
+   .hero-section .content-wraper {
+      max-width: 472px;
+      width: 100%;
+   }
+
+   .hero-section .media {
+      max-width: 676px;
+      width: 100%;
+   }
+
+   .content-wraper .sub-title {
+      margin-bottom: 8px;
+   }
+
+   .content-wraper .title {
+      margin-bottom: 20px;
+   }
+
+   .content-wraper .btn-wraper {
+      margin-top: 30px;
+   }
+
+   .content-wraper .sub-title {
+      font-size: 22px;
+      margin-bottom: 12px;
+   }
+
+   .media img {
+      border-top-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+   }
+
+   /* common hero section style end */
+   /* ====== Mortgages style start ====== */
+   .mortgages-wrap {
+      --space-y: 45px;
+      --space-b: 64px;
+   }
+
+   .mortgages .item {
+      --space-y: 18px;
+      --space-x: 24px;
+   }
+
+   .mortgages .item h3 {
+      text-align: center;
+   }
+
+   .item a {
+      font-size: 16px;
+      line-height: 20px;
+   }
+
+   /* ====== Mortgages style end ====== */
+   /* cta common section style start */
+   .cta {
+      --space-y: 56px;
+      --space-b: 52px;
+   }
+
+   .get-quote-inner {
+      --space-y: 32px;
+      --space-x: 26px;
+      flex-direction: row;
+   }
+
+   .get-quote-content {
+      flex-direction: row;
+   }
+
+   .get-quote-content-inner {
+      align-items: start;
+      text-align: left;
+   }
+
+   /* cta common section style end */
+}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width:1025px) {
+
+   /* varibale */
+   :root {
+      --fs-h1: 42px;
+      --lh-h1: 46.2px;
+      --fs-h2: 26px;
+      --lh-h2: 33.8px;
+      --fs-h3: 24px;
+      --lh-h3: 31.2px;
+      --fs-h4: 20px;
+      --lh-h4: 24px;
+      --fs-h5: 18px;
+      --lh-h5: 21.6px;
+      --fs-label: 17px;
+      --lh-label: 20.4px;
+      --btn-font-size: 18px;
+      --btn-line-height: 21.6px;
+      --btn-padding: 18px;
+      --btn-min-width: 176px;
+   }
+
+   /* body typorgraphy */
+   body {
+      --body-text: 17px;
+      --body-line-height: 23.8px;
+   }
+
+   /* header section start */
+   .header-wrap {
+      padding: 35px 0 39px;
+   }
+
+   /* header section end */
+   /* common hero section start */
+   .hero-section {
+      --space-y: 64px;
+      --space-b: 57px;
+   }
+
+   /* common hero section end */
+   /* ====== Mortgages style start ====== */
+   .mortgages-wrap {
+      --space-y: 57px;
+      --space-b: 93px;
+   }
+
+   .mortgages {
+      --gap: 48px;
+   }
+
+   .mortgages .item {
+      --space-y: 26px;
+      --space-x: 36px;
+   }
+
+   .item a {
+      font-size: 20px;
+      line-height: 24px;
+   }
+
+   /* ====== Mortgages style end ====== */
+   /* cta common section style start */
+   .cta {
+      --space-y: 80px;
+      --space-b: 73px;
+   }
+
+   .get-quote-inner {
+      --space-y: 38px;
+      --space-x: 34px;
+   }
+
+   /* cta common section style end */
+}

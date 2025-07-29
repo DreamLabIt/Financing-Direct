@@ -373,7 +373,7 @@ label {
  .common-faq-section{
   padding-top: 50px;
   padding-bottom: 60px;
-  background-color: #F7F6F2;
+  background-color: var(--section-bg);
  }
  .common-faq-wrap h2{
       color: #007c5d;
@@ -573,7 +573,15 @@ label {
 
 
 /* ====== Common form section ===== */
+
 .common-form-section{
+    padding-block: 20px;
+  }
+  .common-form-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+.common-form-wrap{
   padding-top: 90px;
   padding-bottom: 90px;
   max-width: 805px;
@@ -581,35 +589,26 @@ label {
   background: #ffffff;
   border: 1px solid #EDEBE1;
   border-radius: 10px;
-  padding: 20px;
+  padding-inline: 12px;
+  padding-block: 20px;
 }
 
-.common-form-content {
-    padding-bottom: 40px;
-  }
+
 .common-form-content p{
   margin-bottom: 5px;
 }
 
 .common-form-wrap form {
-  display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
 }
 
-.common-form-wrap .common-form-group {
-  display: flex;
-  flex-direction: column;
-}
 
 .common-form-wrap .common-form-group.wrap {
   grid-column: 1 / -1; 
 }
 
 .common-form-wrap label {
-  font-size: 17px;
   margin-bottom: 6px;
-  font-weight: bold;
   color: #48432C;
   text-align: left;
 }
@@ -617,7 +616,6 @@ label {
 .common-form-wrap input,
 textarea {
   padding: 12px;
-  font-size: 15px;
   border: 1px solid #EDEBE1;
   border-radius: 8px;
   background-color: #FAF9F7;
@@ -634,8 +632,8 @@ textarea {
   color: white;
   border: none;
   border-radius: 8px;
-  font-weight: bold;
-  font-size: 19px;
+  font-weight: 600;
+  font-size: 18px;
   line-height: 22.8px;
   cursor: pointer;
   transition: 0.3s ease-in;
@@ -651,11 +649,20 @@ textarea {
 }
 
 @media (min-width: 769px){
+  .common-form-wrap{
+    padding-inline: 28px;
+    padding-block: 32px;
+  }
   .common-form-wrap form{
     grid-template-columns: repeat(2, 1fr);
   }
+  
   .common-form-section{
-    padding: 30px;
+    padding-block: 30px;
+  }
+  .common-form-content {
+    padding-top: 20px;
+    padding-bottom: 40px;
   }
 }
 
@@ -909,6 +916,7 @@ textarea {
     /* =========== Calculetor style =========== */
 
     .calculator-container {
+      background-color: var(--section-bg);
         border: 1px solid var(--border-color);
         border-radius: 8px;
         width: 100%;
@@ -1012,7 +1020,7 @@ textarea {
     }
 
     .calculate-btn {
-      background: var(--background-green);
+      background: var(--color-primary-dark);
       color: #fff;
       padding: 12px 24px;
       border: none;

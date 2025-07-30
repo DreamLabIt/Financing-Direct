@@ -40,13 +40,21 @@
     // client testimonial slider start
   const swiper = new Swiper('.testimonial-swiper', {
     loop: true,
+<<<<<<< HEAD
     spaceBetween: 20, // 20px gap between slides
+=======
+    spaceBetween: 20,
+>>>>>>> dev-rafi
 
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
+<<<<<<< HEAD
      navigation: {
+=======
+    navigation: {
+>>>>>>> dev-rafi
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },

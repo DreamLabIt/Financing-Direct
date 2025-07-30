@@ -6,7 +6,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>about-shay-wright</title>
    <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
+<<<<<<< HEAD
    <link rel="stylesheet" href="./assets/css/style.css">
+=======
+   <link rel="stylesheet" href="./assets/css/final.css">
+   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+>>>>>>> dev-rafi
    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
 </head>
 
@@ -14,11 +19,16 @@
    <?php include 'header.php'; ?>
    <!-- hero section start -->
    <section class="hero-section">
+<<<<<<< HEAD
       <div class="common-wrap d-flex justify-between">
+=======
+      <div class="common-wrap d-flex justify-between gap-20">
+>>>>>>> dev-rafi
          <div class="content-wraper">
             <p class="sub-title">About Me</p>
             <h1 class="title">Meet Shay Wright</h1>
             <p class="content">“I’m very passionate about helping borrowers not only achieve their homeownership goals but to also get the absolute lowest interest rate and best overall mortgage for their situation”.</p>
+<<<<<<< HEAD
             <div class="btn-wraper">
                <a class="btn btn-primary" href="#">Book a Call</a>
             </div>
@@ -28,13 +38,25 @@
             <div class="media-shape">
                <img src="./assets/images/about-shay-wright-shape.png" alt="about-shay-wright-shape">
             </div>
+=======
+            <div class="btn-wraper d-flex flex-wrap gap-20">
+               <a class="btn btn-primary" href="#">Book a Call</a>
+            </div>
+         </div>
+         <div class="media d-flex item-end flex-col">
+            <img src="./assets/images/about-shay-wright-video.png" alt="about-shay-wright-video">
+>>>>>>> dev-rafi
          </div>
       </div>
    </section>
    <!-- hero section start -->
    <!-- shay wright section start -->
    <section class="shay-wright-section">
+<<<<<<< HEAD
       <div class="common-wrap d-flex justify-between">
+=======
+      <div class="common-wrap d-flex justify-between flex-col">
+>>>>>>> dev-rafi
          <div class="about-shay-wright item-start d-flex flex-wrap justify-between">
             <div class="author-img d-flex flex-col">
                <img src="./assets/images/shay-wright-sm.jpg" alt="author img">
@@ -90,6 +112,7 @@
          </div>
       </div>
    </section>
+<<<<<<< HEAD
    <!-- <section class="quote-section">
       <div class="common-wrap">
          <div class="quote-content-wrapper">
@@ -106,6 +129,11 @@
    <!-- quote section end -->
    <!-- big card section start -->
    <section class="card-section">
+=======
+   <!-- quote section end -->
+   <!-- big card section start -->
+   <section class="blog-post-section">
+>>>>>>> dev-rafi
       <div class="common-wrap">
          <div class="card-wrapper d-flex flex-col">
             <div class="card d-flex justify-between gap-24">
@@ -158,7 +186,11 @@
          <div class="support-box">
             <h2 class="support-title">Let’s Connect</h2>
             <p class="support-text">Interested in learning more about the mortgage services I offer? Please feel free to call or text me anytime at <a href="tel:5124688261">(512) 468-8261</a> or email me at <a href="shay@homefinancingdirect.com">shay@homefinancingdirect.com</a>. You can also book a call with me.</p>
+<<<<<<< HEAD
             <div class="btn-wrapper">
+=======
+            <div class="btn-wrapper d-flex flex-wrap justify-center gap-10">
+>>>>>>> dev-rafi
                <a class="btn btn-primary" href="#">Book a Call</a>
                <a class="btn btn-border" href="#">Send a Referral</a>
             </div>

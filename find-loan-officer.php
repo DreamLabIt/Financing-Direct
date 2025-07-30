@@ -5,10 +5,15 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>find-loan-officer</title>
+<<<<<<< HEAD
    <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
    <link rel="stylesheet" href="./assets/css/style.css">
    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+=======
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="./assets/css/final.css">
+>>>>>>> dev-rafi
 </head>
 
 <body>

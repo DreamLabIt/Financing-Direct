@@ -13,6 +13,7 @@
 <body class="about-shay">
    <?php include 'header.php'; ?>
    <!-- mortgage calculator section start -->
+<<<<<<< HEAD
    <section class="calculator-section">
       <div class="common-wrap">
          <div class="calculator-container">
@@ -98,6 +99,9 @@
       </div>
    </section>
    <!-- mortgage calculator section end -->
+=======
+   <?php include "calculator.php"; ?>
+>>>>>>> dev-rafi
    <?php include 'footer-simple.php'; ?>
    <!-- footer section end -->
    <script src="./script.js"></script>

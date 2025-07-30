@@ -5,22 +5,34 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>zero-down-mortgages</title>
+<<<<<<< HEAD
    <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
    <link rel="stylesheet" href="./assets/css/style.css">
    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+=======
+   <link rel="stylesheet" href="./assets/css/final.css">
+>>>>>>> dev-rafi
 </head>
 
 <body class="about-shay">
    <?php include 'header.php'; ?>
    <!-- hero section start -->
    <section class="hero-section">
+<<<<<<< HEAD
       <div class="common-wrap d-flex justify-between item-center">
+=======
+      <div class="common-wrap d-flex justify-between gap-20">
+>>>>>>> dev-rafi
          <div class="content-wraper">
             <p class="sub-title">Buy a home with zero down</p>
             <h1 class="title">Zero Down Mortgages</h1>
             <p class="content">We’re proud to offer some of the best zero down mortgage options on the market. Our zero down products include FHA, VA, and USDA loans to fit the specific needs and circumstances of each borrower.</p>
          </div>
+<<<<<<< HEAD
          <div class="media">
+=======
+         <div class="media d-flex item-end flex-col">
+>>>>>>> dev-rafi
             <img src="./assets/images/rate-quote-purchase.jpg" alt="rate quote purchase">
          </div>
       </div>

@@ -5,9 +5,13 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>thank-you</title>
+<<<<<<< HEAD
    <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
    <link rel="stylesheet" href="./assets/css/style.css">
    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+=======
+   <link rel="stylesheet" href="./assets/css/final.css">
+>>>>>>> dev-rafi
 </head>
 
 <body class="about-shay">

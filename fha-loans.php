@@ -5,16 +5,24 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>FHA loan</title>
+<<<<<<< HEAD
    <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
    <link rel="stylesheet" href="./assets/css/style.css">
    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+=======
+   <link rel="stylesheet" href="./assets/css/final.css">
+>>>>>>> dev-rafi
 </head>
 
 <body>
    <?php include 'header.php'; ?>
    <!-- hero section start -->
    <section class="hero-section">
+<<<<<<< HEAD
       <div class="common-wrap d-flex justify-between item-center">
+=======
+      <div class="common-wrap d-flex justify-between gap-20">
+>>>>>>> dev-rafi
          <div class="content-wraper">
             <p class="sub-title">The lowest rates & fees</p>
             <h1 class="title">FHA Mortgages</h1>
@@ -23,11 +31,16 @@
                <a class="btn btn-primary" href="#">Get a Rate Quote</a>
             </div>
          </div>
+<<<<<<< HEAD
          <div class="media">
             <img src="./assets/images/happy-fha-mortgage-family.jpg" alt="happy fha mortgage family">
             <!-- <div class="media-shape">
                <img src="./assets/images/about-shay-wright-shape.png" alt="about-shay-wright-shape">
             </div> -->
+=======
+         <div class="media d-flex item-end flex-col">
+            <img src="./assets/images/happy-fha-mortgage-family.jpg" alt="happy fha mortgage family">
+>>>>>>> dev-rafi
          </div>
       </div>
    </section>
@@ -123,6 +136,107 @@
    </section>
    <!-- benefit fha mortgage section end -->
 
+<<<<<<< HEAD
+=======
+   <!-- ============================= FHA loon rate section start ========================== -->
+
+
+   <section class="mortgage-rates">
+      <div class="mortgage-rates-inner">
+         <div class="exceptional-title">
+            <h2>FHA Loan Limits</h2>
+            <p>The following are the loan limits for most counties in Texas with a few exceptions. Look up the FHA loan limit for a specific county in Texas.</p>
+         </div>
+         <div class="rate-box">
+            <div class="rate-row rate-box-head">
+               <div class="rate-col">
+                  <h5>Single Family</h5>
+               </div>
+               <div class="rate-col">
+                  <h5>Duplex</h5>
+               </div>
+               <div class="rate-col">
+                  <h5>Triplex</h5>
+               </div>
+               <div class="rate-col">
+                  <h5>Fourplex</h5>
+               </div>
+            </div>
+            <div class="rate-box-body ">
+               <div class="rate-row">
+                  <div class="rate-col">
+                     <p>$571,550</p>
+                  </div>
+                  <div class="rate-col">
+                     <p>$731,700</p>
+                  </div>
+                  <div class="rate-col">
+                     <p>$884,450</p>
+                  </div>
+                  <div class="rate-col">
+                     <p>$1,099,150</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <br>
+   <br>
+
+
+   <section class="down-pament-rates">
+      <div class="mortgage-rates-inner">
+         <div class="exceptional-title">
+            <h2>Down Payment Requirements</h2>
+            <p>The following are our minimum FHA down payment amounts based on credit score.</p>
+         </div>
+         <div class="rate-box">
+            <div class="rate-row rate-box-head">
+               <div class="rate-col">
+                  <h5>Credit Score</h5>
+               </div>
+               <div class="rate-col">
+                  <h5>Minimum Down</h5>
+               </div>
+            </div>
+            <div class="rate-box-body ">
+               <div class="rate-row">
+                  <div class="rate-col">
+                     <p>600+</p>
+                  </div>
+                  <div class="rate-col">
+                     <p>0.0%</p>
+                  </div>
+               </div>
+               <div class="rate-row">
+                  <div class="rate-col">
+                     <p>580+</p>
+                  </div>
+                  <div class="rate-col">
+                     <p>3.5%</p>
+                  </div>
+               </div>
+               <div class="rate-row">
+                  <div class="rate-col">
+                     <p>500-579</p>
+                  </div>
+                  <div class="rate-col">
+                     <p>10%</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <p class="note">* Please note that the 0% down payment option will result in an interest rate that is about 1% higher than the 3.5% down option.</p>
+      </div>
+   </section>
+
+
+   <!-- ============================= FHA loon rate section end ========================== -->
+
+>>>>>>> dev-rafi
 
    <!-- ============================ FAQ section start ============================ -->
 

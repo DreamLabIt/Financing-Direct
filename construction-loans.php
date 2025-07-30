@@ -6,7 +6,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>construction-loans</title>
    <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
+<<<<<<< HEAD
    <link rel="stylesheet" href="./assets/css/style.css">
+=======
+   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+   <link rel="stylesheet" href="./assets/css/final.css">
+>>>>>>> dev-rafi
    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
 </head>
 
@@ -14,13 +19,21 @@
    <?php include 'header.php'; ?>
    <!-- hero section start -->
    <section class="hero-section">
+<<<<<<< HEAD
       <div class="common-wrap d-flex justify-between item-center">
+=======
+      <div class="common-wrap d-flex justify-between gap-20">
+>>>>>>> dev-rafi
          <div class="content-wraper">
             <p class="sub-title">0% and 5% Doawn Options</p>
             <h1 class="title">One-Time Close Construction Loans</h1>
             <p class="content">We are proud to offer the best new construction loans in the industry for both conventional and VA loans.</p>
          </div>
+<<<<<<< HEAD
          <div class="media">
+=======
+         <div class="media d-flex item-end flex-col">
+>>>>>>> dev-rafi
             <img src="./assets/images/happy-fha-mortgage-family.jpg" alt="happy fha mortgage family">
          </div>
       </div>
@@ -117,6 +130,52 @@
       </div>
    </section>
    <!-- benefit fha mortgage section end -->
+<<<<<<< HEAD
+=======
+   <!-- ============================ loan parameters section start ========================= -->
+
+   <section class="parameters-wrap">
+      <div class="common-wrap">
+         <div class="parameters d-flex flex-wrap flex-col justify-between">
+            <div class="parameters-item">
+               <h2>Conventional</h2>
+               <p>Loan Parameters</p>
+               <div class="parameters-links d-flex flex-wrap flex-col justify-between gap-10">
+                  <ul>
+                     <li>15 yr fixed and 30 yr fixed</li>
+                     <li>7 yr ARM and 10 yr ARM</li>
+                     <li>Primary, second & investment homes</li>
+                  </ul>
+                  <ul>
+                     <li>Max loan amount of $806,500</li>
+                     <li>Minimum credit score of 700</li>
+                     <li>Minimum down payment of 5%</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="border"></div>
+            <div class="parameters-item">
+               <h2>VA <span>(active military or veteran)</span></h2>
+               <p>Loan Parameters</p>
+               <div class="parameters-links d-flex flex-wrap flex-col justify-between gap-10">
+                  <ul>
+                     <li>30 yr fixed</li>
+                     <li>Primary residence only</li>
+                     <li>Max loan amount of $4 million</li>
+                  </ul>
+                  <ul>
+                     <li>Minimum credit score of 580</li>
+                     <li>Minimum down payment of 0%</li>
+                     <li>No owner builders</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ============================ loan parameters section end ========================= -->
+>>>>>>> dev-rafi
 
    <!-- ============================ FAQ section start ============================ -->
 

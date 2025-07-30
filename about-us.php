@@ -6,7 +6,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>about us</title>
    <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
+<<<<<<< HEAD
    <link rel="stylesheet" href="./assets/css/style.css">
+=======
+   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+   <link rel="stylesheet" href="./assets/css/final.css">
+>>>>>>> dev-rafi
    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
 </head>
 
@@ -15,13 +20,21 @@
 
    <!-- hero section start -->
    <section class="hero-section">
+<<<<<<< HEAD
       <div class="common-wrap d-flex justify-between">
+=======
+      <div class="common-wrap d-flex justify-between gap-20">
+>>>>>>> dev-rafi
          <div class="content-wraper">
             <p class="sub-title">Your mortgage partner</p>
             <h1 class="title">About Us</h1>
             <p class="content">Our company was built on the principles of trust, integrity, and customer-centric service, and we are committed to offering our clients the best mortgage options on the market.</p>
          </div>
+<<<<<<< HEAD
          <div class="media">
+=======
+         <div class="media d-flex item-end flex-col">
+>>>>>>> dev-rafi
             <img src="./assets/images/texas-mortgage-company.jpg" alt="about-shay-wright-video">
          </div>
       </div>
@@ -29,7 +42,11 @@
    <!-- hero section start -->
 
    <!-- big card section start -->
+<<<<<<< HEAD
    <section class="card-section">
+=======
+   <section class="blog-post-section">
+>>>>>>> dev-rafi
       <div class="common-wrap">
          <div class="card-wrapper d-flex flex-col">
             <div class="card d-flex justify-between gap-24">

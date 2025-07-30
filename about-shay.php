@@ -6,7 +6,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>about-shay</title>
    <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
+<<<<<<< HEAD
    <link rel="stylesheet" href="./assets/css/style.css">
+=======
+   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+   <link rel="stylesheet" href="./assets/css/final.css">
+>>>>>>> dev-rafi
    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
 </head>
 
@@ -61,7 +66,11 @@
    <!-- quote section end -->
 
    <!-- big card section start -->
+<<<<<<< HEAD
    <section class="card-section">
+=======
+   <section class="blog-post-section">
+>>>>>>> dev-rafi
       <div class="common-wrap">
          <div class="card-wrapper d-flex flex-col">
             <div class="card d-flex justify-between gap-24">

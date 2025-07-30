@@ -14,7 +14,11 @@
              </div>
              <div class="d-flex flex-col gap-24">
                 <address>11701 FM Rd 2244 Suite 140<br> Austin, TX 78738</address>
+<<<<<<< HEAD
                 <div>
+=======
+                <div class="d-flex flex-col">
+>>>>>>> dev-rafi
                    <a class="phone" href="tel:512-593-4157">(512) 593-4157</a>
                    <a class="email" href="mailto:info@homefinancingdirect.com">info@homefinancingdirect.com</a>
                 </div>
@@ -22,7 +26,11 @@
           </div>
           <div class="footer-links d-flex flex-col gap-10">
              <h5>Quick Links</h5>
+<<<<<<< HEAD
              <div class="footer-link-wrap d-flex flex-col">
+=======
+             <div class="footer-link-wrap d-flex flex-col gap-10">
+>>>>>>> dev-rafi
                 <ul>
                    <li><a href="mortgage-rates-today">Mortgage Rates</a></li>
                    <li><a href="get-preapproved">Get Preapproved</a></li>

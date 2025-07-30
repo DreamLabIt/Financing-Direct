@@ -597,8 +597,11 @@ label {
 /* about shay-wright page start */
 
 /* common hero section star */
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> dev-rafi
 .hero-section {
   --space-y: 32px;
   --space-b: 32px;
@@ -1119,7 +1122,11 @@ textarea {
     padding-right: 120px;
   }
 } */
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> dev-rafi
 /* =========== Calculetor style =========== */
 
 .calculator-container {
@@ -1885,6 +1892,10 @@ textarea {
 }
 
 /* let connect end */
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev-rafi
 /* fha mortgages page  start*/
 .info-section {
   padding: 40px 0;

@@ -5,16 +5,24 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>learning-center</title>
+<<<<<<< HEAD
    <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
    <link rel="stylesheet" href="./assets/css/style.css">
    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+=======
+   <link rel="stylesheet" href="./assets/css/final.css">
+>>>>>>> dev-rafi
 </head>
 
 <body>
    <?php include 'header.php'; ?>
    <!-- hero section start -->
    <section class="hero-section learning-center">
+<<<<<<< HEAD
       <div class="common-wrap">
+=======
+      <div class="common-wrap d-flex justify-center item-center text-center">
+>>>>>>> dev-rafi
          <div class="content-wraper">
             <p class="sub-title">Helpful advise & insights</p>
             <h1 class="title">Mortgage Learning Center</h1>

@@ -4,16 +4,13 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>about us</title>
-   <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
-   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+   <title>Financing Direct | about us</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
    <link rel="stylesheet" href="./assets/css/final.css">
-   <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
 </head>
 
 <body class="about-us">
    <?php include 'header.php'; ?>
-
    <!-- hero section start -->
    <section class="hero-section">
       <div class="common-wrap d-flex justify-between gap-20">
@@ -27,13 +24,12 @@
          </div>
       </div>
    </section>
-   <!-- hero section start -->
-
+   <!-- hero section end -->
    <!-- big card section start -->
    <section class="blog-post-section">
       <div class="common-wrap">
          <div class="card-wrapper d-flex flex-col">
-            <div class="card d-flex justify-between gap-24">
+            <div class="card horijontal-card d-flex justify-between gap-24">
                <div class="card-content d-flex flex-col">
                   <div class="card-title-wrap d-flex item-center">
                      <div class="card-title-img">
@@ -51,16 +47,51 @@
                   <img src="./assets/images/community-service.jpg" alt="community-service">
                </div>
             </div>
+
             <!-- quote section start -->
-            <section class="quote-section">
+            <div class="quote-section">
                <div class="common-wrap">
                   <div class="quote-content-wrapper">
                      <h4 class="">My goal is to help my clients obtain the very best mortgage for their specific situation and to lock in the lowest interest rate on the market for them all while delivering the most exceptional service in the business!</h4>
                   </div>
                </div>
-            </section>
+            </div>
             <!-- quote section end -->
-            <div class="card d-flex justify-between gap-24">
+            <div class="card horijontal-card d-flex justify-between gap-24">
+               <div class="card-content d-flex flex-col">
+                  <div class="card-title-wrap d-flex item-center">
+                     <div class="card-title-img">
+                        <img src="./assets/images/interest-icon.png" alt="interest icon">
+                     </div>
+                     <h3 class="card-title h2">Interest & Hobbies</h3>
+                  </div>
+                  <div class="card-body">
+                     <p>Outside of my professional life, I enjoy running, weightlifting, basketball, hiking, swimming, silent disco, and spending quality time with family and friends.</p>
+                     <p>I am a sports enthusiast who enjoys watching most every sport, but my favorite sport to watch is college football.</p>
+                  </div>
+               </div>
+               <div class="card-img d-flex">
+                  <img src="./assets/images/running.jpg" alt="running">
+               </div>
+            </div>
+            <div class="card horijontal-card d-flex justify-between gap-24">
+               <div class="card-content d-flex flex-col">
+                  <div class="card-title-wrap d-flex item-center">
+                     <div class="card-title-img">
+                        <img src="./assets/images/interest-icon.png" alt="interest icon">
+                     </div>
+                     <h3 class="card-title h2">Interest & Hobbies</h3>
+                  </div>
+                  <div class="card-body">
+                     <p>Outside of my professional life, I enjoy running, weightlifting, basketball, hiking, swimming, silent disco, and spending quality time with family and friends.</p>
+                     <p>I am a sports enthusiast who enjoys watching most every sport, but my favorite sport to watch is college football.</p>
+                  </div>
+               </div>
+               <div class="card-img d-flex">
+                  <img src="./assets/images/running.jpg" alt="running">
+               </div>
+            </div>
+            <div class="card horijontal-card d-flex justify-between gap-24">
                <div class="card-content d-flex flex-col">
                   <div class="card-title-wrap d-flex item-center">
                      <div class="card-title-img">
@@ -81,9 +112,10 @@
       </div>
    </section>
    <!-- big card section end -->
-
    <?php include 'footer-simple.php'; ?>
    <!-- footer section end -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
    <script src="./script.js"></script>
 
 </body>

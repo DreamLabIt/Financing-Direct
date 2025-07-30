@@ -4,12 +4,10 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>buy-before-you-sell</title>
+   <title>Financing Direct | buy-before-you-sell</title>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-   <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
-   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
    <link rel="stylesheet" href="./assets/css/final.css">
-   <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+
 </head>
 
 <body>
@@ -23,12 +21,11 @@
             <p class="content">With our program, you can buy your next home and move into it before selling your current home. You no longer need to move twice, make contingent offers, or even show your current home while living in it!</p>
          </div>
          <div class="media d-flex item-end flex-col">
-            <img src="./assets/images/buy-before-sell-couple.jpg" alt="buy before sell">
+            <img src="./assets/images/buy-before-sell-couple.png" alt="buy before sell">
          </div>
       </div>
    </section>
-   <!-- hero section start -->
-
+   <!-- hero section end -->
    <!-- basic loan section start -->
    <section class="basic-loan info-section">
       <div class="common-wrap d-flex flex-col gap-24">
@@ -120,12 +117,11 @@
    </section>
    <!-- benefit fha mortgage section end -->
    <!-- ============================ FAQ section start ============================ -->
-
    <section class="common-faq-section">
       <div class="common-wrap common-faq-wrap">
          <h2>Construction Loan FAQs</h2>
          <p class="subtitle">Answers to commonly asked questions about our one-time close construction loans.</p>
-         <div class="d-flex gap-10 common-faq">
+         <div class="d-flex gap-10 common-faq flex-col">
             <div class="d-flex flex-col gap-10">
                <div class="common-faq-item">
                   <div class="question">
@@ -187,17 +183,15 @@
       </div>
    </section>
    <!-- common faq end -->
-
    <!-- cta section start -->
    <section class="cta">
       <?php include 'cta.php'; ?>
    </section>
    <!-- cta section end -->
-
-   <!-- common form section start  -->
-   <section class=" common-wrap-form">
+   <!-- support box section start -->
+   <section class="support-box-section">
       <div class="common-wrap">
-         <div class="support-box">
+         <div class="support-box text-center">
             <h2 class="support-title">We’re Here to Help</h2>
             <p class="support-text">Have a mortgage related question? Looking for additional information about our mortgage products and services? Please reach out to us anytime!</p>
             <button class="support-btn btn">
@@ -206,45 +200,45 @@
          </div>
       </div>
    </section>
-   <section class="common-form-section">
+   <!-- support box section end -->
+
+   <!-- form section start -->
+   <section class="form-section">
       <div class="common-wrap">
-         <div class="common-form-wrap">
-            <div class="common-form d-flex flex-col">
-               <form class="grid gap-20">
-                  <div class="common-form-group d-flex flex-col">
-                     <label for="name">Name</label>
-                     <input type="text" id="name">
-                  </div>
-                  <div class="common-form-group d-flex flex-col">
-                     <label for="email">Email</label>
-                     <input type="email" id="email">
-                  </div>
-                  <div class="common-form-group d-flex flex-col">
-                     <label for="phone">Phone</label>
-                     <input type="text" id="phone">
-                  </div>
-                  <div class="common-form-group d-flex flex-col">
-                     <label for="contact">Preferred Method of Contact</label>
-                     <input type="text" id="contact">
-                  </div>
-                  <div class="common-form-group d-flex flex-col wrap">
-                     <label for="message">Question or Comment</label>
-                     <textarea id="message" rows="5"></textarea>
-                  </div>
-                  <button type="submit" class="submit-btn"><img src="./assets/images/send-icon.png" alt="send icon"> SEND</button>
-               </form>
+         <form action="" class="common-form d-flex flex-col gap-20">
+            <div class="form-item-wrap grid">
+               <div class="form-item d-flex flex-col">
+                  <label for="name">Name</label>
+                  <input type="text" id="name">
+               </div>
+               <div class="form-item d-flex flex-col">
+                  <label for="email">Email</label>
+                  <input type="text" id="email">
+               </div>
+               <div class="form-item d-flex flex-col">
+                  <label for="phone">Phone</label>
+                  <input type="text" id="phone">
+               </div>
+               <div class="form-item d-flex flex-col">
+                  <label for="preferred_method">Preferred Method of Contact</label>
+                  <input type="text" id="preferred_method">
+               </div>
+               <div class="form-item form-full-width d-flex flex-col">
+                  <label for="comment">Question or Comment</label>
+                  <textarea name="" id="comment"></textarea>
+               </div>
+               <div class="form-item form-submit form-full-width d-flex flex-col">
+                  <button type="submit" class="btn btn-primary d-flex item-center justify-center gap-10"><img src="./assets/images/send-icon.png" alt="send icon"> Get in Touch</button>
+               </div>
             </div>
-         </div>
+         </form>
       </div>
    </section>
-   <!-- common form section end -->
-
-
+   <!-- form section end -->
    <?php include 'client-testimonials.php'; ?>
    <?php include 'footer-simple.php'; ?>
-
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-   <script src="./assets/js/common-scripts.js"></script>
+
    <script src="./script.js"></script>
 
 </body>

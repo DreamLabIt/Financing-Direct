@@ -4,7 +4,8 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>FHA loan</title>
+   <title>Financing Direct | FHA loan</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
    <link rel="stylesheet" href="./assets/css/final.css">
 </head>
 
@@ -22,11 +23,11 @@
             </div>
          </div>
          <div class="media d-flex item-end flex-col">
-            <img src="./assets/images/happy-fha-mortgage-family.jpg" alt="happy fha mortgage family">
+            <img src="./assets/images/fha-loans-mortgages.png" alt="happy fha mortgage family">
          </div>
       </div>
    </section>
-   <!-- hero section start -->
+   <!-- hero section end -->
    <!-- basic loan section start -->
    <section class="basic-loan info-section">
       <div class="common-wrap d-flex flex-col gap-24">
@@ -117,13 +118,10 @@
       </div>
    </section>
    <!-- benefit fha mortgage section end -->
-
    <!-- ============================= FHA loon rate section start ========================== -->
-
-
    <section class="mortgage-rates">
       <div class="mortgage-rates-inner">
-         <div class="exceptional-title">
+         <div class="exceptional-title text-center">
             <h2>FHA Loan Limits</h2>
             <p>The following are the loan limits for most counties in Texas with a few exceptions. Look up the FHA loan limit for a specific county in Texas.</p>
          </div>
@@ -161,15 +159,11 @@
          </div>
       </div>
    </section>
-
-
    <br>
    <br>
-
-
    <section class="down-pament-rates">
       <div class="mortgage-rates-inner">
-         <div class="exceptional-title">
+         <div class="exceptional-title text-center">
             <h2>Down Payment Requirements</h2>
             <p>The following are our minimum FHA down payment amounts based on credit score.</p>
          </div>
@@ -212,18 +206,13 @@
          <p class="note">* Please note that the 0% down payment option will result in an interest rate that is about 1% higher than the 3.5% down option.</p>
       </div>
    </section>
-
-
    <!-- ============================= FHA loon rate section end ========================== -->
-
-
    <!-- ============================ FAQ section start ============================ -->
-
    <section class="common-faq-section">
       <div class="common-wrap common-faq-wrap">
          <h2>FHA Mortgage FAQs</h2>
          <p class="subtitle">Here are the answers to some of the most commonly asked questions about FHA loans.</p>
-         <div class="d-flex gap-10 common-faq">
+         <div class="d-flex gap-10 common-faq flex-col">
             <div class="d-flex flex-col gap-10">
                <div class="common-faq-item">
                   <div class="question">
@@ -285,10 +274,10 @@
       </div>
    </section>
    <!-- common faq end -->
-
    <?php include 'footer-simple.php'; ?>
-
    <!-- footer section end -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
    <script src="./script.js"></script>
 </body>
 

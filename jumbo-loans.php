@@ -4,7 +4,8 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>jumbo loan</title>
+   <title>Financing Direct | jumbo loan</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
    <link rel="stylesheet" href="./assets/css/final.css">
 </head>
 
@@ -26,8 +27,7 @@
          </div>
       </div>
    </section>
-   <!-- hero section start -->
-
+   <!-- hero section end -->
    <!-- basic loan section start -->
    <section class="basic-loan info-section">
       <div class="common-wrap d-flex flex-col gap-24">
@@ -120,14 +120,12 @@
       </div>
    </section>
    <!-- benefit fha mortgage section end -->
-
    <!-- ============================ FAQ section start ============================ -->
-
    <section class="common-faq-section">
       <div class="common-wrap common-faq-wrap">
          <h2>Jumbo Loan FAQs</h2>
          <p class="subtitle">Here are the answers to some of the most commonly asked questions about jumbo loans.</p>
-         <div class="d-flex gap-10 common-faq">
+         <div class="d-flex gap-10 common-faq flex-col">
             <div class="d-flex flex-col gap-10">
                <div class="common-faq-item">
                   <div class="question">
@@ -189,10 +187,10 @@
       </div>
    </section>
    <!-- common faq end -->
-
-
    <?php include 'footer-simple.php'; ?>
    <!-- footer section end -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
    <script src="./script.js"></script>
 </body>
 

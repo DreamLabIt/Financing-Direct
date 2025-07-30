@@ -4,7 +4,8 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>thank-you</title>
+   <title>Financing Direct | thank-you</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
    <link rel="stylesheet" href="./assets/css/final.css">
 </head>
 
@@ -26,11 +27,11 @@
          </div>
       </div>
    </section>
-   <!-- hero section start -->
-
-
+   <!-- hero section end -->
    <?php include 'footer-simple.php'; ?>
    <!-- footer section end -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
    <script src="./script.js"></script>
 </body>
 

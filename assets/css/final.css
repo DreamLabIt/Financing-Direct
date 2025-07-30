@@ -44,6 +44,7 @@
    margin: 0;
    padding: 0;
    border: 0;
+   -webkit-box-sizing: border-box;
    box-sizing: border-box;
 }
 
@@ -123,7 +124,7 @@ h5,
 .h5 {
    font-size: var(--fs-h5);
    line-height: var(--lh-h5);
-   font-weight: var(--fw-normal);
+   font-weight: var(--fw-bold);
    color: var(--color-primary);
 }
 
@@ -135,7 +136,8 @@ label {
 }
 
 input,
-textarea {
+textarea,
+select {
    padding: 12px;
    border: 1px solid #EDEBE1;
    border-radius: 8px;
@@ -144,7 +146,8 @@ textarea {
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
    outline-color: var(--color-primary);
 }
 
@@ -153,8 +156,7 @@ textarea {
    height: 126px;
 }
 
-/* common class*/
-
+/* utility class*/
 .d-flex {
    display: -webkit-box;
    display: -ms-flexbox;
@@ -258,7 +260,6 @@ textarea {
 }
 
 /* component start  */
-
 .grid {
    --grid-column: 1;
    --gap: 20px;
@@ -294,6 +295,8 @@ textarea {
    border-radius: 4px;
    min-width: var(--btn-min-width);
    text-wrap: nowrap;
+   -webkit-transition: all .3s linear;
+   -o-transition: all .3s linear;
    transition: all .3s linear;
 }
 
@@ -320,8 +323,19 @@ textarea {
    padding: 0 12px;
 }
 
-/* header section start */
+section,
+main,
+footer {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding: var(--space-y) 0 var(--space-b);
+}
 
+footer {
+   padding-bottom: 0;
+}
+
+/* header section start */
 .header-wrap {
    padding: 12px 0;
 }
@@ -364,12 +378,8 @@ textarea {
 
 /* navigation section end */
 /* hero component start */
-
 /* hero section start */
 .hero-section {
-   --space-y: 32px;
-   --space-b: 32px;
-   padding: var(--space-y) 0 var(--space-b);
    background-color: var(--section-bg);
 }
 
@@ -408,15 +418,7 @@ textarea {
 }
 
 /* hero section end */
-
 /* cta section start */
-
-.cta {
-   --space-y: 32px;
-   --space-b: 32px;
-   padding-block: var(--space-y) var(--space-b);
-}
-
 .get-quote-inner {
    --space-y: 24px;
    --space-x: 16px;
@@ -449,13 +451,9 @@ textarea {
 }
 
 /* cta section end */
-
 /* support box section start */
 .support-box-section {
-   --space-y: 32px;
-   --space-b: 32px;
    --support-box-container-width: 600px;
-   padding: var(--space-y) 0 var(--space-b);
 }
 
 .support-box-section .common-wrap {
@@ -492,7 +490,6 @@ textarea {
 }
 
 /* support box section start */
-
 /* doubele quote section start */
 .double-quote {
    position: relative;
@@ -530,9 +527,7 @@ textarea {
 }
 
 /* doubele quote section end */
-
 /* testimonial section start*/
-
 .testimonial .testimonial-swiper {
    padding-top: 76px;
 }
@@ -614,12 +609,7 @@ textarea {
 }
 
 /* testimonial section start*/
-
 /* Footer section start */
-.footer {
-   padding-top: 32px;
-}
-
 .footer-top {
    padding: 20px 0;
    background-color: var(--color-primary-light);
@@ -690,11 +680,8 @@ textarea {
 }
 
 /* Footer section start */
-
 /* let connect section start */
 .let-connect {
-   --space-y: 32px;
-   --space-b: 32px;
    --support-box-container-width: 1060px;
    background-color: var(--section-bg);
 }
@@ -705,7 +692,6 @@ textarea {
 
 /* let connect section start */
 /* author info section start */
-
 .about-shay-wright .author-img {
    max-width: 114px;
    width: 100%;
@@ -732,12 +718,15 @@ textarea {
    color: #46432c;
 }
 
+.author-info .author-name {
+   color: var(--color-primary);
+}
+
 .author-title a:last-child {
    color: var(--color-primary-extra-light);
 }
 
 /* author info section start */
-
 /* about shay hero section start */
 .hero-section.about-shay-hero {
    background-image: url(../images/about-shay-bg.png);
@@ -761,20 +750,13 @@ textarea {
 }
 
 /* about shay hero section end */
-
 /* Mortgages style start  */
-.mortgages-wrap {
-   --space-y: 32px;
-   --space-b: 32px;
-   padding: var(--space-y) 0 var(--space-b);
-}
-
 .mortgages .item {
    --space-y: 12px;
    --space-x: 12px;
    background: no-repeat;
+   background-position: top;
    background-size: cover;
-   background-position: center;
    padding: var(--space-y) var(--space-x);
    text-align: center;
    color: var(--color-white);
@@ -803,7 +785,6 @@ textarea {
 }
 
 /* Mortgages style start  */
-
 /* calculetor section style start */
 .calculator-container {
    border: 1px solid #EDEBE1;
@@ -910,13 +891,7 @@ textarea {
 }
 
 /* calculetor section style end */
-
 /* shay wright section style start */
-.shay-wright-section {
-   --space-y: 32px;
-   padding: var(--space-y) 0;
-}
-
 .shay-wright-section .common-wrap {
    gap: 40px;
 }
@@ -926,12 +901,6 @@ textarea {
 }
 
 /* author info section start */
-.author-info-section {
-   --space-y: 32px;
-   --space-b: 32px;
-   padding: var(--space-y) 0 var(--space-b);
-}
-
 .author-info-section .author-img {
    --size: 100px;
    width: var(--size);
@@ -1014,9 +983,14 @@ textarea {
 /* shay wright section style end */
 /* common faq section style start */
 .common-faq-section {
-   --space-y: 32px;
-   --space-b: 32px;
-   padding: var(--space-y) 0 var(--space-b);
+   background-color: #F7F6F2;
+}
+
+.common-faq>* {
+   width: 100%;
+}
+
+.bank-statement-page .common-faq-section {
    background-color: #F7F6F2;
 }
 
@@ -1090,27 +1064,9 @@ textarea {
    display: block;
 }
 
-@media (max-width: 768px) {
-   .common-faq {
-      flex-direction: column;
-   }
-
-   .common-faq-item {
-      width: 100%;
-      padding-block: 12px;
-      padding-left: 20px;
-   }
-}
-
 /* common faq section style end */
 /* shay wright section end */
-
 /* quote section start */
-.quote-section {
-   --space-y: 32px;
-   padding: var(--space-y) 0;
-}
-
 .about-us .quote-section {
    padding: 0;
 }
@@ -1125,6 +1081,7 @@ textarea {
    color: var(--color-text);
    border-top: 1px solid #DDDDDD;
    border-bottom: 1px solid #DDDDDD;
+   border-radius: 0;
 }
 
 .quote-content-wrapper {
@@ -1162,14 +1119,7 @@ textarea {
 }
 
 /* quote section end */
-
 /* form section style start */
-.form-section {
-   --space-y: 32px;
-   --space-b: 32px;
-   padding: var(--space-y) 0 var(--space-b);
-}
-
 .form-section .common-wrap {
    max-width: 744px;
 }
@@ -1198,12 +1148,6 @@ textarea {
 }
 
 /* contact us section start */
-.contact-us {
-   --space-y: 32px;
-   --space-b: 32px;
-   padding: var(--space-y) 0 var(--space-b);
-}
-
 .contact-us .common-form {
    flex-grow: 1;
 }
@@ -1224,7 +1168,8 @@ textarea {
 }
 
 .contact-info img {
-   width: 18px;
+   width: 20px;
+   height: 24px;
 }
 
 .contact-info h3 {
@@ -1236,78 +1181,8 @@ textarea {
 }
 
 /* contact us section end */
-
-@media only screen and (min-width:769px) {
-
-   /* form section start */
-   .form-section {
-      --space-y: 48px;
-      --space-b: 48px;
-   }
-
-   .form-item-wrap {
-      --grid-column: 2;
-      gap: 30px 20px;
-   }
-
-   .common-form {
-      --space: 24px;
-   }
-
-   /* form section end */
-   /* contact us section start */
-   .contact-us {
-      --space-y: 48px;
-      --space-b: 48px;
-   }
-
-   .contact-info {
-      --space: 24px;
-   }
-
-   /* contact us section end */
-}
-
-@media only screen and (min-width:1025px) {
-
-   /* form section start */
-   .common-form {
-      --space: 28px;
-   }
-
-   /* form section end */
-   /* contact us section style start */
-   .contact-us {
-      --space-y: 72px;
-      --space-b: 72px;
-   }
-
-   .contact-us .common-wrap {
-      flex-direction: row;
-   }
-
-   .contact-info {
-      --space: 28px;
-   }
-
-   .contact-us .contact-info {
-      width: 29.919%;
-      align-items: center;
-   }
-
-   /* contact us section style end */
-}
-
 /* form section style end */
-
 /* big card section start */
-
-.blog-post-section {
-   --space-y: 32px;
-   --space-b: 32px;
-   padding: var(--space-y) 0 var(--space-b);
-}
-
 .card-wrapper {
    gap: 40px;
 }
@@ -1315,6 +1190,11 @@ textarea {
 .card.horijontal-card {
    flex-direction: column-reverse;
    gap: 20px;
+}
+
+.card.horijontal-card:nth-child(n+3):not(:last-child) {
+   padding-bottom: 40px;
+   border-bottom: 1px solid #D5D5D5;
 }
 
 .card-content {
@@ -1352,7 +1232,6 @@ textarea {
    line-height: 27px;
 }
 
-
 .card-body p:has(+ p) {
    margin-bottom: 12px;
 }
@@ -1361,45 +1240,8 @@ textarea {
    margin-bottom: 24px;
 }
 
-@media only screen and (min-width:769px) {
-   .card-wrapper {
-      gap: 160px;
-   }
-
-   .card.horijontal-card {
-      gap: 40px 20px;
-      flex-direction: row;
-   }
-
-   .card-content {
-      gap: 30px;
-   }
-
-   .card-body p:has(+ p) {
-      margin-bottom: 23px;
-   }
-
-   .card-body p:has(+ ul) {
-      margin-bottom: 49px;
-   }
-
-   .about-us .card {
-      flex-direction: row-reverse;
-   }
-
-   .about-us .card-wrapper .card:nth-child(even) {
-      flex-direction: row-reverse;
-   }
-}
-
 /* big card section end */
 /* fha mortgages page  start*/
-.info-section {
-   --space-y: 32px;
-   --space-b: 32px;
-   padding: var(--space-y) 0 var(--space-b);
-}
-
 .basic-loan-item {
    padding: 16px;
    border: 1px solid #F5F5F5;
@@ -1423,7 +1265,6 @@ textarea {
 }
 
 /* fha mortgages page  end*/
-
 /* benefit mortgage section start */
 .benefit-mortgage {
    background-image: url(../images/neighborhood-mortgages-bg.jpg);
@@ -1458,11 +1299,6 @@ textarea {
 
 /* benefit mortgage section end */
 /* ========================= loan parameters style start ================== */
-
-.parameters-wrap {
-   padding-block: 20px;
-}
-
 .parameters-wrap .border {
    width: 100%;
    height: 1px;
@@ -1504,42 +1340,8 @@ ol {
    color: var(--color-text);
 }
 
-@media only screen and (min-width:769px) {
-   .parameters-wrap {
-      padding-block: 80px;
-   }
-
-   .parameters-wrap .border {
-      width: 1px;
-      height: unset;
-      margin-inline: 45px;
-   }
-
-   .parameters {
-      flex-direction: row;
-   }
-
-   .parameters-links {
-      row-gap: 0px;
-   }
-
-   .parameters-links ul li {
-      font-size: 16px;
-   }
-
-   .parameters-item h2 {
-      margin-bottom: 5px;
-   }
-
-   .parameters-item p {
-      margin-bottom: 32px;
-   }
-}
-
-
 /* ========================= loan parameters style end ================== */
 /* =============== FHA loan rate style start ================= */
-
 .mortgage-rates-inner {
    max-width: 527px;
    width: 100%;
@@ -1547,7 +1349,6 @@ ol {
 }
 
 .exceptional-title {
-   text-align: center;
    margin-bottom: 24px;
 }
 
@@ -1602,34 +1403,8 @@ ol {
 
 }
 
-
-@media only screen and (min-width:769px) {
-   .mortgage-rates {
-      padding-block: 70px;
-   }
-
-   .exceptional-title {
-      margin-bottom: 48px;
-   }
-
-   .rate-col {
-      padding-block: 14px;
-      padding-inline: 7px;
-   }
-
-   .rate-col h5 {
-      font-size: 18px;
-   }
-
-   .rate-col p {
-      font-size: 18px;
-   }
-
-}
-
 /* =============== FHA loan rate style end ================= */
 /* ================ down-pament-rate style start ================ */
-
 .down-pament-rates .rate-box .rate-row {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
@@ -1640,25 +1415,8 @@ ol {
    padding-left: 30px;
 }
 
-@media only screen and (min-width:769px) {
-   .down-pament-rates {
-      padding-block: 70px;
-   }
-
-   .down-pament-rates .note {
-      font-size: 14px;
-      font-weight: 16.8px;
-      padding: 10px;
-   }
-}
-
 /* ================ down-pament-rate style end ================ */
 /* blog wrap common section start */
-.blog-wrap {
-   --space-y: 32px;
-   padding: var(--space-y) 0;
-}
-
 .blog-item {
    border-radius: 8px;
    border: 1px solid #EEECE3;
@@ -1696,37 +1454,121 @@ ol {
    margin-left: 10px;
 }
 
-@media only screen and (min-width:460px) {
-   .blog-wrap .common-wrap {
-      --grid-column: 2;
-   }
-}
-
-@media only screen and (min-width:769px) {
-   .blog-wrap {
-      --space-y: 40px;
-   }
-
-   .blog-wrap .common-wrap {
-      --grid-column: 3;
-   }
-}
-
-@media only screen and (min-width:1025px) {
-   .blog-wrap {
-      --space-y: 60px;
-   }
-
-   .blog-wrap .common-wrap {
-      --gap: 60px;
-   }
-}
-
 /* blog wrap common section end */
+/* how to apply section start */
+.how-to-apply-page main .common-wrap {
+   max-width: 844px;
+}
 
+.how-to-apply-page .how-to-apply {
+   padding: 0;
+}
+
+.how-to-apply ul li {
+   position: relative;
+   padding-left: 30px;
+}
+
+.how-to-apply ul li::before {
+   content: "";
+   position: absolute;
+   width: 6px;
+   height: 6px;
+   background-color: var(--color-text);
+   border-radius: 50%;
+   left: 0;
+   top: 6px;
+}
+
+.pagination a {
+   color: var(--color-text);
+}
+
+.author-info-wrapper {
+   border: 1px solid #EDEBE1;
+   border-width: 1px 0;
+}
+
+.author-info-wrapper .about-shay-wright {
+   max-width: 100%;
+}
+
+.author-info-wrapper .about-shay-wright {
+   padding-top: 0;
+}
+
+/* how to apply section end */
+/* mortgage section start */
+.mortgage-card {
+   padding: 16px;
+   padding-top: 40px;
+   border-radius: 8px;
+   border: 1px solid #EDEBE1;
+}
+
+.mortgage-card .card-content {
+   gap: 24px;
+}
+
+.mortgage-card .card-body {
+   flex-grow: 1;
+}
+
+.mortgage-card .card-body p:has(+ ul) {
+   margin-bottom: 30px;
+}
+
+.mortgage-card .btn {
+   text-decoration: none;
+}
+
+.mortgage-card .card-body ul {
+   list-style: none;
+}
+
+.mortgage-card .card-body ul li {
+   position: relative;
+   padding-left: 16px;
+}
+
+.mortgage-card .card-body ul li::before {
+   position: absolute;
+   content: "";
+   display: block;
+   width: 12px;
+   height: 12px;
+   background-image: url(../images/yellow-dot.png);
+   background-repeat: no-repeat;
+   left: -6px;
+   top: 6px;
+}
+
+/* mortgage section end */
 /* responsive  */
 @media only screen and (min-width:426px) {
    .benefit-mortgage .basic-loan-card {
+      --grid-column: 2;
+   }
+
+   .footer-middle .common-wrap {
+      --grid-column: 3;
+   }
+
+   .footer-middle .footer-links {
+      grid-column: span 2;
+   }
+
+   .footer-bottom .common-wrap {
+      --grid-column: 3;
+   }
+
+   .footer-bottom p {
+      text-align: left;
+   }
+}
+
+@media only screen and (min-width:460px) {
+   .blog-wrap .common-wrap {
       --grid-column: 2;
    }
 }
@@ -1760,6 +1602,13 @@ ol {
       --body-line-height: 22.4px;
    }
 
+   section,
+   main,
+   footer {
+      --space-y: 48px;
+      --space-b: 48px;
+   }
+
    /* header section start */
    .header-wrap {
       padding: 24px 0 30px;
@@ -1773,11 +1622,6 @@ ol {
 
    /* navigation section style end */
    /* common hero section style start */
-   .hero-section {
-      --space-y: 48px;
-      --space-b: 45px;
-   }
-
    .hero-section .common-wrap {
       flex-direction: row;
    }
@@ -1845,11 +1689,6 @@ ol {
 
    /* common hero section style end */
    /* ====== Mortgages style start ====== */
-   .mortgages-wrap {
-      --space-y: 45px;
-      --space-b: 64px;
-   }
-
    .mortgages .item {
       --space-y: 18px;
       --space-x: 24px;
@@ -1866,11 +1705,6 @@ ol {
 
    /* ====== Mortgages style end ====== */
    /* cta common section style start */
-   .cta {
-      --space-y: 56px;
-      --space-b: 52px;
-   }
-
    .get-quote-inner {
       --space-y: 32px;
       --space-x: 26px;
@@ -1887,7 +1721,6 @@ ol {
    }
 
    /* cta common section style end */
-
    /* testimonial section styel stat */
    .testimonial-item {
       padding: 30px;
@@ -1973,12 +1806,7 @@ ol {
 
    /* calculator section style end */
    /* shay wright section start */
-   .shay-wright-section {
-      --space-y: 48px;
-   }
-
    /* about shay */
-
    .author-info-section .common-wrap {
       flex-direction: row;
       gap: var(--gap);
@@ -1998,10 +1826,6 @@ ol {
 
    /* shay wright section end */
    /* quote section style start */
-   .quote-section {
-      --space-y: 37px;
-   }
-
    .quote-content-wrapper {
       padding: 30px 60px;
       padding-right: 40px;
@@ -2009,19 +1833,8 @@ ol {
 
    /* quote section style end */
    /* about shay style start */
-
-   .hero-section.about-shay-hero {
-      --space-y: 100px;
-      --space-b: 90px;
-   }
-
    .hero-section.about-shay-hero .content-wraper {
       padding-left: calc(var(--width) + var(--gap));
-   }
-
-   .author-info-section {
-      --space-y: 76px;
-      --space-b: 100px;
    }
 
    .author-info-section .author-img {
@@ -2045,20 +1858,144 @@ ol {
    }
 
    /* benifit mortgage end */
+   /* common faq sectio start */
+   .common-faq {
+      flex-direction: row;
+   }
 
+   .common-faq-item {
+      width: 100%;
+      padding-block: 12px;
+      padding-left: 20px;
+   }
+
+   /* common faq sectio end */
+   /* form section start */
+   .form-item-wrap {
+      --grid-column: 2;
+      gap: 30px 20px;
+   }
+
+   .common-form {
+      --space: 24px;
+   }
+
+   /* form section end */
+   /* contact us section start */
+   .contact-info {
+      --space: 24px;
+   }
+
+   /* contact us section end */
+   /* card section start */
+   .card.horijontal-card {
+      gap: 40px;
+      flex-direction: row;
+   }
+
+   .card.horijontal-card:nth-child(even) {
+      flex-direction: row-reverse;
+   }
+
+   .card-img,
+   .card-content {
+      flex: 1;
+   }
+
+   .card-content {
+      gap: 30px;
+   }
+
+   .card-body p:has(+ p) {
+      margin-bottom: 23px;
+   }
+
+   .card-body p:has(+ ul) {
+      margin-bottom: 49px;
+   }
+
+   .about-us .card.horijontal-card:first-child {
+      flex-direction: row-reverse;
+   }
+
+   .about-us .card-wrapper .card:nth-child(even) {
+      flex-direction: row-reverse;
+   }
+
+   /* card section end */
+   /* how to apply section start */
+   .how-to-apply ul {
+      padding-left: 30px;
+   }
+
+   .author-info-wrapper .about-shay-wright {
+      flex-direction: row;
+   }
+
+   /* how to apply section end */
+   /* down payment section start */
+   .down-pament-rates .note {
+      font-size: 14px;
+      font-weight: 16.8px;
+      padding: 10px;
+   }
+
+   /* down payment section end */
+   /* mortgage rate section start */
+   .exceptional-title {
+      margin-bottom: 48px;
+   }
+
+   .rate-col {
+      padding-block: 14px;
+      padding-inline: 7px;
+   }
+
+   .rate-col h5 {
+      font-size: 18px;
+   }
+
+   .rate-col p {
+      font-size: 18px;
+   }
+
+   /* mortgage rate section end */
+   /* blog section start */
+   .blog-wrap .common-wrap {
+      --grid-column: 3;
+   }
+
+   /* blog section end */
+   /* parameters section start */
+
+   .parameters-wrap .border {
+      width: 1px;
+      height: unset;
+      margin-inline: 45px;
+   }
+
+   .parameters {
+      flex-direction: row;
+   }
+
+   .parameters-links {
+      row-gap: 0px;
+   }
+
+   .parameters-links ul li {
+      font-size: 16px;
+   }
+
+   .parameters-item h2 {
+      margin-bottom: 5px;
+   }
+
+   .parameters-item p {
+      margin-bottom: 32px;
+   }
+
+   /* parameters section end */
    /* footer section start */
-   .footer-middle .common-wrap {
-      --grid-column: 3;
-   }
-
-   .footer-bottom .common-wrap {
-      --grid-column: 3;
-   }
-
-   .footer-middle .footer-links {
-      grid-column: span 2;
-   }
-
    .footer-link-wrap {
       flex-direction: row;
    }
@@ -2067,18 +2004,12 @@ ol {
       width: 100%;
    }
 
-   .footer-bottom p {
-      text-align: left;
-   }
-
    .footer-top img {
       margin-right: 26px;
    }
 
    /* footer section end */
 }
-
-@media only screen and (min-width: 992px) {}
 
 @media only screen and (min-width:1025px) {
 
@@ -2172,8 +2103,6 @@ ol {
 
    /* cta common section style end */
    /* support box style start */
-
-
    /* support box style end */
    /* testimonial section styel stat */
    .testimonial-item {
@@ -2184,6 +2113,7 @@ ol {
    /* shay wright section start */
    .shay-wright-section {
       --space-y: 60px;
+      --space-b: 60px;
    }
 
    .about-shay-wright {
@@ -2216,7 +2146,6 @@ ol {
    .author-info .author-name {
       font-size: 24px;
       line-height: 29px;
-      color: var(--color-primary);
    }
 
    /* shay wright section end */
@@ -2257,7 +2186,7 @@ ol {
    }
 
    .section-header {
-      gap: 24px;
+      gap: 16px;
    }
 
    .basic-loan-card {
@@ -2284,7 +2213,61 @@ ol {
    }
 
    /* banifit mortgage end */
+   /* form section start */
+   .common-form {
+      --space: 28px;
+   }
 
+   /* form section end */
+   /* contact us section style start */
+   .contact-us {
+      --space-y: 72px;
+      --space-b: 72px;
+   }
+
+   .contact-us .common-wrap {
+      flex-direction: row;
+   }
+
+   .contact-info {
+      --space: 28px;
+   }
+
+   .contact-us .contact-info {
+      width: 29.919%;
+      align-items: center;
+   }
+
+   /* contact us section style end */
+   /* card section start */
+   .card-wrapper {
+      gap: 160px;
+   }
+
+   .card.horijontal-card {
+      gap: 40px 80px;
+   }
+
+   .about-us .card-wrapper {
+      gap: 60px;
+   }
+
+   .card.horijontal-card:nth-child(n+3):not(:last-child) {
+      padding-bottom: 60px;
+   }
+
+   /* card section end */
+   /* blog section start */
+   .blog-wrap {
+      --space-y: 60px;
+      --space-b: 60px;
+   }
+
+   .blog-wrap .common-wrap {
+      --gap: 60px;
+   }
+
+   /* blog section end */
    /* footer section start */
    .footer {
       padding-top: 92px;

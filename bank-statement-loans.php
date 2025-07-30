@@ -4,16 +4,13 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>bank-statement-loans</title>
-   <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
-   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+   <title>Financing Direct | bank-statement-loans</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
    <link rel="stylesheet" href="./assets/css/final.css">
-   <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
 </head>
 
-<body>
+<body class="bank-statement-page">
    <?php include 'header.php'; ?>
-
    <!-- hero section start -->
    <section class="hero-section">
       <div class="common-wrap d-flex justify-between gap-20">
@@ -27,8 +24,7 @@
          </div>
       </div>
    </section>
-   <!-- hero section start -->
-
+   <!-- hero section end -->
    <!-- basic loan section start -->
    <section class="basic-loan info-section">
       <div class="common-wrap d-flex flex-col gap-24">
@@ -119,14 +115,12 @@
       </div>
    </section>
    <!-- benefit fha mortgage section end -->
-
    <!-- ============================ FAQ section start ============================ -->
-
    <section class="common-faq-section">
       <div class="common-wrap common-faq-wrap">
          <h2>Construction Loan FAQs</h2>
          <p class="subtitle">Answers to commonly asked questions about our one-time close construction loans.</p>
-         <div class="d-flex gap-10 common-faq">
+         <div class="d-flex gap-10 common-faq flex-col">
             <div class="d-flex flex-col gap-10">
                <div class="common-faq-item">
                   <div class="question">
@@ -188,11 +182,11 @@
       </div>
    </section>
    <!-- common faq end -->
-
    <?php include 'footer-simple.php'; ?>
    <!-- footer section end -->
-   <script src="./script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+   <script src="./script.js"></script>
 </body>
 
 </html>

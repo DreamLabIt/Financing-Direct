@@ -4,11 +4,9 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>about-shay-wright</title>
-   <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
+   <title>Financing Direct | about shay wright</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
    <link rel="stylesheet" href="./assets/css/final.css">
-   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
-   <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
 </head>
 
 <body>
@@ -29,7 +27,7 @@
          </div>
       </div>
    </section>
-   <!-- hero section start -->
+   <!-- hero section end -->
    <!-- shay wright section start -->
    <section class="shay-wright-section">
       <div class="common-wrap d-flex justify-between flex-col">
@@ -89,7 +87,7 @@
       </div>
    </section>
    <!-- quote section end -->
-   <!-- big card section start -->
+   <!-- horijonal card section start -->
    <section class="blog-post-section">
       <div class="common-wrap">
          <div class="card-wrapper d-flex flex-col">
@@ -136,7 +134,7 @@
          </div>
       </div>
    </section>
-   <!-- big card section end -->
+   <!-- horijonal card section end -->
    <!-- lets connect start -->
    <section class="support-box-section let-connect">
       <div class="common-wrap">
@@ -154,6 +152,8 @@
    <!-- footer section start -->
    <?php include 'footer-simple.php'; ?>
    <!-- footer section end -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
    <script src="./script.js"></script>
 </body>
 

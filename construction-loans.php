@@ -4,11 +4,10 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>construction-loans</title>
-   <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
-   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+   <title>Financing Direct | construction-loans</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
    <link rel="stylesheet" href="./assets/css/final.css">
-   <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+
 </head>
 
 <body>
@@ -22,7 +21,7 @@
             <p class="content">We are proud to offer the best new construction loans in the industry for both conventional and VA loans.</p>
          </div>
          <div class="media d-flex item-end flex-col">
-            <img src="./assets/images/happy-fha-mortgage-family.jpg" alt="happy fha mortgage family">
+            <img src="./assets/images/happy-fha-mortgage-family.png" alt="happy fha mortgage family">
          </div>
       </div>
    </section>
@@ -119,7 +118,6 @@
    </section>
    <!-- benefit fha mortgage section end -->
    <!-- ============================ loan parameters section start ========================= -->
-
    <section class="parameters-wrap">
       <div class="common-wrap">
          <div class="parameters d-flex flex-wrap flex-col justify-between">
@@ -159,16 +157,13 @@
          </div>
       </div>
    </section>
-
    <!-- ============================ loan parameters section end ========================= -->
-
    <!-- ============================ FAQ section start ============================ -->
-
    <section class="common-faq-section">
       <div class="common-wrap common-faq-wrap">
          <h2>Construction Loan FAQs</h2>
          <p class="subtitle">Answers to commonly asked questions about our one-time close construction loans.</p>
-         <div class="d-flex gap-10 common-faq">
+         <div class="d-flex gap-10 common-faq flex-col">
             <div class="d-flex flex-col gap-10">
                <div class="common-faq-item">
                   <div class="question">
@@ -230,10 +225,10 @@
       </div>
    </section>
    <!-- common faq end -->
-
-
    <?php include 'footer-simple.php'; ?>
    <!-- footer section end -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
    <script src="./script.js"></script>
 </body>
 

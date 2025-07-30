@@ -4,10 +4,9 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>FHA Mortgages</title>
-   <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
-   <link rel="stylesheet" href="./assets/css/style.css">
-   <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+   <title>Financing Direct | FHA Mortgages</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="./assets/css/final.css">
 </head>
 
 <body>
@@ -25,13 +24,10 @@
          </div>
          <div class="media">
             <img src="./assets/images/happy-fha-mortgage-family.jpg" alt="happy fha mortgage family">
-            <!-- <div class="media-shape">
-               <img src="./assets/images/about-shay-wright-shape.png" alt="about-shay-wright-shape">
-            </div> -->
          </div>
       </div>
    </section>
-   <!-- hero section start -->
+   <!-- hero section end -->
    <!-- basic loan section start -->
    <section class="basic-loan info-section">
       <div class="common-wrap d-flex flex-col gap-24">
@@ -122,8 +118,11 @@
       </div>
    </section>
    <!-- benefit fha mortgage section end -->
-
    <?php include 'footer-simple.php'; ?>
+   <!-- footer end -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   <script src="./script.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Financing Direct | Home</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
   <link rel="stylesheet" href="./assets/css/final.css">
 
 </head>
@@ -30,7 +29,7 @@
       </div>
     </div>
   </section>
-  <!-- hero section start -->
+  <!-- hero section end -->
   <!-- ===== Mortgages section start -->
   <section class="mortgages-wrap">
     <div class="common-wrap">
@@ -70,7 +69,7 @@
       </div>
     </div>
   </section>
-  <!-- double img hero section start -->
+  <!-- double img hero section end -->
   <!-- cta section start -->
   <section class="cta">
     <?php include 'cta.php'; ?>
@@ -78,9 +77,7 @@
   <!-- cta section end -->
   <!-- ======= Calculetor section start ======= -->
   <?php include 'calculator.php'; ?>
-
   <!-- ======= Calculetor section end ======= -->
-
   <section class="support-box-section">
     <div class="common-wrap">
       <div class="support-box text-center">
@@ -93,14 +90,14 @@
     </div>
   </section>
   <?php include "form.php"; ?>
-  <!-- ====  Beginning footer section === -->
   <!-- testimonial section start  -->
   <?php include 'client-testimonials.php'; ?>
   <!-- testimonial section end -->
+  <!-- footer section start -->
   <?php include 'footer-simple.php'; ?>
   <!-- ====  End footer section ===-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./assets/js/common-scripts.js"></script>
+
   <script src="./script.js"></script>
 </body>
 

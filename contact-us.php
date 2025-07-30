@@ -4,16 +4,13 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>contact us</title>
-   <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
-   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+   <title>Financing Direct | contact us</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
    <link rel="stylesheet" href="./assets/css/final.css">
-   <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
 </head>
 
 <body>
    <?php include 'header.php'; ?>
-
    <!-- hero section start -->
    <section class="hero-section">
       <div class="common-wrap d-flex justify-between gap-20">
@@ -29,7 +26,6 @@
    </section>
    <!-- hero section end -->
    <!-- form section start -->
-
    <section class="contact-us">
       <div class="common-wrap d-flex flex-col gap-24 item-start">
          <form action="" class="common-form d-flex flex-col gap-20">
@@ -76,6 +72,8 @@
    <!-- form section end -->
    <?php include 'footer-simple.php'; ?>
    <!-- footer section end -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
    <script src="./script.js"></script>
 
 </body>

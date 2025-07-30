@@ -4,11 +4,9 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>about-shay</title>
-   <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
-   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+   <title>Financing Direct | about-shay</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
    <link rel="stylesheet" href="./assets/css/final.css">
-   <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
 </head>
 
 <body class="about-shay">
@@ -48,9 +46,7 @@
          </div>
       </div>
    </section>
-
    <!-- author info section end -->
-
    <!-- quote section start -->
    <section class="quote-section">
       <div class="common-wrap">
@@ -60,12 +56,11 @@
       </div>
    </section>
    <!-- quote section end -->
-
-   <!-- big card section start -->
+   <!-- horijonal card section start -->
    <section class="blog-post-section">
       <div class="common-wrap">
          <div class="card-wrapper d-flex flex-col">
-            <div class="card d-flex justify-between gap-24">
+            <div class="card horijontal-card d-flex justify-between gap-24">
                <div class="card-content d-flex flex-col">
                   <div class="card-title-wrap d-flex item-center">
                      <div class="card-title-img">
@@ -88,7 +83,7 @@
                   <img src="./assets/images/community-service.jpg" alt="community-service">
                </div>
             </div>
-            <div class="card d-flex justify-between gap-24">
+            <div class="card horijontal-card d-flex justify-between gap-24">
                <div class="card-content d-flex flex-col">
                   <div class="card-title-wrap d-flex item-center">
                      <div class="card-title-img">
@@ -108,7 +103,7 @@
          </div>
       </div>
    </section>
-   <!-- big card section end -->
+   <!-- horijonal card section end -->
    <!-- lets connect start -->
    <section class="support-box-section let-connect">
       <div class="common-wrap">
@@ -123,9 +118,10 @@
       </div>
    </section>
    <!-- lets connect end -->
-
    <?php include 'footer-simple.php'; ?>
    <!-- footer section end -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
    <script src="./script.js"></script>
 </body>
 

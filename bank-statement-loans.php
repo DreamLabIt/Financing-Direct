@@ -6,7 +6,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>bank-statement-loans</title>
    <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
-   <link rel="stylesheet" href="./assets/css/style.css">
+   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+   <link rel="stylesheet" href="./assets/css/final.css">
    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
 </head>
 
@@ -15,13 +16,13 @@
 
    <!-- hero section start -->
    <section class="hero-section">
-      <div class="common-wrap d-flex justify-between">
+      <div class="common-wrap d-flex justify-between gap-20">
          <div class="content-wraper">
             <p class="sub-title">The Lowest Rates</p>
             <h1 class="title">Bank Statement Loans</h1>
             <p class="content">Designed to help self-employed borrowers who do not have traditional W-2 income qualify for a mortgage by demonstrating their ability to repay a mortgage through their bank deposits.</p>
          </div>
-         <div class="media">
+         <div class="media d-flex item-end flex-col">
             <img src="./assets/images/bank-statement-mortgages.jpg" alt="about-shay-wright-video">
          </div>
       </div>

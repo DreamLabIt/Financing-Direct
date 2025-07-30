@@ -6,7 +6,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>construction-loans</title>
    <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
-   <link rel="stylesheet" href="./assets/css/style.css">
+   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+   <link rel="stylesheet" href="./assets/css/final.css">
    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
 </head>
 
@@ -14,13 +15,13 @@
    <?php include 'header.php'; ?>
    <!-- hero section start -->
    <section class="hero-section">
-      <div class="common-wrap d-flex justify-between item-center">
+      <div class="common-wrap d-flex justify-between gap-20">
          <div class="content-wraper">
             <p class="sub-title">0% and 5% Doawn Options</p>
             <h1 class="title">One-Time Close Construction Loans</h1>
             <p class="content">We are proud to offer the best new construction loans in the industry for both conventional and VA loans.</p>
          </div>
-         <div class="media">
+         <div class="media d-flex item-end flex-col">
             <img src="./assets/images/happy-fha-mortgage-family.jpg" alt="happy fha mortgage family">
          </div>
       </div>
@@ -117,9 +118,123 @@
       </div>
    </section>
    <!-- benefit fha mortgage section end -->
+   <!-- ============================ loan parameters section start ========================= -->
+
+   <section class="parameters-wrap">
+      <div class="common-wrap">
+         <div class="parameters d-flex flex-wrap flex-col justify-between">
+            <div class="parameters-item">
+               <h2>Conventional</h2>
+               <p>Loan Parameters</p>
+               <div class="parameters-links d-flex flex-wrap flex-col justify-between gap-10">
+                  <ul>
+                     <li>15 yr fixed and 30 yr fixed</li>
+                     <li>7 yr ARM and 10 yr ARM</li>
+                     <li>Primary, second & investment homes</li>
+                  </ul>
+                  <ul>
+                     <li>Max loan amount of $806,500</li>
+                     <li>Minimum credit score of 700</li>
+                     <li>Minimum down payment of 5%</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="border"></div>
+            <div class="parameters-item">
+               <h2>VA <span>(active military or veteran)</span></h2>
+               <p>Loan Parameters</p>
+               <div class="parameters-links d-flex flex-wrap flex-col justify-between gap-10">
+                  <ul>
+                     <li>30 yr fixed</li>
+                     <li>Primary residence only</li>
+                     <li>Max loan amount of $4 million</li>
+                  </ul>
+                  <ul>
+                     <li>Minimum credit score of 580</li>
+                     <li>Minimum down payment of 0%</li>
+                     <li>No owner builders</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ============================ loan parameters section end ========================= -->
+
+   <!-- ============================ FAQ section start ============================ -->
+
+   <section class="common-faq-section">
+      <div class="common-wrap common-faq-wrap">
+         <h2>Construction Loan FAQs</h2>
+         <p class="subtitle">Answers to commonly asked questions about our one-time close construction loans.</p>
+         <div class="d-flex gap-10 common-faq">
+            <div class="d-flex flex-col gap-10">
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">Will my interest rate change when construction is complete?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>You will lock in an interest rate for the construction phase...</p>
+                  </div>
+               </div>
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">How long do I have to complete construction?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>You have 12 months from closing to complete construction...</p>
+                  </div>
+               </div>
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">How much interest is charged during construction?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>The interest is based on the amount drawn each month...</p>
+                  </div>
+               </div>
+            </div>
+            <div class="d-flex flex-col gap-10">
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">Can I still do this loan if I already own my lot?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>Yes! We can use the value of your lot as part of the equity...</p>
+                  </div>
+               </div>
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">Does my builder have to be approved through your program?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>Yes, your builder must be reviewed and approved by our team...</p>
+                  </div>
+               </div>
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">What construction documentation will be required?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>Required documents include contract, plans, permits, appraisal, etc.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- common faq end -->
 
 
    <?php include 'footer-simple.php'; ?>
+   <!-- footer section end -->
+   <script src="./script.js"></script>
 </body>
 
 </html>

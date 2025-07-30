@@ -5,16 +5,14 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>FHA loan</title>
-   <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
-   <link rel="stylesheet" href="./assets/css/style.css">
-   <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+   <link rel="stylesheet" href="./assets/css/final.css">
 </head>
 
 <body>
    <?php include 'header.php'; ?>
    <!-- hero section start -->
    <section class="hero-section">
-      <div class="common-wrap d-flex justify-between item-center">
+      <div class="common-wrap d-flex justify-between gap-20">
          <div class="content-wraper">
             <p class="sub-title">The lowest rates & fees</p>
             <h1 class="title">FHA Mortgages</h1>
@@ -23,11 +21,8 @@
                <a class="btn btn-primary" href="#">Get a Rate Quote</a>
             </div>
          </div>
-         <div class="media">
+         <div class="media d-flex item-end flex-col">
             <img src="./assets/images/happy-fha-mortgage-family.jpg" alt="happy fha mortgage family">
-            <!-- <div class="media-shape">
-               <img src="./assets/images/about-shay-wright-shape.png" alt="about-shay-wright-shape">
-            </div> -->
          </div>
       </div>
    </section>
@@ -123,7 +118,178 @@
    </section>
    <!-- benefit fha mortgage section end -->
 
+   <!-- ============================= FHA loon rate section start ========================== -->
+
+
+   <section class="mortgage-rates">
+      <div class="mortgage-rates-inner">
+         <div class="exceptional-title">
+            <h2>FHA Loan Limits</h2>
+            <p>The following are the loan limits for most counties in Texas with a few exceptions. Look up the FHA loan limit for a specific county in Texas.</p>
+         </div>
+         <div class="rate-box">
+            <div class="rate-row rate-box-head">
+               <div class="rate-col">
+                  <h5>Single Family</h5>
+               </div>
+               <div class="rate-col">
+                  <h5>Duplex</h5>
+               </div>
+               <div class="rate-col">
+                  <h5>Triplex</h5>
+               </div>
+               <div class="rate-col">
+                  <h5>Fourplex</h5>
+               </div>
+            </div>
+            <div class="rate-box-body ">
+               <div class="rate-row">
+                  <div class="rate-col">
+                     <p>$571,550</p>
+                  </div>
+                  <div class="rate-col">
+                     <p>$731,700</p>
+                  </div>
+                  <div class="rate-col">
+                     <p>$884,450</p>
+                  </div>
+                  <div class="rate-col">
+                     <p>$1,099,150</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <br>
+   <br>
+
+
+   <section class="down-pament-rates">
+      <div class="mortgage-rates-inner">
+         <div class="exceptional-title">
+            <h2>Down Payment Requirements</h2>
+            <p>The following are our minimum FHA down payment amounts based on credit score.</p>
+         </div>
+         <div class="rate-box">
+            <div class="rate-row rate-box-head">
+               <div class="rate-col">
+                  <h5>Credit Score</h5>
+               </div>
+               <div class="rate-col">
+                  <h5>Minimum Down</h5>
+               </div>
+            </div>
+            <div class="rate-box-body ">
+               <div class="rate-row">
+                  <div class="rate-col">
+                     <p>600+</p>
+                  </div>
+                  <div class="rate-col">
+                     <p>0.0%</p>
+                  </div>
+               </div>
+               <div class="rate-row">
+                  <div class="rate-col">
+                     <p>580+</p>
+                  </div>
+                  <div class="rate-col">
+                     <p>3.5%</p>
+                  </div>
+               </div>
+               <div class="rate-row">
+                  <div class="rate-col">
+                     <p>500-579</p>
+                  </div>
+                  <div class="rate-col">
+                     <p>10%</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <p class="note">* Please note that the 0% down payment option will result in an interest rate that is about 1% higher than the 3.5% down option.</p>
+      </div>
+   </section>
+
+
+   <!-- ============================= FHA loon rate section end ========================== -->
+
+
+   <!-- ============================ FAQ section start ============================ -->
+
+   <section class="common-faq-section">
+      <div class="common-wrap common-faq-wrap">
+         <h2>FHA Mortgage FAQs</h2>
+         <p class="subtitle">Here are the answers to some of the most commonly asked questions about FHA loans.</p>
+         <div class="d-flex gap-10 common-faq">
+            <div class="d-flex flex-col gap-10">
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">What is a FHA mortgage?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>You will lock in an interest rate for the construction phase...</p>
+                  </div>
+               </div>
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">Who qualifies for a FHA loan?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>You have 12 months from closing to complete construction...</p>
+                  </div>
+               </div>
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">What cost and fees are involved with a FHA mortgage?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>The interest is based on the amount drawn each month...</p>
+                  </div>
+               </div>
+            </div>
+            <div class="d-flex flex-col gap-10">
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">How does FHA mortgage insurance work?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>Yes! We can use the value of your lot as part of the equity...</p>
+                  </div>
+               </div>
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">How is a FHA loan different from a conventional loan?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>Yes, your builder must be reviewed and approved by our team...</p>
+                  </div>
+               </div>
+
+               <div class="common-faq-item">
+                  <div class="question">
+                     <h5 class="d-flex item-center justify-between gap-10">How can I apply for a FHA loan?</h5>
+                  </div>
+                  <div class="answer">
+                     <p>Required documents include contract, plans, permits, appraisal, etc.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- common faq end -->
+
    <?php include 'footer-simple.php'; ?>
+
+   <!-- footer section end -->
+   <script src="./script.js"></script>
 </body>
 
 </html>

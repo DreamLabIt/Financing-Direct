@@ -5,16 +5,14 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>learning-center</title>
-   <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
-   <link rel="stylesheet" href="./assets/css/style.css">
-   <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+   <link rel="stylesheet" href="./assets/css/final.css">
 </head>
 
 <body>
    <?php include 'header.php'; ?>
    <!-- hero section start -->
    <section class="hero-section learning-center">
-      <div class="common-wrap">
+      <div class="common-wrap d-flex justify-center item-center text-center">
          <div class="content-wraper">
             <p class="sub-title">Helpful advise & insights</p>
             <h1 class="title">Mortgage Learning Center</h1>
@@ -24,66 +22,108 @@
    </section>
    <!-- hero section start -->
    <!-- card section start -->
-   <!-- <section class="card-section">
-      <div class="common-wrap">
-         <div class="grid">
-            <div class="card learning-card-verticle">
-               <div class="card-content">
-                  <div class="card-title-wrap">
-                     <a href="#" class="card-title">Community Involvement</a>
-                  </div>
-                  <div class="card-body">
-                     <p>The genuine concern I have for my community and people in general is apparent in my daily life. I serve and support several local charities and strives to make a positive impact through my service.</p>
-                     <a href="#">Read More</a>
-                  </div>
+   <section class="blog-wrap">
+      <div class="common-wrap grid">
+         <div class="blog-item d-flex flex-col">
+            <a href="#" class="blog-item-thumb d-flex">
+               <img src="./assets/images/rate-quote-purchase.jpg" alt="all types of home loans">
+            </a>
+            <div class="blog-item-content d-flex flex-col gap-24">
+               <h5> <a href="#">Purchase a Home With No Money Down</a></h5>
+               <p>Don't have money saved up for a down payment? No problem. We offer some of the best zero down mortgage options on the market. Purchasing a home has never been easier!</p>
+               <div>
+                  <a href="#">Read More <span class="arrow-icon"></span></a>
                </div>
-               <a href="#" class="card-img">
-                  <img src="./assets/images/community-service.jpg" alt="community-service">
-               </a>
             </div>
          </div>
-      </div>
-   </section> -->
-
-   <section class="blog-wrap new-blog-wrap">
-      <div class="common-wrap clear">
-         <div class="blog-item-wrap">
-            <a href="types-of-mortgages" class="blog-item">
-               <div class="blog-item-thumb">
-                  <figure>
-                     <img src="https://www.homefinancingdirect.com/img/home-loans.jpg" alt="all types of home loans">
-                  </figure>
-               </div>
-               <div class="blog-item-content">
-                  <h5>Mortgage Options</h5>
-                  <p>We are proud to offer a wide selection of great loan products to perfectly fit your specific situation and needs.</p>
-                  <h6>Explore loan options</h6>
-               </div>
+         <div class="blog-item d-flex flex-col">
+            <a href="#" class="blog-item-thumb d-flex">
+               <img src="./assets/images/how-to-apply.jpg" alt="all types of home loans">
             </a>
-            <a href="mortgage-rates-today" class="blog-item">
-               <div class="blog-item-thumb">
-                  <figure>
-                     <img src="https://www.homefinancingdirect.com/img/mortgage-calculator.jpg" alt="mortgage calculator">
-                  </figure>
+            <div class="blog-item-content d-flex flex-col gap-24">
+               <h5> <a href="#">Key Steps to Follow When Applying for a Mortgage Loan</a></h5>
+               <p>Navigating the process of applying for a mortgage can seem a little overwhelming for most people. However, this comprehensive guide helps to simplify the process with easy to understand steps.</p>
+               <div>
+                  <a href="#">Read More <span class="arrow-icon"></span></a>
                </div>
-               <div class="blog-item-content">
-                  <h5>Mortgage Rates Today</h5>
-                  <p>Check out the great mortgage rates we can offer today for several different types of mortgages.</p>
-                  <h6>See our rates</h6>
-               </div>
+            </div>
+         </div>
+         <div class="blog-item d-flex flex-col">
+            <a href="#" class="blog-item-thumb d-flex">
+               <img src="./assets/images/first-time-home-buyers.jpg" alt="all types of home loans">
             </a>
-            <a href="ask-mortgage-expert" class="blog-item">
-               <div class="blog-item-thumb">
-                  <figure>
-                     <img src="https://www.homefinancingdirect.com/img/home-financing-advise.jpg" alt="mortgage financing advice">
-                  </figure>
+            <div class="blog-item-content d-flex flex-col gap-24">
+               <h5> <a href="#">12 Helpful Tips for First Time Home Buyers</a></h5>
+               <p>The decision to purchase your first home is a significant milestone that can bring with it a mix of emotions. The following helpful tips will assist you in navigating the home buying process with ease.</p>
+               <div>
+                  <a href="#">Read More <span class="arrow-icon"></span></a>
                </div>
-               <div class="blog-item-content">
-                  <h5>Ask an Expert</h5>
-                  <p>Our mortgage experts are here to help answer your mortgage questions and provide you with great unbiased advice.</p>
-                  <h6>Get expert advice</h6>
-               </div>
+            </div>
+         </div>
+         <div class="blog-item d-flex flex-col">
+            <a href="#" class="blog-item-thumb d-flex">
+               <img src="./assets/images/woman-closing-costs-calculation.jpg" alt="all types of home loans">
             </a>
+            <div class="blog-item-content d-flex flex-col gap-24">
+               <h5> <a href="#">Understanding Mortgage Closing Costs</a></h5>
+               <p>Closing costs are a crucial part of the home buying equation and understanding them is essential for a financially sound purchase. This article helps to demystify mortgage closing costs.
+               </p>
+               <div>
+                  <a href="#">Read More <span class="arrow-icon"></span></a>
+               </div>
+            </div>
+         </div>
+         <div class="blog-item d-flex flex-col">
+            <a href="#" class="blog-item-thumb d-flex">
+               <img src="./assets/images/home-ownership-benefits.jpg" alt="all types of home loans">
+            </a>
+            <div class="blog-item-content d-flex flex-col gap-24">
+               <h5> <a href="#">10 Important Benefits to Owning a Home</a></h5>
+               <p>Owning a home represents a cornerstone of financial stability and personal well-being, and the multitude of benefits for owning a home certainly makes the journey of homeownership worthwhile.
+               </p>
+               <div>
+                  <a href="#">Read More <span class="arrow-icon"></span></a>
+               </div>
+            </div>
+         </div>
+         <div class="blog-item d-flex flex-col">
+            <a href="#" class="blog-item-thumb d-flex">
+               <img src="./assets/images/effective-ways-real-estate-agents.jpg" alt="all types of home loans">
+            </a>
+            <div class="blog-item-content d-flex flex-col gap-24">
+               <h5> <a href="#">50 Effective Ways For Realtors to Attract More Clients</a></h5>
+               <p>Whether you're looking to attract buyers, sellers, or both, these strategies will help increase your visibility, enhance your reputation, drive more traffic, and ultimately close more deals!
+               </p>
+               <div>
+                  <a href="#">Read More <span class="arrow-icon"></span></a>
+               </div>
+            </div>
+         </div>
+         <div class="blog-item d-flex flex-col">
+            <a href="#" class="blog-item-thumb d-flex">
+               <img src="./assets/images/purchase-perfect-home.jpg" alt="all types of home loans">
+            </a>
+            <div class="blog-item-content d-flex flex-col gap-24">
+               <h5> <a href="#">Unlocking Your Dream Home: 12 Essential Tips to Follow</a></h5>
+               <p>The journey to purchasing the perfect home can be an exciting yet daunting experience. Fortunately, there are some valuable tips to help you navigate the process and make an informed decision.
+               </p>
+               <div>
+                  <a href="#">Read More <span class="arrow-icon"></span></a>
+               </div>
+            </div>
+         </div>
+         <div class="blog-item d-flex flex-col">
+            <a href="#" class="blog-item-thumb d-flex">
+               <img src="./assets/images/self-employed-couple-mortgage.jpg" alt="all types of home loans">
+            </a>
+            <div class="blog-item-content d-flex flex-col gap-24">
+               <h5> <a href="#">Great Mortgage Options For Self-Employed Individuals</a></h5>
+               <p>Navigating the mortgage landscape can be daunting for self-employed individuals. However, with the best loan options, securing a great home loan can be easier than you might think.
+               </p>
+               <div>
+                  <a href="#">Read More <span class="arrow-icon"></span></a>
+               </div>
+            </div>
          </div>
       </div>
    </section>

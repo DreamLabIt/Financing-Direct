@@ -12,9 +12,8 @@
 
 <body class="about-shay">
    <?php include 'header.php'; ?>
-   <!-- hero section end -->
-
-
+   <!-- mortgage calculator section start -->
+   <?php include "calculator.php"; ?>
    <?php include 'footer-simple.php'; ?>
    <!-- footer section end -->
    <script src="./script.js"></script>

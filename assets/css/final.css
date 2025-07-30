@@ -1,0 +1,2315 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* ====Global style==== */
+/* variable */
+:root {
+   --color-brich: #3d3825;
+   --color-primary: #007c5d;
+   --color-primary-dark: #006048;
+   --color-primary-light: #32a250;
+   --color-primary-extra-light: #32a150;
+   --section-bg: #f7f6f2;
+   --color-secondary: #ffd65c;
+   --color-secondary-light: #fed65d;
+   --color-white: #ffffff;
+   --color-text: #48432c;
+   --border-color: #EDEBE1;
+   --color-primary-heading: #005f47;
+   --font-family-mulish: "Mulish", sans-serif;
+   --fs-h1: 26px;
+   --lh-h1: 32px;
+   --fs-h2: 20px;
+   --lh-h2: 26px;
+   --fs-h3: 18px;
+   --lh-h3: 24px;
+   --fs-h4: 16px;
+   --lh-h4: 20px;
+   --fs-h5: 15px;
+   --lh-h5: 18px;
+   --fs-label: 14px;
+   --lh-label: 17px;
+   --fw-light: 300;
+   --fw-normal: 400;
+   --fw-medium: 500;
+   --fw-semibold: 600;
+   --fw-bold: 700;
+   --fw-extrabold: 800;
+   --btn-font-size: 14px;
+   --btn-line-height: 18px;
+   --btn-padding: 12px;
+   --btn-min-width: 120px;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+
+body {
+   --body-text: 14px;
+   --body-line-height: 20px;
+   font-family: var(--font-family-mulish);
+   font-size: var(--body-text);
+   line-height: var(--body-line-height);
+   color: var(--color-text);
+   background: var(--color-white);
+}
+
+ul,
+ol {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   display: inline-block;
+   color: var(--color-primary-extra-light);
+}
+
+img {
+   width: 100%;
+   max-width: 100%;
+   height: auto;
+   -o-object-fit: cover;
+   object-fit: cover;
+}
+
+button {
+   cursor: pointer;
+   border: 0;
+   outline: 0;
+   background-color: transparent;
+}
+
+address {
+   font-style: normal;
+}
+
+/* typrography */
+h1,
+.h1 {
+   font-size: var(--fs-h1);
+   line-height: var(--lh-h1);
+   font-weight: var(--fw-extrabold);
+   color: var(--color-primary-heading);
+}
+
+h2,
+.h2 {
+   font-size: var(--fs-h2);
+   line-height: var(--lh-h2);
+   font-weight: var(--fw-bold);
+   color: var(--color-primary);
+}
+
+h3,
+.h3 {
+   font-size: var(--fs-h3);
+   line-height: var(--lh-h3);
+   font-weight: var(--fw-bold);
+   color: var(--color-brich);
+}
+
+h4,
+.h4 {
+   font-size: var(--fs-h4);
+   line-height: var(--lh-h4);
+   font-weight: var(--fw-bold);
+}
+
+h5,
+.h5 {
+   font-size: var(--fs-h5);
+   line-height: var(--lh-h5);
+   font-weight: var(--fw-normal);
+   color: var(--color-primary);
+}
+
+label {
+   font-size: var(--fs-label);
+   line-height: var(--lh-label);
+   font-weight: var(--fw-semibold);
+   color: #47432c;
+}
+
+input,
+textarea {
+   padding: 12px;
+   border: 1px solid #EDEBE1;
+   border-radius: 8px;
+   background-color: #FAF9F7;
+   resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+   outline-color: var(--color-primary);
+}
+
+textarea {
+   resize: none;
+   height: 126px;
+}
+
+/* common class*/
+
+.d-flex {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+}
+
+.flex-wrap {
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+}
+
+.flex-row {
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: row;
+   flex-direction: row;
+}
+
+.flex-col {
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+}
+
+.flex-row-rev {
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: reverse;
+   -ms-flex-direction: row-reverse;
+   flex-direction: row-reverse;
+}
+
+.item-center {
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+}
+
+.item-end {
+   -webkit-box-align: end;
+   -ms-flex-align: end;
+   align-items: end;
+}
+
+.item-start {
+   -webkit-box-align: start;
+   -ms-flex-align: start;
+   align-items: start;
+}
+
+.justify-center {
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+}
+
+.justify-between {
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+}
+
+.justify-start {
+   -webkit-box-pack: start;
+   -ms-flex-pack: start;
+   justify-content: start;
+}
+
+.justify-end {
+   -webkit-box-pack: end;
+   -ms-flex-pack: end;
+   justify-content: end;
+}
+
+.text-center {
+   text-align: center;
+}
+
+.text-left {
+   text-align: left;
+}
+
+.text-right {
+   text-align: right;
+}
+
+.gap-10 {
+   gap: 10px;
+}
+
+.gap-20 {
+   gap: 20px;
+}
+
+.gap-24 {
+   gap: 24px;
+}
+
+.overflow-hidden {
+   overflow: hidden;
+}
+
+/* component start  */
+
+.grid {
+   --grid-column: 1;
+   --gap: 20px;
+   display: -ms-grid;
+   display: grid;
+   gap: var(--gap);
+   -ms-grid-columns: 1fr;
+   grid-template-columns: repeat(var(--grid-column), 1fr);
+}
+
+@media screen and (min-width: 789px) {
+   .grid {
+      --grid-column: 2;
+      --gap: 30px;
+   }
+}
+
+@media screen and (min-width: 1025px) {
+   .grid {
+      --grid-column: 3;
+      --gap: 40px;
+   }
+}
+
+.btn {
+   background-color: var(--color-secondary);
+   color: var(--color-brich);
+   text-align: center;
+   font-size: var(--btn-font-size);
+   line-height: var(--btn-line-height);
+   font-weight: var(--fw-bold);
+   padding: var(--btn-padding);
+   border-radius: 4px;
+   min-width: var(--btn-min-width);
+   text-wrap: nowrap;
+   transition: all .3s linear;
+}
+
+.btn-primary {
+   background-color: var(--color-primary);
+   color: var(--color-white);
+}
+
+.btn-white {
+   background-color: var(--color-white);
+   color: var(--color-primary);
+}
+
+.btn-border {
+   color: var(--color-primary);
+   border: 1px solid var(--color-primary-extra-light);
+   background-color: var(--color-white);
+}
+
+.common-wrap {
+   max-width: 1264px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 12px;
+}
+
+/* header section start */
+
+.header-wrap {
+   padding: 12px 0;
+}
+
+.header-right p {
+   font-size: 16px;
+   line-height: 19.2px;
+   font-weight: 300;
+}
+
+.header-right p span {
+   font-weight: 800;
+   color: var(--color-primary-dark);
+   margin-left: 8px;
+}
+
+.header-right .btn {
+   font-size: 17px;
+   line-height: 20.4px;
+   font-weight: 600;
+}
+
+/* header section start */
+/* navigation section start */
+.nav-wrap {
+   background-color: var(--color-primary);
+}
+
+.nav-wrap ul {
+   gap: 6px;
+}
+
+.nav-wrap ul a {
+   font-size: 18px;
+   line-height: 21.6px;
+   color: var(--color-white);
+   padding-block: 12px;
+   font-weight: 600;
+}
+
+/* navigation section end */
+/* hero component start */
+
+/* hero section start */
+.hero-section {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding: var(--space-y) 0 var(--space-b);
+   background-color: var(--section-bg);
+}
+
+.hero-section .common-wrap {
+   flex-direction: column-reverse;
+}
+
+.content-wraper .sub-title {
+   color: var(--color-primary-light);
+   font-size: 16px;
+   line-height: 26.4px;
+
+   margin-bottom: 8px;
+}
+
+.content-wraper .title {
+   margin-bottom: 24px;
+}
+
+.content-wraper .title span {
+   color: #3d3825;
+   display: block;
+}
+
+.content-wraper .btn-wraper {
+   margin-top: 24px;
+}
+
+.double-img-hero .content-wraper .btn-white {
+   border: 1px solid var(--color-primary-extra-light);
+}
+
+.media img {
+   border-top-left-radius: 24px;
+   border-bottom-right-radius: 24px;
+}
+
+/* hero section end */
+
+/* cta section start */
+
+.cta {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding-block: var(--space-y) var(--space-b);
+}
+
+.get-quote-inner {
+   --space-y: 24px;
+   --space-x: 16px;
+   padding: var(--space-y) var(--space-x);
+   background-image: url(../images/home-financing-cta-bg.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   border-radius: 12px;
+}
+
+.get-quote-content h4,
+.get-quote-content p {
+   color: var(--color-white);
+}
+
+.get-quote-btn {
+   flex-shrink: 0;
+}
+
+.get-quote-content-img {
+   --size: 60px;
+   width: var(--size);
+   height: var(--size);
+   flex-shrink: 0;
+}
+
+.get-quote-content-img img {
+   height: 100%;
+}
+
+/* cta section end */
+
+/* support box section start */
+.support-box-section {
+   --space-y: 32px;
+   --space-b: 32px;
+   --support-box-container-width: 600px;
+   padding: var(--space-y) 0 var(--space-b);
+}
+
+.support-box-section .common-wrap {
+   max-width: var(--support-box-container-width);
+}
+
+.support-box .support-text a {
+   color: var(--color-primary-extra-light);
+}
+
+.support-box img {
+   max-width: 14px;
+}
+
+.support-box h2 {
+   margin-bottom: 16px;
+}
+
+.support-box p {
+   margin-bottom: 55px;
+}
+
+.support-box .btn {
+   min-width: 180px;
+   border: none;
+}
+
+.support-box .support-btn {
+   min-width: 210px;
+}
+
+.support-box .support-text {
+   margin-bottom: 16px;
+}
+
+/* support box section start */
+
+/* doubele quote section start */
+.double-quote {
+   position: relative;
+   padding-left: 32px;
+   display: inline-block;
+}
+
+.double-quote::before,
+.double-quote::after {
+   content: "";
+   width: 14px;
+   height: 12px;
+   background-size: cover;
+}
+
+.double-quote::before {
+   position: absolute;
+   left: 0;
+   top: 6px;
+   background-image: url(../images/quote.png);
+}
+
+.double-quote::after {
+   background-image: url(../images/quote-2.png);
+   display: inline-block;
+   margin-left: 8px;
+}
+
+.double-quote.white-quote::before {
+   background-image: url(../images/white-quote.png);
+}
+
+.double-quote.white-quote::after {
+   background-image: url(../images/white-quote-2.png);
+}
+
+/* doubele quote section end */
+
+/* testimonial section start*/
+
+.testimonial .testimonial-swiper {
+   padding-top: 76px;
+}
+
+.slider-wrapper {
+   position: relative;
+}
+
+.testimonial .swiper-button-prev,
+.testimonial .swiper-button-next {
+   background-image: url(../images/testimonial-left-arrow.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   width: 40px;
+   height: 36px;
+   border-radius: 4px;
+   margin-top: 0;
+   top: 0;
+   right: 0;
+}
+
+.testimonial .swiper-button-prev {
+   left: auto;
+   right: 60px;
+}
+
+.testimonial .swiper-button-next {
+   background-image: url(../images/testimonial-right-arrow.png);
+}
+
+.testimonial .swiper-button-prev::after,
+.testimonial .swiper-button-next::after {
+   display: none;
+}
+
+.testimonial-item {
+   padding: 20px;
+   border: 1px solid #EDEBE1;
+   border-radius: 8px;
+}
+
+.testimonial-content {
+   flex-grow: 1;
+}
+
+.testimonial-content p {
+   font-size: 15px;
+   line-height: 26.25px;
+   position: relative;
+   padding-left: 32px;
+   display: inline-block;
+}
+
+
+.testimonial-item .author-img {
+   --size: 48px;
+   max-width: var(--size);
+   width: 100%;
+   height: var(--size);
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+.testimonial-author {
+   gap: 12px;
+   padding-left: 32px;
+}
+
+.testimonial-author h5 {
+   font-size: 14px;
+   line-height: 22.4px;
+   color: var(--color-text);
+   margin-bottom: 6px;
+}
+
+.author-img img {
+   height: 100%;
+}
+
+/* testimonial section start*/
+
+/* Footer section start */
+.footer {
+   padding-top: 32px;
+}
+
+.footer-top {
+   padding: 20px 0;
+   background-color: var(--color-primary-light);
+}
+
+.footer-top img {
+   width: 32px;
+   height: 32px;
+   vertical-align: middle;
+   margin-right: 6px;
+}
+
+.footer-top h4 {
+   color: var(--color-white);
+}
+
+.footer-top span {
+   color: var(--color-secondary-light);
+}
+
+.footer-middle {
+   --space-y: 32px;
+   --space-b: 32px;
+   background-color: var(--section-bg);
+   padding: var(--space-y) 0 var(--space-b);
+}
+
+.footer-logo-wrap a:first-child {
+   color: var(--color-text);
+}
+
+.footer-links a {
+   font-size: 16px;
+   line-height: 40px;
+   color: var(--color-text);
+   transition: all linear .3s;
+}
+
+.footer-links a:hover {
+   color: var(--color-primary-extra-light);
+}
+
+.footer-form form input {
+   border: none;
+   background-color: var(--color-white);
+   font-size: 15px;
+   line-height: 18px;
+   padding: 12px;
+}
+
+.footer-form .btn {
+   padding-block: 12px;
+   background-color: var(--color-secondary-light);
+   color: #115740;
+}
+
+.footer-bottom {
+   padding: 24px 0;
+   background-color: var(--section-bg);
+   border-top: 1px solid #E6E7DA;
+}
+
+.footer-bottom p,
+.footer-bottom a {
+   font-size: 16px;
+   line-height: 19.2px;
+   color: var(--color-text);
+}
+
+/* Footer section start */
+
+/* let connect section start */
+.let-connect {
+   --space-y: 32px;
+   --space-b: 32px;
+   --support-box-container-width: 1060px;
+   background-color: var(--section-bg);
+}
+
+.about-shay .let-connect .btn {
+   border: 1px solid var(--color-primary-extra-light);
+}
+
+/* let connect section start */
+/* author info section start */
+
+.about-shay-wright .author-img {
+   max-width: 114px;
+   width: 100%;
+   flex-shrink: 0;
+}
+
+.about-shay-wright .author-info {
+   flex-grow: 1;
+   gap: 16px;
+}
+
+.about-shay-wright .author-info img {
+   max-width: 240px;
+}
+
+.about-shay-wright .author-img {
+   overflow: hidden;
+   border-radius: 4px;
+}
+
+.author-title * {
+   font-size: 16px;
+   line-height: 26px;
+   color: #46432c;
+}
+
+.author-title a:last-child {
+   color: var(--color-primary-extra-light);
+}
+
+/* author info section start */
+
+/* about shay hero section start */
+.hero-section.about-shay-hero {
+   background-image: url(../images/about-shay-bg.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.calc-spacing {
+   --width: 236px;
+   --gap: 20px;
+}
+
+.hero-section.about-shay-hero .title,
+.hero-section.about-shay-hero .content {
+   color: var(--color-white);
+}
+
+.hero-section.about-shay-hero .content-wraper {
+   max-width: 100%;
+}
+
+/* about shay hero section end */
+
+/* Mortgages style start  */
+.mortgages-wrap {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding: var(--space-y) 0 var(--space-b);
+}
+
+.mortgages .item {
+   --space-y: 12px;
+   --space-x: 12px;
+   background: no-repeat;
+   background-size: cover;
+   background-position: center;
+   padding: var(--space-y) var(--space-x);
+   text-align: center;
+   color: var(--color-white);
+   min-height: 360px;
+}
+
+.item h3 {
+   color: var(--color-white);
+   margin-bottom: 10px;
+}
+
+.item p {
+   margin-bottom: 4px;
+}
+
+.item a {
+   width: 100%;
+   font-size: 14px;
+   line-height: 18px;
+   font-weight: 600;
+}
+
+.explore {
+   background-color: #777777;
+   color: var(--color-white);
+}
+
+/* Mortgages style start  */
+
+/* calculetor section style start */
+.calculator-container {
+   border: 1px solid #EDEBE1;
+   border-radius: 8px;
+   width: 100%;
+   padding-top: 20px;
+}
+
+.calculator-header {
+   padding-left: 60px;
+}
+
+.calculator-header h2 {
+   margin-bottom: 10px;
+}
+
+.calculator-body .tabs {
+   background-color: var(--color-white);
+}
+
+.calculator-body .tab {
+   padding: 14px 20px;
+   background: #EBE9DE;
+   border: none;
+   cursor: pointer;
+   font-size: 14px;
+   font-weight: bold;
+   border-radius: 4px 4px 0 0;
+   min-width: 143px;
+   color: var(--color-brich);
+   margin-top: 30px;
+}
+
+.calculator-header {
+   text-align: center;
+   padding-inline: 12px;
+}
+
+.tab.active {
+   background: var(--section-bg);
+}
+
+.calculator-form {
+   background-color: var(--section-bg);
+   width: 100%;
+}
+
+.calculator-form span {
+   width: 100%;
+   height: 1px;
+   background-color: #DDDDDD;
+   order: 2;
+}
+
+.calculator-form .form-inner {
+   order: 3;
+   width: 100%;
+}
+
+.calculator-form .output {
+   order: 1;
+   width: 100%;
+}
+
+.output-value {
+   color: var(--color-primary);
+   font-weight: bold;
+   font-size: 32px;
+   line-height: 36px;
+}
+
+.form-inner {
+   max-width: 718px;
+}
+
+.calculator-form {
+   flex-direction: column;
+   padding-block: 20px;
+   padding-right: 12px;
+   padding-left: 12px;
+}
+
+.calculator-form.active {
+   display: flex;
+}
+
+.input-group label {
+   margin-bottom: 6px;
+   display: block;
+}
+
+.input-group input {
+   width: 100%;
+   padding: 10px;
+   border-radius: 6px;
+   border: 1px solid #e0e0e0;
+   font-size: 16px;
+   height: 60px;
+}
+
+.input-group {
+   width: 100%;
+   max-width: 100%;
+}
+
+/* calculetor section style end */
+
+/* shay wright section style start */
+.shay-wright-section {
+   --space-y: 32px;
+   padding: var(--space-y) 0;
+}
+
+.shay-wright-section .common-wrap {
+   gap: 40px;
+}
+
+.about-shay-wright {
+   gap: 24px;
+}
+
+/* author info section start */
+.author-info-section {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding: var(--space-y) 0 var(--space-b);
+}
+
+.author-info-section .author-img {
+   --size: 100px;
+   width: var(--size);
+   max-width: var(--size);
+   height: var(--size);
+   border-radius: 50%;
+   border: 10px solid var(--color-white);
+}
+
+.author-info-section .about-shay-wright {
+   gap: 12px;
+}
+
+.author-info-section .about-shay-wright .author-info {
+   gap: 12px;
+}
+
+.faq-item {
+   border-bottom: 1px solid #48432c;
+   padding-right: 28px;
+   padding-bottom: 22px;
+   padding-top: 26px;
+}
+
+.faq-item:first-child {
+   padding-top: 0;
+}
+
+.faq-button {
+   background: none;
+   border: none;
+   font-size: 17px;
+   line-height: 20px;
+   font-weight: 600;
+   cursor: pointer;
+   width: 100%;
+   text-align: left;
+   padding: 0;
+   color: #48432c;
+   letter-spacing: 0.3px;
+   position: relative;
+}
+
+.faq-button::after {
+   content: "+";
+   font-size: 20px;
+   color: var(--color-green-tropical);
+   transition: transform 0.3s ease, opacity 0.3s ease;
+   font-weight: 400;
+   margin-top: -3px;
+}
+
+.faq-item.active .faq-button::after {
+   content: "−";
+}
+
+.faq-content {
+   max-height: 0;
+   overflow: hidden;
+   opacity: 0;
+   transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+   color: #48432c;
+}
+
+.faq-item.active .faq-content {
+   max-height: 500px;
+   opacity: 1;
+   padding-top: 24px;
+}
+
+.faq-item.active .faq-content p {
+   letter-spacing: -0.16px;
+   line-height: 23.8px;
+}
+
+.faq-content p+p {
+   margin-top: 24px;
+}
+
+/* shay wright section style end */
+/* common faq section style start */
+.common-faq-section {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding: var(--space-y) 0 var(--space-b);
+   background-color: #F7F6F2;
+}
+
+.common-faq-wrap h2 {
+   color: #007c5d;
+   text-align: center;
+   font-size: 26px;
+   line-height: 31.2px;
+   margin-bottom: 20px;
+   font-weight: 700;
+}
+
+.common-faq-wrap .subtitle {
+   text-align: center;
+   color: #48432c;
+   font-size: 18px;
+   line-height: 21.6px;
+   margin-bottom: 24px;
+}
+
+.common-faq-item {
+   background: #FFFFFF;
+   border-radius: 8px;
+   border-radius: 8px;
+   padding-block: 20px;
+   padding-left: 36px;
+   padding-right: 16px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.common-faq-item:hover {
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.question h5 {
+   font-size: 18px;
+   line-height: 21.6px;
+   color: #48432c;
+   font-weight: 400;
+   margin: 0;
+   position: relative;
+}
+
+.question h5::after {
+   content: "";
+   right: 0;
+   top: 9px;
+   width: 10px;
+   height: 8px;
+   clip-path: polygon(0 0, 50% 100%, 100% 0);
+   background-color: #333333;
+   transition: 0.7s ease-in-out;
+   flex-shrink: 0;
+}
+
+.common-faq-wrap .rotate {
+   transform: rotate(180deg);
+}
+
+.answer {
+   margin-top: 16px;
+   margin-left: 10px;
+   font-size: 14px;
+   color: #4a4a4a;
+   display: none;
+}
+
+.show {
+   display: block;
+}
+
+@media (max-width: 768px) {
+   .common-faq {
+      flex-direction: column;
+   }
+
+   .common-faq-item {
+      width: 100%;
+      padding-block: 12px;
+      padding-left: 20px;
+   }
+}
+
+/* common faq section style end */
+/* shay wright section end */
+
+/* quote section start */
+.quote-section {
+   --space-y: 32px;
+   padding: var(--space-y) 0;
+}
+
+.about-us .quote-section {
+   padding: 0;
+}
+
+.about-us .quote-section .common-wrap {
+   padding: 0;
+}
+
+.about-us .quote-content-wrapper {
+   padding-inline: 0;
+   background: none;
+   color: var(--color-text);
+   border-top: 1px solid #DDDDDD;
+   border-bottom: 1px solid #DDDDDD;
+}
+
+.quote-content-wrapper {
+   background: url(../images/home-financing-cta-bg.jpg) no-repeat center/cover;
+   border-radius: 8px;
+   color: var(--color-white);
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 20px;
+   padding: 30px 60px;
+   padding-right: 40px;
+   padding: 20px;
+}
+
+.quote-content__image {
+   max-width: 60px;
+   flex-shrink: 0;
+   border-radius: 50%;
+}
+
+.quote-content__content {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   flex: 1;
+   color: var(--color-white);
+}
+
+.quote-content__content h4 {
+   font-size: 24px;
+   line-height: 30px;
+   font-weight: 700;
+   color: var(--color-white);
+}
+
+/* quote section end */
+
+/* form section style start */
+.form-section {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding: var(--space-y) 0 var(--space-b);
+}
+
+.form-section .common-wrap {
+   max-width: 744px;
+}
+
+.common-form {
+   --space: 12px;
+   padding: var(--space);
+   border: 1px solid #EDEBE1;
+   border-radius: 8px;
+}
+
+.common-form h3 {
+   color: var(--color-primary);
+}
+
+.form-item {
+   gap: 6px;
+}
+
+.form-full-width {
+   grid-column: 1 / -1;
+}
+
+.form-submit img {
+   width: 30px;
+}
+
+/* contact us section start */
+.contact-us {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding: var(--space-y) 0 var(--space-b);
+}
+
+.contact-us .common-form {
+   flex-grow: 1;
+}
+
+.contact-us .common-form {
+   width: 100%;
+}
+
+.contact-us .contact-info {
+   width: 100%;
+}
+
+.contact-info {
+   --space: 12px;
+   padding: var(--space);
+   border: 1px solid #EDEBE1;
+   border-radius: 8px;
+}
+
+.contact-info img {
+   width: 18px;
+}
+
+.contact-info h3 {
+   color: var(--color-primary);
+}
+
+.contact-info .contact-item:not(:last-child) a {
+   color: var(--color-text);
+}
+
+/* contact us section end */
+
+@media only screen and (min-width:769px) {
+
+   /* form section start */
+   .form-section {
+      --space-y: 48px;
+      --space-b: 48px;
+   }
+
+   .form-item-wrap {
+      --grid-column: 2;
+      gap: 30px 20px;
+   }
+
+   .common-form {
+      --space: 24px;
+   }
+
+   /* form section end */
+   /* contact us section start */
+   .contact-us {
+      --space-y: 48px;
+      --space-b: 48px;
+   }
+
+   .contact-info {
+      --space: 24px;
+   }
+
+   /* contact us section end */
+}
+
+@media only screen and (min-width:1025px) {
+
+   /* form section start */
+   .common-form {
+      --space: 28px;
+   }
+
+   /* form section end */
+   /* contact us section style start */
+   .contact-us {
+      --space-y: 72px;
+      --space-b: 72px;
+   }
+
+   .contact-us .common-wrap {
+      flex-direction: row;
+   }
+
+   .contact-info {
+      --space: 28px;
+   }
+
+   .contact-us .contact-info {
+      width: 29.919%;
+      align-items: center;
+   }
+
+   /* contact us section style end */
+}
+
+/* form section style end */
+
+/* big card section start */
+
+.blog-post-section {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding: var(--space-y) 0 var(--space-b);
+}
+
+.card-wrapper {
+   gap: 40px;
+}
+
+.card.horijontal-card {
+   flex-direction: column-reverse;
+   gap: 20px;
+}
+
+.card-content {
+   gap: 16px;
+}
+
+.card-content a {
+   text-decoration: underline;
+}
+
+.card-img {
+   max-width: 522px;
+   width: 100%;
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+.card-title-wrap {
+   gap: 12px;
+   margin-top: -6px;
+}
+
+.card-title-wrap .card-title-img {
+   --size: 34px;
+   width: var(--size);
+   height: var(--size);
+   display: flex;
+}
+
+.card-body ul {
+   list-style: disc;
+   list-style-position: inside;
+   color: #48432c;
+   font-size: 17px;
+   line-height: 27px;
+}
+
+
+.card-body p:has(+ p) {
+   margin-bottom: 12px;
+}
+
+.card-body p:has(+ ul) {
+   margin-bottom: 24px;
+}
+
+@media only screen and (min-width:769px) {
+   .card-wrapper {
+      gap: 160px;
+   }
+
+   .card.horijontal-card {
+      gap: 40px 20px;
+      flex-direction: row;
+   }
+
+   .card-content {
+      gap: 30px;
+   }
+
+   .card-body p:has(+ p) {
+      margin-bottom: 23px;
+   }
+
+   .card-body p:has(+ ul) {
+      margin-bottom: 49px;
+   }
+
+   .about-us .card {
+      flex-direction: row-reverse;
+   }
+
+   .about-us .card-wrapper .card:nth-child(even) {
+      flex-direction: row-reverse;
+   }
+}
+
+/* big card section end */
+/* fha mortgages page  start*/
+.info-section {
+   --space-y: 32px;
+   --space-b: 32px;
+   padding: var(--space-y) 0 var(--space-b);
+}
+
+.basic-loan-item {
+   padding: 16px;
+   border: 1px solid #F5F5F5;
+}
+
+.basic-loan-item .loan-things {
+   --size: 40px;
+   width: var(--size);
+   height: var(--size);
+   font-size: 18px;
+   line-height: 21.6px;
+   font-weight: 700;
+   color: #007255;
+   flex-shrink: 0;
+   background-color: #f0f7f1;
+}
+
+.basic-loan-item .loan-content h4 {
+   margin-bottom: 10px;
+   color: var(--color-text);
+}
+
+/* fha mortgages page  end*/
+
+/* benefit mortgage section start */
+.benefit-mortgage {
+   background-image: url(../images/neighborhood-mortgages-bg.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.benefit-mortgage .basic-loan-details,
+.benefit-mortgage .basic-loan-details h2 {
+   color: var(--color-white);
+}
+
+.benefit-mortgage .basic-loan-details h2 {
+   line-height: 31.2px;
+}
+
+.benefit-mortgage .basic-loan-item .loan-content h4,
+.benefit-mortgage .basic-loan-item {
+   color: var(--color-white);
+}
+
+.benefit-mortgage .basic-loan-item {
+   border: 0;
+   background-color: var(--color-primary-dark);
+   border-radius: 24px;
+}
+
+.benefit-mortgage .basic-loan-item .loan-things {
+   --size: auto;
+}
+
+/* benefit mortgage section end */
+/* ========================= loan parameters style start ================== */
+
+.parameters-wrap {
+   padding-block: 20px;
+}
+
+.parameters-wrap .border {
+   width: 100%;
+   height: 1px;
+   background-color: #EDEBE1;
+}
+
+.parameters-item p {
+   margin-bottom: 14px;
+}
+
+.parameters-item {
+   flex: 1;
+}
+
+.parameters {
+   gap: 10px;
+}
+
+.parameters-links {
+   font-size: 14px;
+   flex-direction: row;
+   row-gap: 0px;
+}
+
+.parameters-links ul li {
+   list-style-type: disc;
+}
+
+.parameters-links ul,
+ol {
+   list-style-position: inside;
+}
+
+.parameters-item span {
+   font-size: 18px;
+   line-height: 21.6px;
+   font-weight: 400;
+   font-style: italic;
+   color: var(--color-text);
+}
+
+@media only screen and (min-width:769px) {
+   .parameters-wrap {
+      padding-block: 80px;
+   }
+
+   .parameters-wrap .border {
+      width: 1px;
+      height: unset;
+      margin-inline: 45px;
+   }
+
+   .parameters {
+      flex-direction: row;
+   }
+
+   .parameters-links {
+      row-gap: 0px;
+   }
+
+   .parameters-links ul li {
+      font-size: 16px;
+   }
+
+   .parameters-item h2 {
+      margin-bottom: 5px;
+   }
+
+   .parameters-item p {
+      margin-bottom: 32px;
+   }
+}
+
+
+/* ========================= loan parameters style end ================== */
+/* =============== FHA loan rate style start ================= */
+
+.mortgage-rates-inner {
+   max-width: 527px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.exceptional-title {
+   text-align: center;
+   margin-bottom: 24px;
+}
+
+.exceptional-title h2 {
+   margin-bottom: 12px;
+}
+
+.rate-box {
+   border: 1px solid #EDEBE1;
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+.rate-box-head {
+   background-color: var(--color-primary);
+
+}
+
+.mortgage-rates .rate-box .rate-row {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+}
+
+.rate-col h5 {
+   color: white;
+   font-size: 14px;
+}
+
+.rate-col p {
+   font-size: 12px;
+}
+
+.rate-col {
+   padding-block: 10px;
+   padding-inline: 4px;
+   border-right: 1px solid #EDEBE1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.rate-box-body .rate-row:nth-child(even) {
+   background-color: var(--color-white);
+}
+
+.rate-col:last-child {
+   border: 0;
+}
+
+.rate-box-body {
+   background-color: var(--section-bg);
+
+}
+
+
+@media only screen and (min-width:769px) {
+   .mortgage-rates {
+      padding-block: 70px;
+   }
+
+   .exceptional-title {
+      margin-bottom: 48px;
+   }
+
+   .rate-col {
+      padding-block: 14px;
+      padding-inline: 7px;
+   }
+
+   .rate-col h5 {
+      font-size: 18px;
+   }
+
+   .rate-col p {
+      font-size: 18px;
+   }
+
+}
+
+/* =============== FHA loan rate style end ================= */
+/* ================ down-pament-rate style start ================ */
+
+.down-pament-rates .rate-box .rate-row {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.down-pament-rates .rate-col {
+   justify-content: start;
+   padding-left: 30px;
+}
+
+@media only screen and (min-width:769px) {
+   .down-pament-rates {
+      padding-block: 70px;
+   }
+
+   .down-pament-rates .note {
+      font-size: 14px;
+      font-weight: 16.8px;
+      padding: 10px;
+   }
+}
+
+/* ================ down-pament-rate style end ================ */
+/* blog wrap common section start */
+.blog-wrap {
+   --space-y: 32px;
+   padding: var(--space-y) 0;
+}
+
+.blog-item {
+   border-radius: 8px;
+   border: 1px solid #EEECE3;
+   overflow: hidden;
+}
+
+.blog-item-thumb {
+   height: 200px;
+}
+
+.blog-item-thumb img {
+   height: 100%;
+}
+
+.blog-item-content {
+   padding: 32px 24px;
+   flex-grow: 1;
+}
+
+.blog-item-content h5 a {
+   color: var(--color-brich);
+}
+
+.blog-item-content p {
+   flex-grow: 1;
+}
+
+.arrow-icon {
+   display: inline-block;
+   width: 10px;
+   height: 8px;
+   clip-path: polygon(0 0, 50% 100%, 100% 0);
+   background-color: var(--color-primary-extra-light);
+   transform: rotate(38deg);
+   margin-left: 10px;
+}
+
+@media only screen and (min-width:460px) {
+   .blog-wrap .common-wrap {
+      --grid-column: 2;
+   }
+}
+
+@media only screen and (min-width:769px) {
+   .blog-wrap {
+      --space-y: 40px;
+   }
+
+   .blog-wrap .common-wrap {
+      --grid-column: 3;
+   }
+}
+
+@media only screen and (min-width:1025px) {
+   .blog-wrap {
+      --space-y: 60px;
+   }
+
+   .blog-wrap .common-wrap {
+      --gap: 60px;
+   }
+}
+
+/* blog wrap common section end */
+
+/* responsive  */
+@media only screen and (min-width:426px) {
+   .benefit-mortgage .basic-loan-card {
+      --grid-column: 2;
+   }
+}
+
+@media only screen and (min-width:769px) {
+
+   /* varibale */
+   :root {
+      --fs-h1: 32px;
+      --lh-h1: 38px;
+      --fs-h2: 22px;
+      --lh-h2: 28px;
+      --fs-h3: 20px;
+      --lh-h3: 26px;
+      --fs-h4: 18px;
+      --lh-h4: 22px;
+      --fs-h5: 16px;
+      --lh-h5: 20px;
+      --fs-label: 15px;
+      --lh-label: 18px;
+      --btn-font-size: 16px;
+      --btn-line-height: 20px;
+      --btn-padding: 16px;
+      --btn-min-width: 150px;
+   }
+
+   /* body typorgraphy */
+
+   body {
+      --body-text: 16px;
+      --body-line-height: 22.4px;
+   }
+
+   /* header section start */
+   .header-wrap {
+      padding: 24px 0 30px;
+   }
+
+   /* header section end */
+   /* navigation section style start */
+   .nav-wrap ul a {
+      padding-block: 16px;
+   }
+
+   /* navigation section style end */
+   /* common hero section style start */
+   .hero-section {
+      --space-y: 48px;
+      --space-b: 45px;
+   }
+
+   .hero-section .common-wrap {
+      flex-direction: row;
+   }
+
+   .hero-section .content-wraper {
+      max-width: 534px;
+      width: 100%;
+      padding-top: 16px;
+   }
+
+   .hero-section.double-img-hero .content-wraper {
+      padding-top: 64px;
+   }
+
+   .hero-section .media {
+      max-width: 676px;
+      width: 100%;
+   }
+
+   .hero-section.double-img-hero .media {
+      max-width: 586px;
+   }
+
+   .content-wraper .sub-title {
+      margin-bottom: 8px;
+   }
+
+   .content-wraper .title {
+      margin-bottom: 24px;
+   }
+
+   .double-img-hero .content-wraper .title {
+      font-size: 36px;
+      line-height: 43.2px;
+      margin-bottom: 38px;
+   }
+
+   .content-wraper .btn-wraper {
+      margin-top: 64px;
+      gap: 12px;
+   }
+
+   .double-img-hero .content-wraper .btn-wraper {
+      margin-top: 54px;
+      gap: 12px;
+   }
+
+   .content-wraper .btn-wraper .btn {
+      min-width: 194px;
+   }
+
+   .double-img-hero .content-wraper .btn-wraper .btn {
+      min-width: 232px;
+   }
+
+   .content-wraper .sub-title {
+      font-size: 22px;
+      margin-bottom: 10px;
+   }
+
+   .media img {
+      border-top-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+   }
+
+   /* common hero section style end */
+   /* ====== Mortgages style start ====== */
+   .mortgages-wrap {
+      --space-y: 45px;
+      --space-b: 64px;
+   }
+
+   .mortgages .item {
+      --space-y: 18px;
+      --space-x: 24px;
+   }
+
+   .mortgages .item h3 {
+      text-align: center;
+   }
+
+   .item a {
+      font-size: 16px;
+      line-height: 20px;
+   }
+
+   /* ====== Mortgages style end ====== */
+   /* cta common section style start */
+   .cta {
+      --space-y: 56px;
+      --space-b: 52px;
+   }
+
+   .get-quote-inner {
+      --space-y: 32px;
+      --space-x: 26px;
+      flex-direction: row;
+   }
+
+   .get-quote-content {
+      flex-direction: row;
+   }
+
+   .get-quote-content-inner {
+      align-items: start;
+      text-align: left;
+   }
+
+   /* cta common section style end */
+
+   /* testimonial section styel stat */
+   .testimonial-item {
+      padding: 30px;
+   }
+
+   /* testimonial section style end */
+   /* calculator section style start */
+   .calculator-container {
+      padding-top: 50px;
+   }
+
+   .calculator-header {
+      text-align: start;
+      padding-left: 60px;
+      padding-right: 24px;
+   }
+
+   .calculator-header h2 {
+      margin-bottom: 10px;
+   }
+
+   .tabs {
+      padding-right: 24px;
+      padding-left: 60px;
+   }
+
+   .calculator-body .tab {
+      padding: 16px 24px;
+      font-size: 16px;
+   }
+
+   .calculator-form {
+      flex-direction: row;
+      padding-block: 32px;
+      padding-right: 24px;
+      padding-left: 60px;
+   }
+
+   .basic-tab {
+      padding-bottom: 130px;
+   }
+
+   .calculator-form .form-inner {
+      order: 1;
+      width: 100%;
+      gap: 17px;
+      row-gap: 52px;
+   }
+
+   .calculator-form .output {
+      order: 3;
+      width: 100%;
+      padding-left: 80px;
+      flex: 1;
+      padding-top: 10px;
+   }
+
+   .calculator-form span {
+      margin-top: 20px;
+      width: 1px;
+      height: auto;
+      order: 2;
+   }
+
+   .input-group label {
+      margin-bottom: 6px;
+   }
+
+   .output-value {
+      font-size: 45px;
+      line-height: 52.8px;
+      margin-top: 9px;
+   }
+
+   .input-group {
+      width: 210px;
+      max-width: 100%;
+   }
+
+   .calculate-btn {
+      min-width: 208px;
+   }
+
+   /* calculator section style end */
+   /* shay wright section start */
+   .shay-wright-section {
+      --space-y: 48px;
+   }
+
+   /* about shay */
+
+   .author-info-section .common-wrap {
+      flex-direction: row;
+      gap: var(--gap);
+   }
+
+   .author-info-section .about-shay-wright {
+      flex-shrink: 0;
+      max-width: var(--width);
+      align-items: center;
+      margin-top: -216px;
+   }
+
+   .author-info-section .author-info {
+      text-align: center;
+      align-items: center;
+   }
+
+   /* shay wright section end */
+   /* quote section style start */
+   .quote-section {
+      --space-y: 37px;
+   }
+
+   .quote-content-wrapper {
+      padding: 30px 60px;
+      padding-right: 40px;
+   }
+
+   /* quote section style end */
+   /* about shay style start */
+
+   .hero-section.about-shay-hero {
+      --space-y: 100px;
+      --space-b: 90px;
+   }
+
+   .hero-section.about-shay-hero .content-wraper {
+      padding-left: calc(var(--width) + var(--gap));
+   }
+
+   .author-info-section {
+      --space-y: 76px;
+      --space-b: 100px;
+   }
+
+   .author-info-section .author-img {
+      --size: 200px;
+   }
+
+   /* about shay style end */
+   /* benifit mortgage start */
+   .benefit-mortgage {
+      padding: 60px 0;
+   }
+
+   .benefit-mortgage .basic-loan-card {
+      --grid-column: 3;
+      gap: 20px;
+   }
+
+   .benefit-mortgage .basic-loan-details p {
+      font-size: 18px;
+      line-height: 21.6px;
+   }
+
+   /* benifit mortgage end */
+
+   /* footer section start */
+   .footer-middle .common-wrap {
+      --grid-column: 3;
+   }
+
+   .footer-bottom .common-wrap {
+      --grid-column: 3;
+   }
+
+   .footer-middle .footer-links {
+      grid-column: span 2;
+   }
+
+   .footer-link-wrap {
+      flex-direction: row;
+   }
+
+   .footer-link-wrap * {
+      width: 100%;
+   }
+
+   .footer-bottom p {
+      text-align: left;
+   }
+
+   .footer-top img {
+      margin-right: 26px;
+   }
+
+   /* footer section end */
+}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width:1025px) {
+
+   /* varibale */
+   :root {
+      --fs-h1: 42px;
+      --lh-h1: 46.2px;
+      --fs-h2: 26px;
+      --lh-h2: 33.8px;
+      --fs-h3: 24px;
+      --lh-h3: 31.2px;
+      --fs-h4: 20px;
+      --lh-h4: 24px;
+      --fs-h5: 18px;
+      --lh-h5: 21.6px;
+      --fs-label: 17px;
+      --lh-label: 20.4px;
+      --btn-font-size: 18px;
+      --btn-line-height: 21.6px;
+      --btn-padding: 18px;
+      --btn-min-width: 176px;
+   }
+
+   /* body typorgraphy */
+   body {
+      --body-text: 17px;
+      --body-line-height: 23.8px;
+   }
+
+   /* header section start */
+   .header-wrap {
+      padding: 35px 0 39px;
+   }
+
+   /* header section end */
+   /* common hero section start */
+   .hero-section {
+      --space-y: 64px;
+      --space-b: 57px;
+   }
+
+   .hero-section.double-img-hero {
+      --space-y: 48px;
+      --space-b: 46px;
+   }
+
+   /* common hero section end */
+   /* ====== Mortgages style start ====== */
+   .mortgages-wrap {
+      --space-y: 57px;
+      --space-b: 93px;
+   }
+
+   .mortgages {
+      --gap: 64px;
+   }
+
+   .mortgages .item {
+      --space-y: 26px;
+      --space-x: 26px;
+   }
+
+   .item a {
+      font-size: 20px;
+      line-height: 24px;
+      padding-block: 13px;
+   }
+
+   /* ====== Mortgages style end ====== */
+   /* cta common section style start */
+   .cta {
+      --space-y: 80px;
+      --space-b: 73px;
+   }
+
+   .get-quote-inner {
+      gap: 60px;
+      padding-left: 22px;
+      padding-top: 35px;
+      padding-right: 40px;
+      padding-bottom: 32px;
+   }
+
+   .get-quote-btn .btn {
+      min-width: 200px;
+   }
+
+   .get-quote-content-img {
+      --size: 80px;
+   }
+
+   /* cta common section style end */
+   /* support box style start */
+
+
+   /* support box style end */
+   /* testimonial section styel stat */
+   .testimonial-item {
+      padding: 40px;
+   }
+
+   /* testimonial section styel end */
+   /* shay wright section start */
+   .shay-wright-section {
+      --space-y: 60px;
+   }
+
+   .about-shay-wright {
+      max-width: 400px;
+      width: 100%;
+   }
+
+   .shay-wright-section .about-shay-wright-faq {
+      max-width: 586px;
+      width: 100%;
+   }
+
+   .shay-wright-section .common-wrap {
+      flex-direction: row;
+   }
+
+   .about-shay-wright {
+      gap: 43px;
+      padding-top: 24px;
+   }
+
+   .about-shay-wright .author-info {
+      gap: 23px;
+   }
+
+   .author-info-section .about-shay-wright {
+      margin-top: -237px;
+   }
+
+   .author-info .author-name {
+      font-size: 24px;
+      line-height: 29px;
+      color: var(--color-primary);
+   }
+
+   /* shay wright section end */
+   /* quote section start */
+
+   .quote-content-wrapper h4 {
+      font-size: 19px;
+      line-height: 33px;
+      font-weight: 600;
+   }
+
+   /* quote section end */
+   /* big card section start */
+   .blog-post-section {
+      --space-y: 80px;
+      --space-b: 134px;
+   }
+
+   /* big card section end*/
+   /* about shay page style start */
+   .calc-spacing {
+      --gap: 110px;
+   }
+
+   /* about shay page style end */
+   /* loan section style start */
+   .basic-loan-item .loan-content h4 {
+      font-size: 19px;
+      line-height: 22.8px;
+   }
+
+   .basic-loan {
+      padding: 100px 0 80px;
+   }
+
+   .basic-loan .common-wrap {
+      gap: 60px;
+   }
+
+   .section-header {
+      gap: 24px;
+   }
+
+   .basic-loan-card {
+      gap: 50px;
+   }
+
+   .basic-loan-item {
+      padding: 24px;
+      gap: 24px;
+   }
+
+   .basic-loan-item .loan-content {
+      flex-grow: 1;
+   }
+
+   .basic-loan-item .loan-content h4 {
+      margin-bottom: 24px;
+   }
+
+   /* loan section style end */
+   /* banifit mortgage start */
+   .benefit-mortgage .basic-loan-card {
+      --grid-column: 5;
+   }
+
+   /* banifit mortgage end */
+
+   /* footer section start */
+   .footer {
+      padding-top: 92px;
+   }
+
+   .footer-middle {
+      --space-y: 96px;
+      --space-b: 74px;
+   }
+
+   .footer-middle .common-wrap {
+      --grid-column: 4;
+   }
+
+   .footer-bottom .common-wrap {
+      --grid-column: 4;
+   }
+
+   .footer-form form {
+      flex-direction: row;
+   }
+
+   .footer-form form .btn {
+      min-width: auto;
+   }
+
+   /* footer section end */
+}

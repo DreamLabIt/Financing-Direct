@@ -6,7 +6,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>about-shay-wright</title>
    <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
-   <link rel="stylesheet" href="./assets/css/style.css">
+   <link rel="stylesheet" href="./assets/css/final.css">
+   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
 </head>
 
@@ -14,27 +15,24 @@
    <?php include 'header.php'; ?>
    <!-- hero section start -->
    <section class="hero-section">
-      <div class="common-wrap d-flex justify-between">
+      <div class="common-wrap d-flex justify-between gap-20">
          <div class="content-wraper">
             <p class="sub-title">About Me</p>
             <h1 class="title">Meet Shay Wright</h1>
             <p class="content">“I’m very passionate about helping borrowers not only achieve their homeownership goals but to also get the absolute lowest interest rate and best overall mortgage for their situation”.</p>
-            <div class="btn-wraper">
+            <div class="btn-wraper d-flex flex-wrap gap-20">
                <a class="btn btn-primary" href="#">Book a Call</a>
             </div>
          </div>
-         <div class="media">
+         <div class="media d-flex item-end flex-col">
             <img src="./assets/images/about-shay-wright-video.png" alt="about-shay-wright-video">
-            <div class="media-shape">
-               <img src="./assets/images/about-shay-wright-shape.png" alt="about-shay-wright-shape">
-            </div>
          </div>
       </div>
    </section>
    <!-- hero section start -->
    <!-- shay wright section start -->
    <section class="shay-wright-section">
-      <div class="common-wrap d-flex justify-between">
+      <div class="common-wrap d-flex justify-between flex-col">
          <div class="about-shay-wright item-start d-flex flex-wrap justify-between">
             <div class="author-img d-flex flex-col">
                <img src="./assets/images/shay-wright-sm.jpg" alt="author img">
@@ -90,25 +88,12 @@
          </div>
       </div>
    </section>
-   <!-- <section class="quote-section">
-      <div class="common-wrap">
-         <div class="quote-content-wrapper">
-            <img src="./assets/images/interest-rate-quote-icon.png" alt="interest-rate-quote-icon" class="quote-content__image" />
-            <div class="quote-content__content">
-               <h4>Media Section with Image</h4>
-               <p>This section contains an image, some text, and a button. It's useful for feature highlights or promotional content.</p>
-            </div>
-            <a href="#" class="btn btn-secondary">Get a Rate Quote</a>
-         </div>
-      </div>
-   </section> -->
-
    <!-- quote section end -->
    <!-- big card section start -->
-   <section class="card-section">
+   <section class="blog-post-section">
       <div class="common-wrap">
          <div class="card-wrapper d-flex flex-col">
-            <div class="card d-flex justify-between gap-24">
+            <div class="card horijontal-card d-flex justify-between gap-24">
                <div class="card-content d-flex flex-col">
                   <div class="card-title-wrap d-flex item-center">
                      <div class="card-title-img">
@@ -131,7 +116,7 @@
                   <img src="./assets/images/community-service.jpg" alt="community-service">
                </div>
             </div>
-            <div class="card d-flex justify-between gap-24">
+            <div class="card horijontal-card d-flex justify-between gap-24">
                <div class="card-content d-flex flex-col">
                   <div class="card-title-wrap d-flex item-center">
                      <div class="card-title-img">
@@ -153,12 +138,12 @@
    </section>
    <!-- big card section end -->
    <!-- lets connect start -->
-   <section class="let-connect">
+   <section class="support-box-section let-connect">
       <div class="common-wrap">
-         <div class="support-box">
+         <div class="support-box text-center">
             <h2 class="support-title">Let’s Connect</h2>
             <p class="support-text">Interested in learning more about the mortgage services I offer? Please feel free to call or text me anytime at <a href="tel:5124688261">(512) 468-8261</a> or email me at <a href="shay@homefinancingdirect.com">shay@homefinancingdirect.com</a>. You can also book a call with me.</p>
-            <div class="btn-wrapper">
+            <div class="btn-wrapper d-flex flex-wrap justify-center gap-10">
                <a class="btn btn-primary" href="#">Book a Call</a>
                <a class="btn btn-border" href="#">Send a Referral</a>
             </div>

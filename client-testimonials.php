@@ -1,5 +1,5 @@
 <section class="testimonial">
-   <div class="common-wrap d-flex flex-col">
+   <div class="common-wrap d-flex flex-col gap-10">
       <h2 class="text-center">Client Testimonials</h2>
       <div class="overflow-hidden slider-wrapper">
          <div class="testimonial-swiper">

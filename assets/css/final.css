@@ -1312,7 +1312,7 @@ textarea {
    gap: 40px;
 }
 
-.card {
+.card.horijontal-card {
    flex-direction: column-reverse;
    gap: 20px;
 }
@@ -1366,7 +1366,7 @@ textarea {
       gap: 160px;
    }
 
-   .card {
+   .card.horijontal-card {
       gap: 40px 20px;
       flex-direction: row;
    }

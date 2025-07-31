@@ -9,15 +9,15 @@
    <link rel="stylesheet" href="./assets/css/final.css">
 </head>
 
-<body class="about-shay">
+<body class="rate-quote-purchase">
    <?php include 'header.php'; ?>
    <!-- hero section start -->
    <section class="hero-section">
       <div class="common-wrap d-flex justify-center text-center">
          <div class="content-wraper">
-            <p class="sub-title">Your mortgage partner</p>
-            <h1 class="title">About Us</h1>
-            <p class="content">Our company was built on the principles of trust, integrity, and customer-centric service, and we are committed to offering our clients the best mortgage options on the market.</p>
+            <p class="sub-title">Lowest rates and fees</p>
+            <h1 class="title">Interest Rate Quote</h1>
+            <p class="content">Simply complete the form below to get a free personalized rate quote, and you’ll typically receive your free quote in less than an hour.</p>
          </div>
    </section>
    <!-- hero section end -->
@@ -29,26 +29,26 @@
                <div class="form-item d-flex flex-col">
                   <label for="first_time_buyer">First Time Buyer</label>
                   <div class="d-flex gap-10">
-                     <div>
-                        <input name="firstTimeBuyer" id="buyerYes" type="radio" value="yes">
-                        <label for="buyerYes">Yes</label>
+                     <div class="d-flex item-center gap-10">
+                        <input class="custom-radio" name="firstTimeBuyer" id="buyerYes" type="radio" value="yes">
+                        <label class="custom-radio-label" for="buyerYes">Yes</label>
                      </div>
-                     <div>
-                        <input name="firstTimeBuyer" id="buyerNo" type="radio" value="no">
-                        <label for="buyerNo">No</label>
+                     <div class="d-flex item-center gap-10">
+                        <input class="custom-radio" name="firstTimeBuyer" id="buyerNo" type="radio" value="no">
+                        <label class="custom-radio-label" for="buyerNo">No</label>
                      </div>
                   </div>
                </div>
                <div class="form-item d-flex flex-col">
                   <label for="first_time_buyer">Veteran or Active Military?</label>
                   <div class="d-flex gap-10">
-                     <div>
-                        <input name="military" id="militaryYes" type="radio" value="yes">
-                        <label for="militaryYes">Yes</label>
+                     <div class="d-flex item-center gap-10">
+                        <input class="custom-radio" name="military" id="militaryYes" type="radio" value="yes">
+                        <label class="custom-radio-label" for="militaryYes">Yes</label>
                      </div>
-                     <div>
-                        <input name="military" id="militaryno" type="radio" value="no">
-                        <label for="militaryno">No</label>
+                     <div class="d-flex item-center gap-10">
+                        <input class="custom-radio" name="military" id="militaryno" type="radio" value="no">
+                        <label class="custom-radio-label" for="militaryno">No</label>
                      </div>
                   </div>
                </div>

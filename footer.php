@@ -1,42 +1,19 @@
-<?php include "cta.php"; ?>
-<section class=" common-wrap-form">
+<section>
+   <?php include "cta.php"; ?>
+</section>
+<section class="support-box-section">
    <div class="common-wrap">
-      <div class="support-box">
+      <div class="support-box text-center">
          <h2 class="support-title">We’re Here to Help</h2>
          <p class="support-text">Have a mortgage related question? Looking for additional information about our mortgage products and services? Please reach out to us anytime!</p>
          <button class="support-btn btn">
             <img src="./assets/images/phone-icon.png" alt=""> (512) 593-4157
          </button>
       </div>
-      <div class="form-box">
-         <form>
-            <div class="form-group">
-               <label for="name">Name</label>
-               <input type="text" id="name">
-            </div>
-            <div class="form-group">
-               <label for="email">Email</label>
-               <input type="email" id="email">
-            </div>
-            <div class="form-group">
-               <label for="phone">Phone</label>
-               <input type="text" id="phone">
-            </div>
-            <div class="form-group">
-               <label for="contact">Preferred Method of Contact</label>
-               <input type="text" id="contact">
-            </div>
-            <div class="form-group full">
-               <label for="message">Question or Comment</label>
-               <textarea id="message" rows="5"></textarea>
-            </div>
-            <button type="submit" class="submit-btn btn btn-primary">✉️ SEND</button>
-         </form>
-      </div>
    </div>
 </section>
 
-
+<?php include "form.php"; ?>
 <?php include "client-testimonials.php"; ?>
 
 <footer class="footer">

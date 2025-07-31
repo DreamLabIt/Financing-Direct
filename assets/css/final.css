@@ -137,7 +137,8 @@ label {
 
 input,
 textarea,
-select {
+select,
+option {
    padding: 12px;
    border: 1px solid #EDEBE1;
    border-radius: 8px;
@@ -154,6 +155,53 @@ select:focus {
 textarea {
    resize: none;
    height: 126px;
+}
+
+.custom-radio {
+   display: none;
+}
+
+.custom-radio-label {
+   position: relative;
+   padding-left: 28px;
+   cursor: pointer;
+   line-height: 20px;
+   user-select: none;
+}
+
+.custom-radio-label::before {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 18px;
+   height: 18px;
+   border: 1px solid #EDEBE1;
+   border-radius: 4px;
+   background: #FAF9F7;
+   transition: 0.2s;
+}
+
+.custom-radio:checked+.custom-radio-label::before {
+   background-color: var(--color-primary);
+   border-color: var(--color-primary);
+}
+
+.custom-radio-label::after {
+   content: '';
+   position: absolute;
+   left: 7px;
+   top: 2px;
+   width: 5px;
+   height: 10px;
+   border: solid #fff;
+   border-width: 0 2px 2px 0;
+   transform: rotate(45deg);
+   display: none;
+}
+
+.custom-radio:checked+.custom-radio-label::after {
+   display: block;
 }
 
 /* utility class*/
@@ -1129,6 +1177,7 @@ footer {
    padding: var(--space);
    border: 1px solid #EDEBE1;
    border-radius: 8px;
+   background-color: var(--color-white);
 }
 
 .common-form h3 {
@@ -1544,6 +1593,12 @@ ol {
 }
 
 /* mortgage section end */
+/* rate quote purchase page start */
+.rate-quote-purchase {
+   --form-section-mt: 70px;
+}
+
+/* rate quote purchase page end */
 /* responsive  */
 @media only screen and (min-width:426px) {
    .benefit-mortgage .basic-loan-card {
@@ -2239,6 +2294,24 @@ ol {
    }
 
    /* contact us section style end */
+   /* rate quote purchase page form secion start */
+   .rate-quote-purchase .hero-section {
+      padding-bottom: calc(var(--space-b) + var(--form-section-mt));
+   }
+
+   .rate-quote-purchase .form-section {
+      padding-top: 0;
+   }
+
+   .rate-quote-purchase .common-form {
+      margin-top: calc(var(--form-section-mt) * -1);
+   }
+
+   .rate-quote-purchase .support-box-section+.form-section .common-form {
+      margin-top: 0;
+   }
+
+   /* rate quote purchase page form secion end */
    /* card section start */
    .card-wrapper {
       gap: 160px;
